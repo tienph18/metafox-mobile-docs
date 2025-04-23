@@ -2,26 +2,28 @@
 
 The `AdvertiseCalculatorCost` element is a specialized text input field designed for calculating advertising costs based on a selected placement and a numeric input value (e.g., number of impressions, clicks). It displays the calculated total cost dynamically based on the input and the price associated with the selected placement option.
 
+For a visual reference, see [AdvertiseCalculatorCost Props Gallery](./form-elements/AdvertiseCalculatorCost.md)
+
 ### Props
 
 | Name                  | Type                                                     | Description                                                                                                                               | Required | Default      |
 | :-------------------- | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :------- | :----------- |
-| `label`               | `string`                                                 | The label displayed for the input field.                                                                                                  | No       |              |
-| `description`         | `string`                                                 | A description text displayed below the input.                                                                                             | No       |              |
-| `placeholder`         | `string`                                                 | Placeholder text shown when the input is empty.                                                                                           | No       |              |
-| `required`            | `boolean`                                                | Marks the field as required.                                                                                                              | No       | `false`      |
-| `disabled`            | `boolean`                                                | Disables the input field.                                                                                                                 | No       | `false`      |
+| `label`               | `string`                                                 |                                                                                                                                   | No       |              |
+| `description`         | `string`                                                 |                                                                                                                                   | No       |              |
+| `placeholder`         | `string`                                                 |                                                                                                                                   | No       |              |
+| `required`            | `boolean`                                                |                                                                                                                                   | No       | `false`      |
+| `disabled`            | `boolean`                                                |                                                                                                                                   | No       | `false`      |
 | `editable`            | `boolean`                                                | Whether the input is editable.                                                                                                            | No       | `true`       |
-| `fullWidth`           | `boolean`                                                | Makes the component take up the full width.                                                                                               | No       | `false`      |
-| `margin`              | `'none'`, `'dense'`, `'normal'`, `'small'`               | Controls the margin around the component.                                                                                                 | No       | `'normal'`   |
-| `paddingBottom`       | `'none'`, `'dense'`, `'normal'`, `'small'`               | Controls the bottom padding.                                                                                                              | No       | `'normal'`   |
+| `fullWidth`           | `boolean`                                                |                                                                                                                                   | No       | `false`      |
+| `margin`              | `'none'`, `'dense'`, `'normal'`, `'small'`               |                                                                                                                                   | No       | `'normal'`   |
+| `paddingBottom`       | `'none'`, `'dense'`, `'normal'`, `'small'`               |                                                                                                                                   | No       | `'normal'`   |
 | `variant`             | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'` | Specifies the visual style of the component.                                                                                              | No       | `'standard'` |
-| `minHeight`           | `number`                                                 | Minimum height of the input field.                                                                                                        | No       |              |
-| `maxLength`           | `number`                                                 | Maximum number of characters allowed.                                                                                                     | No       |              |
+| `minHeight`           | `number`                                                 |                                                                                                                                   | No       |              |
+| `maxLength`           | `number`                                                 |                                                                                                                                   | No       |              |
 | `multiline`           | `boolean`                                                | Allows multiple lines of text input.                                                                                                      | No       | `false`      |
 | `autoCorrect`         | `boolean`                                                | Enables auto-correction.                                                                                                                  | No       | `true`       |
 | `autoCapitalize`      | `'none'`, `'sentences'`, `'words'`, `'characters'`       | Controls automatic capitalization.                                                                                                        | No       | `'sentences'`|
-| `autoFocus`           | `boolean`                                                | Automatically focuses the input on mount.                                                                                                 | No       | `false`      |
+| `autoFocus`           | `boolean`                                                |                                                                                                                                   | No       | `false`      |
 | `clearButtonMode`     | `'never'`, `'while-editing'`, `'unless-editing'`, `'always'` | When to show the clear button (iOS only).                                                                                                 | No       | `'never'`    |
 | `totalNameLabel`      | `string`                                                 | The translation key for the "Total Cost" label prefix.                                                                                    | No       | `total_cost` |
 | `initialUnit`         | `number`                                                 | The base unit for the cost calculation (e.g., cost per 1000 impressions means `initialUnit` is 1000).                                      | Yes      |              |
@@ -52,12 +54,12 @@ The Attachment element allows users to upload one or more files (photos, videos,
 
 | Name                  | Type                                       | Description                                                                 | Required | Default            |
 | :-------------------- | :----------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`               | `string`                                   | The label displayed above the attachment area.                              | No       |                    |
-| `description`         | `string`                                   | Additional descriptive text displayed below the label.                      | No       |                    |
-| `required`            | `boolean`                                  | Whether the field is mandatory.                                             | No       | `false`            |
-| `disabled`            | `boolean`                                  | Disables the attachment input.                                              | No       | `false`            |
-| `fullWidth`           | `boolean`                                  | If `true`, the element takes the full width of its container.               | No       | `false`            |
-| `margin`              | `'none' \| 'dense' \| 'normal'`            | The margin spacing around the element.                                      | No       | `'normal'`         |
+| `label`               | `string`                                   |                                                                             | No       |                    |
+| `description`         | `string`                                   |                                                                             | No       |                    |
+| `required`            | `boolean`                                  |                                                                             | No       | `false`            |
+| `disabled`            | `boolean`                                  |                                                                             | No       | `false`            |
+| `fullWidth`           | `boolean`                                  |                                                                             | No       | `false`            |
+| `margin`              | `'none' \| 'dense' \| 'normal'`            |                                                                             | No       | `'normal'`         |
 | `variant`             | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | The display style variant.                                                  | No       | `'standard-inlined'` |
 | `multiple`            | `boolean`                                  | Allows selecting multiple files if `true`.                                  | No       | `false`            |
 | `file_type`           | `'photo' \| 'video' \| 'file'`             | Specifies the type of file allowed ('photo', 'video', or generic 'file').   | No       | `'photo'`          |
@@ -70,7 +72,7 @@ The Attachment element allows users to upload one or more files (photos, videos,
 | `item_type`           | `string`                                   | The backend item type associated with the attachment (e.g., 'photo', 'video'). | No       | `'unknown'`        |
 | `maxFilesDescription` | `string`                                   | Custom description text related to the maximum file limit.                  | No       |                    |
 | `current_files`       | `FileItemShape[]`                          | An array of pre-existing files (used when editing).                         | No       | `[]`               |
-| `paddingBottom`       | `string`                                   | Custom padding-bottom style value.                                          | No       |                    |
+| `paddingBottom`       | `string`                                   |                                                                             | No       |                    |
 
 ## AttachPoll
 
@@ -81,12 +83,12 @@ Allows users to attach, view, edit, or remove a poll within a form. It presents 
 | Name          | Type                               | Description                                                                 | Required | Default       |
 | :------------ | :--------------------------------- | :-------------------------------------------------------------------------- | :------- | :------------ |
 | `formUrl`     | `string`                           | API endpoint URL to fetch/submit the poll form data.                        | Yes      | `undefined`   |
-| `label`       | `string`                           | The label text for the form control (handled by `FormControl`).             | No       | `undefined`   |
-| `description` | `string`                           | Description text displayed below the control (handled by `FormControl`).    | No       | `undefined`   |
-| `placeholder` | `string`                           | Placeholder text/translation key for the attach button.                     | No       | `'attach_poll'` |
-| `disabled`    | `boolean`                          | Disables the field interaction.                                             | No       | `false`       |
-| `fullWidth`   | `boolean`                          | If `true`, the control stretches to the full width of its container.        | No       | `true`        |
-| `margin`      | `'none' \| 'normal' \| 'dense'`    | Defines the margin spacing around the control.                              | No       | `'normal'`    |
+| `label`       | `string`                           |                                                                             | No       | `undefined`   |
+| `description` | `string`                           |                                                                             | No       | `undefined`   |
+| `placeholder` | `string`                           |                                                                             | No       | `'attach_poll'` |
+| `disabled`    | `boolean`                          |                                                                             | No       | `false`       |
+| `fullWidth`   | `boolean`                          |                                                                             | No       | `true`        |
+| `margin`      | `'none' \| 'normal' \| 'dense'`    |                                                                             | No       | `'normal'`    |
 | `size`        | `'small' \| 'medium'`              | Defines the size of the control elements (like the button).                 | No       | `'medium'`    |
 
 ## AuthenticatorQrCode
@@ -97,14 +99,14 @@ Displays a QR code, typically used for setting up two-factor authentication (2FA
 
 | Name          | Type                                    | Description                                                                 | Required | Default      |
 | :------------ | :-------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `label`       | `string`                                | The label displayed above the QR code section.                              | No       | `undefined`  |
+| `label`       | `string`                                |                                                                             | No       | `undefined`  |
 | `content`     | `string`                                | The content/data to encode in the QR code and the URL to open 2FA apps.     | No       | `undefined`  |
-| `description` | `string`                                | The text displayed below the QR code, typically the manual setup key.       | No       | `undefined`  |
-| `placeholder` | `string`                                | The text for the button below the QR code that attempts to open 2FA apps. | No       | `undefined`  |
+| `description` | `string`                                |                                                                             | No       | `undefined`  |
+| `placeholder` | `string`                                |                                                                             | No       | `undefined`  |
 | `variant`     | `'standard'`, `'outlined'`, `'filled'`  | The visual style variant of the form control.                               | No       | `'standard'` |
-| `margin`      | `'none'`, `'dense'`, `'normal'`         | The margin spacing for the form control.                                    | Yes      | -            |
-| `paddingBottom`| `'none'`, `'dense'`, `'normal'`         | The bottom padding spacing for the form control.                            | Yes      | -            |
-| `fullWidth`   | `boolean`                               | If `true`, the form control will take up the full width of its container.   | No       | `false`      |
+| `margin`      | `'none'`, `'dense'`, `'normal'`         |                                                                             | Yes      | -            |
+| `paddingBottom`| `'none'`, `'dense'`, `'normal'`         |                                                                             | Yes      | -            |
+| `fullWidth`   | `boolean`                               |                                                                             | No       | `false`      |
 
 ## Autocomplete
 
@@ -115,12 +117,12 @@ A form element allowing users to select one or multiple options from a list, oft
 | Name              | Type                                  | Description                                                                 | Required | Default      |
 | :---------------- | :------------------------------------ | :-------------------------------------------------------------------------- | :------- | :----------- |
 | `variant`         | `string` ('outlined', 'standard', ...) | Visual style of the form field.                                             | No       | `'outlined'` |
-| `label`           | `string`                              | The text label displayed for the form field.                                | Yes      |              |
+| `label`           | `string`                              |                                                                             | Yes      |              |
 | `size`            | `string` ('medium', 'small')          | The size of the form field.                                                 | No       | `'medium'`   |
-| `margin`          | `string` ('normal', 'dense', 'none')  | The margin applied around the form field.                                   | No       | `'normal'`   |
-| `placeholder`     | `string`                              | Placeholder text displayed when no value is selected.                       | No       | `''`         |
-| `required`        | `boolean`                             | Indicates if the field is mandatory (adds visual indicator).                | No       | `false`      |
-| `fullWidth`       | `boolean`                             | If `true`, the form field occupies the full width of its container.         | No       | `true`       |
+| `margin`          | `string` ('normal', 'dense', 'none')  |                                                                             | No       | `'normal'`   |
+| `placeholder`     | `string`                              |                                                                             | No       | `''`         |
+| `required`        | `boolean`                             |                                                                             | No       | `false`      |
+| `fullWidth`       | `boolean`                             |                                                                             | No       | `true`       |
 | `search_endpoint` | `string`                              | API endpoint URL used to fetch options dynamically based on user input.     | Yes      |              |
 | `search_params`   | `object`                              | Additional parameters to include in the API request to `search_endpoint`.   | No       | `{}`         |
 | `multiple`        | `boolean`                             | If `true`, allows the user to select multiple options.                      | No       | `false`      |
@@ -128,7 +130,7 @@ A form element allowing users to select one or multiple options from a list, oft
 | `disable_uncheck` | `boolean`                             | If `true`, prevents unselecting the currently selected option (single mode). | No       | `false`      |
 | `choice_type`     | `string`                              | Influences how choices are presented or handled internally.                 | No       | `undefined`  |
 | `icon`            | `string` (IconName)                   | Name of the icon to display, primarily used in the 'livestream' variant.    | No       | `undefined`  |
-| `paddingBottom`   | `string` ('normal', 'dense', 'none')  | Specifies the bottom padding for the form control wrapper.                  | No       | `undefined`  |
+| `paddingBottom`   | `string` ('normal', 'dense', 'none')  |                                                                             | No       | `undefined`  |
 
 ## AvatarUpload
 
@@ -140,10 +142,10 @@ A form element that allows users to select and upload an avatar image, displayin
 | :--------------- | :---------------------- | :--------------------------------------------------------------- | :------- | :---------- |
 | `size`           | `string`                | Size of the avatar preview (e.g., 'small', 'medium', 'xxlarge'). | No       | `'xxlarge'` |
 | `circle`         | `boolean`               | Renders the avatar preview as a circle.                          | No       | `true`      |
-| `margin`         | `keyof typeof SizeEnum` | Margin around the control.                                       | No       | `'none'`    |
-| `paddingBottom`  | `keyof typeof SizeEnum` | Bottom padding for the control.                                  | No       | `undefined` |
-| `fullWidth`      | `boolean`               | Makes the control span the full width of its container.          | No       | `false`     |
-| `required`       | `boolean`               | Marks the field as required within the config context.           | No       | `false`     |
+| `margin`         | `keyof typeof SizeEnum` |                                                                  | No       | `'none'`    |
+| `paddingBottom`  | `keyof typeof SizeEnum` |                                                                  | No       | `undefined` |
+| `fullWidth`      | `boolean`               |                                                                  | No       | `false`     |
+| `required`       | `boolean`               |                                                                  | No       | `false`     |
 | `variant`        | `Variant`               | Visual style variant of the form control.                        | No       | `undefined` |
 | `spaceWidth`     | `number`              | Width of the space around the avatar image.                      | No       | `undefined` |
 | `spaceColor`     | `string`              | Color of the space around the avatar image.                      | No       | `undefined` |
@@ -157,13 +159,13 @@ The `Birthday` element provides a user-friendly interface for selecting a date, 
 
 | Name             | Type                             | Description                                                                 | Required | Default        |
 | :--------------- | :------------------------------- | :-------------------------------------------------------------------------- | :------- | :------------- |
-| `label`          | `string`                         | Text label displayed above the input field.                                 | No       | -              |
-| `placeholder`    | `string`                         | Placeholder text shown when the input is empty.                             | No       | -              |
-| `required`       | `boolean`                        | Specifies if the birthday field must be filled.                             | No       | `false`        |
-| `disabled`       | `boolean`                        | Disables user interaction with the date picker.                             | No       | `false`        |
-| `description`    | `string`                         | Additional helper text displayed below the input.                           | No       | -              |
-| `fullWidth`      | `boolean`                        | If `true`, the element expands to the full width of its container.          | No       | `false`        |
-| `margin`         | `'none' \| 'normal' \| 'dense'` | Controls the margin spacing around the element.                             | No       | `'normal'`     |
+| `label`          | `string`                         |                                                                             | No       | -              |
+| `placeholder`    | `string`                         |                                                                             | No       | -              |
+| `required`       | `boolean`                        |                                                                             | No       | `false`        |
+| `disabled`       | `boolean`                        |                                                                             | No       | `false`        |
+| `description`    | `string`                         |                                                                             | No       | -              |
+| `fullWidth`      | `boolean`                        |                                                                             | No       | `false`        |
+| `margin`         | `'none' \| 'normal' \| 'dense'` |                                                                             | No       | `'normal'`     |
 | `variant`        | `'standard' \| 'outlined' \| 'filled'` | Defines the visual style of the input field.                              | No       | `'standard'`   |
 | `minDate`        | `string`                         | The earliest selectable date in ISO 8601 format (e.g., "1900-01-01").       | No       | -              |
 | `maxDate`        | `string`                         | The latest selectable date in ISO 8601 format (e.g., "2024-12-31").         | No       | Current Date   |
@@ -182,9 +184,9 @@ A form element that renders a toggleable button. Its text changes based on its i
 |---------------|----------------------------------|-----------------------------------------------------------------------------|----------|------------|
 | label         | `string`                         | The text displayed on the button when its value is 1 (active state).        | Yes      |            |
 | cancelLabel   | `string`                         | The text displayed on the button when its value is 0 (inactive state).      | Yes      |            |
-| disabled      | `boolean`                        | If `true`, disables the button interaction.                                 | No       | `false`    |
-| fullWidth     | `boolean`                        | If `true`, the surrounding form control takes up the full available width.  | No       | `true`     |
-| margin        | `'normal' \| 'dense' \| 'none'` | The margin applied to the surrounding form control.                         | No       | `'normal'` |
+| disabled      | `boolean`                        |                                                                             | No       | `false`    |
+| fullWidth     | `boolean`                        |                                                                             | No       | `true`     |
+| margin        | `'normal' \| 'dense' \| 'none'` |                                                                             | No       | `'normal'` |
 | size          | `'small' \| 'medium'`          | The size applied to the surrounding form control.                           | No       | `undefined`|
 
 ## Checkbox
@@ -195,16 +197,16 @@ A form element that renders a checkbox input field. It allows users to toggle be
 
 | Name                | Type                                                   | Description                                                     | Required | Default            |
 | :------------------ | :----------------------------------------------------- | :-------------------------------------------------------------- | :------- | :----------------- |
-| `label`             | `string`                                               | The text label displayed next to the checkbox.                  | Yes      |                    |
-| `fullWidth`         | `boolean`                                              | If true, the control takes up the full available width.         | No       | `false`            |
-| `margin`            | `'none' \| 'dense' \| 'normal'`                        | Margin size around the control.                                 | No       | `'normal'`         |
-| `required`          | `boolean`                                              | Whether the field is required (validation).                     | No       | `false`            |
+| `label`             | `string`                                               |                                                                 | Yes      |                    |
+| `fullWidth`         | `boolean`                                              |                                                                 | No       | `false`            |
+| `margin`            | `'none' \| 'dense' \| 'normal'`                        |                                                                 | No       | `'normal'`         |
+| `required`          | `boolean`                                              |                                                                 | No       | `false`            |
 | `variant`           | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Visual style variant of the control.                            | No       | `'standard-inlined'` |
-| `paddingBottom`     | `'none' \| 'dense' \| 'normal'`                        | Padding below the control.                                      | No       | `'normal'`         |
+| `paddingBottom`     | `'none' \| 'dense' \| 'normal'`                        |                                                                 | No       | `'normal'`         |
 | `checkedValue`      | `any`                                                  | The value submitted when the checkbox is checked.               | No       | `1`                |
 | `uncheckedValue`    | `any`                                                  | The value submitted when the checkbox is unchecked.             | No       | `0`                |
-| `description`       | `string`                                               | Additional descriptive text displayed below the label.          | No       | `''`               |
-| `disabled`          | `boolean`                                              | If true, the checkbox is disabled and cannot be interacted with. | No       | `false`            |
+| `description`       | `string`                                               |                                                                 | No       | `''`               |
+| `disabled`          | `boolean`                                              |                                                                 | No       | `false`            |
 | `isReverse`         | `boolean`                                              | If true, reverses the order of the label and checkbox control.  | No       | `false`            |
 
 ## CheckboxGroup
@@ -215,16 +217,16 @@ This element renders a group of checkboxes, allowing users to select multiple op
 
 | Name             | Type                                     | Description                                                                 | Required | Default      |
 | :--------------- | :--------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `label`          | `string`                                 | The text label displayed above the checkbox group.                          | Yes      |              |
+| `label`          | `string`                                 |                                                                             | Yes      |              |
 | `options`        | `Array<{ label: string, value: any }>` | An array of objects defining the available checkbox options.                | Yes      | `[]`         |
 | `variant`        | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the form control wrapper.                       | No       | `'standard'` |
-| `margin`         | `'normal' \| 'dense' \| 'none'`        | The margin applied around the form control.                                 | No       | `undefined`  |
-| `fullWidth`      | `boolean`                                | If `true`, the form control spans the full width of its container.          | No       | `false`      |
-| `disabled`       | `boolean`                                | If `true`, all checkboxes in the group are disabled.                        | No       | `false`      |
-| `required`       | `boolean`                                | If `true`, the field is marked as required in the UI.                       | No       | `false`      |
+| `margin`         | `'normal' \| 'dense' \| 'none'`        |                                                                             | No       | `undefined`  |
+| `fullWidth`      | `boolean`                                |                                                                             | No       | `false`      |
+| `disabled`       | `boolean`                                |                                                                             | No       | `false`      |
+| `required`       | `boolean`                                |                                                                             | No       | `false`      |
 | `hasFormOrder`   | `boolean`                                | If `true`, prepends the `order` number to the label.                        | No       | `false`      |
 | `order`          | `number`                                 | The numerical order to display before the label (if `hasFormOrder` is true). | No       | `undefined`  |
-| `paddingBottom`  | `string`                                 | Custom padding applied to the bottom of the form control.                   | No       | `undefined`  |
+| `paddingBottom`  | `string`                                 |                                                                             | No       | `undefined`  |
 
 ## Chip
 
@@ -234,9 +236,9 @@ Renders a group of selectable chip buttons. Selecting a chip updates the form's 
 
 | Name            | Type                  | Description                                                                                      | Required | Default     |
 | :-------------- | :-------------------- | :----------------------------------------------------------------------------------------------- | :------- | :---------- |
-| `label`         | `string`              | The text label displayed above the chips.                                                        | Yes      |             |
+| `label`         | `string`              |                                                                                                  | Yes      |             |
 | `options`       | `RadioFieldOptions[]` | An array of option objects to render as chips. Each should have `title` and `description`.       | Yes      | `[]`        |
-| `required`      | `boolean`             | Marks the field as required, adding a visual indicator to the label.                             | No       | `false`     |
+| `required`      | `boolean`             |                                                                                                  | No       | `false`     |
 
 ## ClearSearch
 
@@ -260,13 +262,13 @@ A form element that displays a label and a right arrow, acting as a button. When
 | Name          | Type                                       | Description                                                    | Required | Default     |
 | ------------- | ------------------------------------------ | -------------------------------------------------------------- | -------- | ----------- |
 | `name`        | `string`                                   | The name of the field in the form state.                       | Yes      |             |
-| `label`       | `string`                                   | The text label displayed in the clickable area.                | Yes      |             |
+| `label`       | `string`                                   |                                                                | Yes      |             |
 | `action`      | `string`                                   | The Redux action type to dispatch on click.                    | Yes      |             |
 | `params`      | `object`                                   | The payload to send with the dispatched action.                | Yes      |             |
-| `fullWidth`   | `boolean`                                  | If true, the component takes up the full width.                | No       | `false`     |
-| `margin`      | `'normal' \| 'dense' \| 'none'`            | Controls the margin around the component.                      | No       | `'normal'`  |
+| `fullWidth`   | `boolean`                                  |                                                                | No       | `false`     |
+| `margin`      | `'normal' \| 'dense' \| 'none'`            |                                                                | No       | `'normal'`  |
 | `variant`     | `'standard' \| 'outlined' \| 'filled'`     | The visual style variant.                                      | No       | `'standard'`|
-| `paddingBottom`| `boolean`                                  | Controls bottom padding.                                       | No       | `false`     |
+| `paddingBottom`| `boolean`                                  |                                                                | No       | `false`     |
 | `severity`    | `'error' \| 'warning' \| 'info' \| 'success'` | Sets the text color based on severity (e.g., for validation). | No       |             |
 
 ## ComposerInput
@@ -277,16 +279,16 @@ A specialized text input field designed for composer interfaces within MetaFox f
 
 | Name                  | Type                                                      | Description                                                                 | Required | Default     |
 | :-------------------- | :-------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :---------- |
-| `label`               | `string`                                                  | The text label displayed for the input.                                     | No       | `undefined` |
-| `placeholder`         | `string`                                                  | Placeholder text shown when the input is empty.                             | No       | `undefined` |
-| `description`         | `string`                                                  | Help text displayed below the input.                                        | No       | `undefined` |
+| `label`               | `string`                                                  |                                                                             | No       | `undefined` |
+| `placeholder`         | `string`                                                  |                                                                             | No       | `undefined` |
+| `description`         | `string`                                                  |                                                                             | No       | `undefined` |
 | `variant`             | `'standard' \| 'outlined' \| 'filled'`                    | The visual style variant of the input.                                      | No       | `'standard'`|
-| `margin`              | `'none' \| 'dense' \| 'normal'`                           | Controls the margin around the component.                                   | No       | `'normal'`  |
-| `fullWidth`           | `boolean`                                                 | If `true`, the component takes up the full width of its container.          | No       | `false`     |
-| `required`            | `boolean`                                                 | Visually marks the field as required (e.g., with an asterisk).              | No       | `false`     |
-| `disabled`            | `boolean`                                                 | If `true`, the input field is disabled.                                     | No       | `false`     |
-| `maxLength`           | `number`                                                  | Maximum number of characters allowed in the input.                          | No       | `undefined` |
-| `autoFocus`           | `boolean`                                                 | If `true`, the input field automatically gains focus when mounted.          | No       | `false`     |
+| `margin`              | `'none' \| 'dense' \| 'normal'`                           |                                                                             | No       | `'normal'`  |
+| `fullWidth`           | `boolean`                                                 |                                                                             | No       | `false`     |
+| `required`            | `boolean`                                                 |                                                                             | No       | `false`     |
+| `disabled`            | `boolean`                                                 |                                                                             | No       | `false`     |
+| `maxLength`           | `number`                                                  |                                                                             | No       | `undefined` |
+| `autoFocus`           | `boolean`                                                 |                                                                             | No       | `false`     |
 | `autoCorrect`         | `boolean`                                                 | Enables or disables auto-correction.                                        | No       | `undefined` |
 | `autoCapitalize`      | `'none' \| 'sentences' \| 'words' \| 'characters'`        | Controls automatic capitalization behavior.                                 | No       | `undefined` |
 | `clearButtonMode`     | `'never' \| 'while-editing' \| 'unless-editing' \| 'always'` | (iOS only) When to display the standard clear button.                       | No       | `undefined` |
@@ -301,13 +303,13 @@ The `Container` element acts as a layout wrapper for grouping other form element
 
 | Name          | Type                                        | Description                                                                 | Required | Default      |
 |---------------|---------------------------------------------|-----------------------------------------------------------------------------|----------|--------------|
-| `label`       | `string`                                    | The main label displayed above the contained elements.                      | No       | `undefined`  |
-| `description` | `string`                                    | Additional descriptive text displayed below the label.                      | No       | `undefined`  |
+| `label`       | `string`                                    |                                                                             | No       | `undefined`  |
+| `description` | `string`                                    |                                                                             | No       | `undefined`  |
 | `elements`    | `Record<string, FormFieldConfig>`           | An object defining the form elements nested within this container.          | Yes      | `{}`         |
 | `variant`     | `'vertical' \| 'horizontal' \| 'livestream'` | Controls the layout arrangement of elements.                                | No       | `'vertical'` |
 | `collapsible` | `boolean`                                   | If true, allows the user to collapse and expand the container.              | No       | `false`      |
 | `collapsed`   | `boolean`                                   | Sets the initial collapsed state when `collapsible` is true.                | No       | `false`      |
-| `required`    | `boolean`                                   | Marks the container's label as required (visually).                         | No       | `false`      |
+| `required`    | `boolean`                                   |                                                                             | No       | `false`      |
 | `wrapAs`      | `React.ElementType`                         | A custom React component to use as the wrapper instead of the default `View`. | No       | `undefined`  |
 | `wrapperProps`| `object`                                    | Additional props to pass directly to the root wrapper component.            | No       | `{}`         |
 | `className`   | `string`                                    | CSS class name for the wrapper (primarily for web).                         | No       | `undefined`  |
@@ -322,12 +324,12 @@ This form element provides an input field that allows users to select a country 
 
 | Name              | Type                                             | Description                                                                                              | Required | Default        |
 | :---------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :------- | :------------- |
-| `label`           | `string`                                         | The label displayed for the form field and used as the title in the selection view.                      | Yes      | `''`           |
-| `fullWidth`       | `boolean`                                        | If true, the component takes up the full width of its container.                                         | No       | `false`        |
-| `margin`          | `'none' \| 'dense' \| 'normal'`                  | Defines the margin spacing around the component.                                                         | No       | `'normal'`     |
-| `required`        | `boolean`                                        | Marks the field as required, often displaying an asterisk and preventing unselection.                    | No       | `false`        |
+| `label`           | `string`                                         |                                                                                                          | Yes      | `''`           |
+| `fullWidth`       | `boolean`                                        |                                                                                                          | No       | `false`        |
+| `margin`          | `'none' \| 'dense' \| 'normal'`                  |                                                                                                          | No       | `'normal'`     |
+| `required`        | `boolean`                                        |                                                                                                          | No       | `false`        |
 | `variant`         | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the form field.                                                              | No       | `'standard'`   |
-| `paddingBottom`   | `'none' \| 'dense' \| 'normal'`                  | Defines the bottom padding spacing.                                                                      | No       | `'normal'`     |
+| `paddingBottom`   | `'none' \| 'dense' \| 'normal'`                  |                                                                                                          | No       | `'normal'`     |
 | `enable_search`   | `boolean`                                        | Enables search functionality within the selection view.                                                  | No       | `false`        |
 | `disable_uncheck` | `boolean`                                        | Prevents the user from unselecting the current value if set to true.                                     | No       | `false`        |
 | `search_endpoint` | `string`                                         | API endpoint used for searching options if `enable_search` is true.                                      | No       | `undefined`    |
@@ -342,19 +344,19 @@ This element provides a specialized picker for selecting a country and its corre
 
 | Name              | Type                                  | Description                                                                 | Required | Default     |
 | :---------------- | :------------------------------------ | :-------------------------------------------------------------------------- | :------- | :---------- |
-| `label`           | `string`                              | The text label displayed for the element.                                   | Yes      | `''`        |
-| `fullWidth`       | `boolean`                             | If true, the element takes the full width.                                  | No       | `false`     |
-| `margin`          | `'normal' \| 'dense' \| 'none'`       | Controls the margin around the element.                                     | No       | `'normal'`  |
-| `required`        | `boolean`                             | If true, the field is mandatory.                                            | No       | `false`     |
+| `label`           | `string`                              |                                                                             | Yes      | `''`        |
+| `fullWidth`       | `boolean`                             |                                                                             | No       | `false`     |
+| `margin`          | `'normal' \| 'dense' \| 'none'`       |                                                                             | No       | `'normal'`  |
+| `required`        | `boolean`                             |                                                                             | No       | `false`     |
 | `variant`         | `'standard' \| 'outlined' \| 'filled'`| The display style of the form element.                                      | No       | `'standard'`|
-| `paddingBottom`   | `'normal' \| 'dense' \| 'none'`       | Controls the bottom padding.                                                | No       | `'normal'`  |
-| `placeholder`     | `string`                              | Placeholder text when no value is selected.                                 | No       | `undefined` |
+| `paddingBottom`   | `'normal' \| 'dense' \| 'none'`       |                                                                             | No       | `'normal'`  |
+| `placeholder`     | `string`                              |                                                                             | No       | `undefined` |
 | `search_endpoint` | `string`                              | API endpoint to fetch options dynamically (e.g., states based on country). | No       | `undefined` |
 | `search_params`   | `object`                              | Additional parameters for the search API endpoint.                          | No       | `undefined` |
 | `enable_search`   | `boolean`                             | Enables searching within the options list (if applicable).                  | No       | `false`     |
 | `disable_uncheck` | `boolean`                             | Prevents unselecting the current value if the field is required.            | No       | `false`     |
 | `backgroundColor` | `string`                              | Background color for the element (used in specific variants).               | No       | `undefined` |
-| `disabled`        | `boolean`                             | If true, the element is disabled.                                           | No       | `false`     |
+| `disabled`        | `boolean`                             |                                                                             | No       | `false`     |
 
 ## CustomButton
 
@@ -365,10 +367,10 @@ A form element that renders a button which dispatches a custom Redux action when
 | Name          | Type                                               | Description                                                                                                | Required | Default           |
 | ------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------- | ----------------- |
 | `name`        | `string`                                           | The unique identifier for the form field.                                                                  | Yes      | `CustomButtonField` |
-| `label`       | `string`                                           | The text label displayed on the button.                                                                    | Yes      |                   |
+| `label`       | `string`                                           |                                                                                                            | Yes      |                   |
 | `variant`     | `string`                                           | Specifies the button style. Currently supports 'link'.                                                     | Yes      | `'link'`          |
 | `customAction`| `{ type: string; payload?: any; meta?: any }`      | An object defining the Redux action dispatched on press. `type` is required, `payload` and `meta` are optional. | Yes      |                   |
-| `disabled`    | `boolean`                                          | If true, the button is disabled.                                                                           | No       | `false`           |
+| `disabled`    | `boolean`                                          |                                                                                                            | No       | `false`           |
 
 ## Date
 
@@ -378,13 +380,13 @@ A form element that allows users to select a date, time, or both using a native 
 
 | Name           | Type                             | Description                                                                 | Required | Default             |
 | -------------- | -------------------------------- | --------------------------------------------------------------------------- | -------- | ------------------- |
-| label          | string                           | The text label displayed for the field.                                     | Yes      | `'close_time'`      |
-| placeholder    | string                           | Placeholder text for the input field.                                       | No       |                     |
-| description    | string                           | Additional descriptive text displayed below the input.                      | No       |                     |
-| required       | boolean                          | Whether the field is mandatory.                                             | No       | `false`             |
-| disabled       | boolean                          | Whether the field is disabled and cannot be interacted with.                | No       | `false`             |
-| fullWidth      | boolean                          | If `true`, the component takes up the full width of its container.          | No       | `false`             |
-| margin         | `'none' \| 'normal' \| 'dense'`  | Defines the margin spacing around the component.                            | No       | `'normal'`          |
+| label          | string                           |                                                                             | Yes      | `'close_time'`      |
+| placeholder    | string                           |                                                                             | No       |                     |
+| description    | string                           |                                                                             | No       |                     |
+| required       | boolean                          |                                                                             | No       | `false`             |
+| disabled       | boolean                          |                                                                             | No       | `false`             |
+| fullWidth      | boolean                          |                                                                             | No       | `false`             |
+| margin         | `'none' \| 'normal' \| 'dense'`  |                                                                             | No       | `'normal'`          |
 | variant        | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input field.                              | No       | `'standard'`        |
 | datePickerMode | `'date' \| 'time' \| 'datetime'` | Determines if the picker selects date, time, or both.                     | No       | `'datetime'`        |
 | displayFormat  | string                           | The `moment.js` format string used to display the selected date/time.     | No       | `'DD/MM/YYYY - HH:mm'` |
@@ -403,14 +405,14 @@ A form element component that provides a user interface for selecting a date, ti
 
 | Name               | Type                           | Description                                                                 | Required | Default        |
 | :----------------- | :----------------------------- | :-------------------------------------------------------------------------- | :------- | :------------- |
-| `fullWidth`        | `boolean`                      | If `true`, the component stretches to the full width of its container.      | No       | `false`        |
-| `margin`           | `string`                       | Sets the outer margin spacing for the component (`none`, `dense`, `normal`). | No       | `normal`       |
-| `paddingBottom`    | `string`                       | Sets the bottom padding spacing (`none`, `dense`, `normal`).                | No       | `normal`       |
+| `fullWidth`        | `boolean`                      |                                                                             | No       | `false`        |
+| `margin`           | `string`                       |                                                                             | No       | `normal`       |
+| `paddingBottom`    | `string`                       |                                                                             | No       | `normal`       |
 | `variant`          | `string`                       | The visual style variant (`standard`, `outlined`, `filled`).                | No       | `standard`     |
 | `time_zone_gmt`    | `string`                       | Specifies the GMT timezone offset (e.g., "+07:00").                         | No       | `''`           |
-| `label`            | `string`                       | The text label displayed above or alongside the input field.                | No       | `'close_time'` |
-| `placeholder`      | `string`                       | Placeholder text displayed when the input field is empty.                   | No       | `''`           |
-| `required`         | `boolean`                      | If `true`, the field is marked as mandatory in the form.                    | No       | `false`        |
+| `label`            | `string`                       |                                                                             | No       | `'close_time'` |
+| `placeholder`      | `string`                       |                                                                             | No       | `''`           |
+| `required`         | `boolean`                      |                                                                             | No       | `false`        |
 | `editable`         | `boolean`                      | If `false`, the text input part is not directly editable by the user.       | No       | `true`         |
 | `minDate`          | `string`                       | The earliest selectable date (format defined by `momentResultFormat`).      | No       | `undefined`    |
 | `maxDate`          | `string`                       | The latest selectable date (format defined by `momentResultFormat`).        | No       | `undefined`    |
@@ -420,7 +422,7 @@ A form element component that provides a user interface for selecting a date, ti
 | `valueFormat`      | `string`                       | The Moment.js format string for displaying and storing the selected value.  | No       | `'DD/MM/YYYY'` |
 | `initialValue`     | `string`                       | An initial value to populate the date field with.                           | No       | `undefined`    |
 | `timeFormat`       | `number`                       | Specifies the time format (e.g., `12` or `24` for 12/24 hour format).       | No       | `12`           |
-| `disabled`         | `boolean`                      | If `true`, the entire component is disabled and cannot be interacted with.  | No       | `false`        |
+| `disabled`         | `boolean`                      |                                                                             | No       | `false`        |
 
 ## Datetime
 
@@ -432,9 +434,9 @@ Props are configured via the `config` object passed to the component.
 
 | Name             | Type                             | Description                                                                 | Required | Default             |
 | :--------------- | :------------------------------- | :-------------------------------------------------------------------------- | :------- | :------------------ |
-| `label`          | `string`                         | The text label displayed for the field.                                     | No       | `'close_time'`      |
-| `description`    | `string`                         | Help text displayed below the input field.                                  | No       |                     |
-| `placeholder`    | `string`                         | The placeholder text shown when the input is empty.                         | No       |                     |
+| `label`          | `string`                         |                                                                             | No       | `'close_time'`      |
+| `description`    | `string`                         |                                                                             | No       |                     |
+| `placeholder`    | `string`                         |                                                                             | No       |                     |
 | `datePickerMode` | `'date' \| 'time' \| 'datetime'` | Determines if the picker selects date, time, or both.                       | No       | `'datetime'`        |
 | `displayFormat`  | `string`                         | The Moment.js format string used to display the selected value.             | No       | `'DD/MM/YYYY - HH:mm'` |
 | `initialValue`   | `string`                         | An initial value for the date/time field (ISO 8601 format recommended).     | No       |                     |
@@ -445,11 +447,11 @@ Props are configured via the `config` object passed to the component.
 | `timeFormat`     | `12 \| 24`                       | Specifies 12-hour or 24-hour time format for the picker.                    | No       | (Locale default)    |
 | `startOfDay`     | `boolean`                        | If true, sets the selected date's time to the start of the day (00:00:00).  | No       | `false`             |
 | `endOfDay`       | `boolean`                        | If true, sets the selected date's time to the end of the day (23:59:59).    | No       | `false`             |
-| `required`       | `boolean`                        | Whether the field is mandatory.                                             | No       | `false`             |
-| `disabled`       | `boolean`                        | Disables the input field.                                                   | No       | `false`             |
-| `fullWidth`      | `boolean`                        | If true, the component takes up the full width of its container.            | No       | `false`             |
-| `margin`         | `'none' \| 'dense' \| 'normal'`  | Controls the margin around the component.                                   | No       | `'normal'`          |
-| `paddingBottom`  | `'none' \| 'dense' \| 'normal'`  | Controls the bottom padding of the component.                               | No       | `'normal'`          |
+| `required`       | `boolean`                        |                                                                             | No       | `false`             |
+| `disabled`       | `boolean`                        |                                                                             | No       | `false`             |
+| `fullWidth`      | `boolean`                        |                                                                             | No       | `false`             |
+| `margin`         | `'none' \| 'dense' \| 'normal'`  |                                                                             | No       | `'normal'`          |
+| `paddingBottom`  | `'none' \| 'dense' \| 'normal'`  |                                                                             | No       | `'normal'`          |
 | `variant`        | `'standard' \| 'outlined' \| 'filled'` | The visual style of the input field.                                        | No       | `'standard'`        |
 
 *Note: The component also accepts standard `FormFieldProps` like `name` (required) and `formik` (required), as well as top-level `disabled` and `required` props that can override the corresponding settings within `config`.*
@@ -462,11 +464,11 @@ Displays a simple text label within a form, often used for informational purpose
 
 | Name          | Type                     | Description                                      | Required | Default      |
 | ------------- | ------------------------ | ------------------------------------------------ | -------- | ------------ |
-| `label`       | `string`                 | The text content to display.                     | Yes      |              |
+| `label`       | `string`                 |                                                  | Yes      |              |
 | `variant`     | `keyof typeof Variant`   | The visual style variant (e.g., 'standard').     | No       | `'standard'` |
-| `fullWidth`   | `boolean`                | Determines if the element takes up full width.   | No       | `false`      |
-| `margin`      | `keyof typeof SizeEnum`  | Sets the margin around the element.              | No       | `undefined`  |
-| `paddingBottom`| `keyof typeof SizeEnum`  | Sets the bottom padding of the element.          | No       | `undefined`  |
+| `fullWidth`   | `boolean`                |                                                  | No       | `false`      |
+| `margin`      | `keyof typeof SizeEnum`  |                                                  | No       | `undefined`  |
+| `paddingBottom`| `keyof typeof SizeEnum`  |                                                  | No       | `undefined`  |
 
 ## DynamicTypo
 
@@ -478,11 +480,11 @@ Displays a dynamic description text based on the value of a related form field. 
 | :--------------- | :-------------------------------------------- | :----------------------------------------------------------------------- | :------- | :------ |
 | `data`           | `Array<{ value: any; description: string; }>` | Array of value-description pairs.                                        | Yes      | `[]`    |
 | `relatedField`   | `string`                                      | Name of the form field whose value determines the displayed description. | Yes      |         |
-| `fullWidth`      | `boolean`                                     | Determines if the element should occupy the full width available.        | No       |         |
-| `margin`         | `'dense' \| 'normal' \| 'none'`               | Specifies the margin size around the element.                            | No       |         |
-| `required`       | `boolean`                                     | Indicates if the field is required (visual indicator, validation elsewhere). | No       |         |
+| `fullWidth`      | `boolean`                                     |                                                                          | No       |         |
+| `margin`         | `'dense' \| 'normal' \| 'none'`               |                                                                          | No       |         |
+| `required`       | `boolean`                                     |                                                                          | No       |         |
 | `variant`        | `'outlined' \| 'filled' \| 'standard'`        | The visual style variant of the element.                                 | No       |         |
-| `paddingBottom`  | `'dense' \| 'normal' \| 'none'`               | Specifies the padding size below the element.                            | No       |         |
+| `paddingBottom`  | `'dense' \| 'normal' \| 'none'`               |                                                                          | No       |         |
 
 ## Editor
 
@@ -492,20 +494,20 @@ The same with element Text.
 
 | Name                  | Type                                                              | Description                                                                 | Required | Default         |
 | :-------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :-------------- |
-| `label`        | `string`                                                          | The label displayed above the input field.                                  | No       |                 |
-| `placeholder`  | `string`                                                          | Placeholder text shown when the input is empty.                             | No       |                 |
-| `description`  | `string`                                                          | Help text displayed below the input field.                                  | No       |                 |
+| `label`        | `string`                           |                                                                             | No       |                 |
+| `placeholder`  | `string`                           |                                                                             | No       |                 |
+| `description`  | `string`                           |                                                                             | No       |                 |
 | `variant`      | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | The visual style variant of the input field.                              | No       | `'standard'`    |
-| `fullWidth`    | `boolean`                                                         | If `true`, the input field takes the full width of its container.           | No       | `false`         |
-| `margin`       | `'none' \| 'normal' \| 'dense'`                                     | The margin applied around the form control.                                 | No       | `'normal'`      |
+| `fullWidth`    | `boolean`                                                         |                                                                             | No       | `false`         |
+| `margin`       | `'none' \| 'normal' \| 'dense'`                                     |                                                                             | No       | `'normal'`      |
 | `multiline`    | `boolean`                                                         | If `true`, allows multiple lines of text input (textarea).                  | No       | `false`         |
-| `minHeight`    | `number`                                                          | Minimum height for the input field, especially useful with `multiline`.     | No       |                 |
-| `maxLength`    | `number`                                                          | Maximum number of characters allowed in the input.                          | No       |                 |
-| `autoFocus`    | `boolean`                                                         | If `true`, the input field automatically gains focus when mounted.          | No       | `false`         |
+| `minHeight`    | `number`                                                          |                                                                             | No       |                 |
+| `maxLength`    | `number`                                                          |                                                                             | No       |                 |
+| `autoFocus`    | `boolean`                                                         |                                                                             | No       | `false`         |
 | `autoCorrect`  | `boolean`                                                         | Enables or disables auto-correction for the input.                          | No       | `true`          |
 | `autoCapitalize`| `'none' \| 'sentences' \| 'words' \| 'characters'`                | Controls automatic capitalization behavior.                                 | No       | `'sentences'`   |
 | `editable`     | `boolean`                                                         | If `false`, the text input is not editable.                                 | No       | `true`          |
-| `required`     | `boolean`                                                         | Visually marks the field as required (e.g., with an asterisk).              | No       | `false`         |
+| `required`     | `boolean`                                                         |                                                                             | No       | `false`         |
 | `clearButtonMode`| `'never' \| 'while-editing' \| 'unless-editing' \| 'always'`      | (iOS only) When to display the clear text button.                           | No       | `'never'`       |
 | `validateAction`| `string`                                                          | Name of a registered action for backend validation triggered on blur.       | No       |                 |
 | `findReplace`  | `{ find: string, replace: string }`                               | Configuration to automatically generate a slug-like value based on input. | No       |                 |
@@ -523,16 +525,16 @@ The same with element Text.
 
 | Name                  | Type                                                         | Description                                                                                   | Required | Default         |
 | :-------------------- | :----------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :------- | :-------------- |
-| `label`               | `string`                                                     | The label displayed above the input field.                                                    | No       | `undefined`     |
-| `placeholder`         | `string`                                                     | Placeholder text shown when the input is empty.                                               | No       | `undefined`     |
-| `description`         | `string`                                                     | Additional helper text displayed below the input field.                                       | No       | `undefined`     |
-| `required`            | `boolean`                                                    | Whether the field must be filled.                                                             | No       | `false`         |
-| `disabled`            | `boolean`                                                    | If `true`, the input field is disabled and cannot be interacted with.                         | No       | `false`         |
+| `label`               | `string`                                                     |                                                                                               | No       | `undefined`     |
+| `placeholder`         | `string`                                                     |                                                                                               | No       | `undefined`     |
+| `description`         | `string`                                                     |                                                                                               | No       | `undefined`     |
+| `required`            | `boolean`                                                    |                                                                                               | No       | `false`         |
+| `disabled`            | `boolean`                                                    |                                                                                               | No       | `false`         |
 | `variant`             | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'` | The visual style of the input field.                                                          | No       | `'standard'`    |
-| `margin`              | `'normal'`, `'dense'`, `'none'`                              | Margin applied around the form control.                                                       | No       | `'normal'`      |
-| `fullWidth`           | `boolean`                                                    | If `true`, the input field takes up the full width of its container.                          | No       | `false`         |
-| `maxLength`           | `number`                                                     | Maximum number of characters allowed in the input.                                            | No       | `undefined`     |
-| `autoFocus`           | `boolean`                                                    | If `true`, the input field automatically gains focus when mounted.                            | No       | `false`         |
+| `margin`              | `'normal'`, `'dense'`, `'none'`                              |                                                                                               | No       | `'normal'`      |
+| `fullWidth`           | `boolean`                                                    |                                                                                               | No       | `false`         |
+| `maxLength`           | `number`                                                     |                                                                                               | No       | `undefined`     |
+| `autoFocus`           | `boolean`                                                    |                                                                                               | No       | `false`         |
 | `validateAction`      | `string`                                                     | Name of a registered action for backend validation on blur.                                   | No       | `undefined`     |
 | `keyboardType`        | `string`                                                     | Determines which keyboard to open (e.g., 'numeric', 'email-address'). For Email, defaults to 'email-address'. | No       | `'email-address'` |
 | `autoCapitalize`      | `'none'`, `'sentences'`, `'words'`, `'characters'`           | How to automatically capitalize text. For Email, defaults to 'none'.                          | No       | `'none'`        |
@@ -549,13 +551,13 @@ The `File` form element allows users to select and upload a single file, typical
 
 | Name                  | Type                                                    | Description                                                                                                | Required | Default            |
 | :-------------------- | :------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`               | `string`                                                | The label text for the field.                                                                              | No       | `''`               |
-| `description`         | `string`                                                | Helper text displayed below the label or in selection prompts.                                             | No       | `''`               |
-| `required`            | `boolean`                                               | Marks the field as required.                                                                               | No       | `false`            |
+| `label`               | `string`                                                |                                                                                                            | No       | `''`               |
+| `description`         | `string`                                                |                                                                                                            | No       | `''`               |
+| `required`            | `boolean`                                               |                                                                                                            | No       | `false`            |
 | `variant`             | `string`                                                | Visual style variant ('standard', 'outlined', 'filled', 'standard-inlined', 'livestream').                 | No       | `standard-inlined` |
-| `fullWidth`           | `boolean`                                               | If true, the component takes the full width.                                                               | No       | `false`            |
-| `margin`              | `string`                                                | Margin size ('none', 'dense', 'normal').                                                                   | No       | `normal`           |
-| `paddingBottom`       | `string`                                                | Padding bottom size ('none', 'dense', 'normal').                                                           | No       | `normal`           |
+| `fullWidth`           | `boolean`                                               |                                                                                                            | No       | `false`            |
+| `margin`              | `string`                                                |                                                                                                            | No       | `normal`           |
+| `paddingBottom`       | `string`                                                |                                                                                                            | No       | `normal`           |
 | `preview_url`         | `string`                                                | URL of an existing image/file to preview initially.                                                        | No       | `undefined`        |
 | `max_upload_filesize` | `object`                                                | Max file sizes in bytes (e.g., `{ photo: 5242880, video: 10485760 }`). `0` means no limit.               | No       | `{ photo: 0, video: 0 }` |
 | `file_type`           | `string`                                                | Type of file allowed ('photo', 'video').                                                                   | No       | `photo`            |
@@ -586,8 +588,8 @@ Renders a styled container at the bottom of a form, typically used to group rela
 
 | Name        | Type                          | Description                                                                                             | Required | Default   |
 | :---------- | :---------------------------- | :------------------------------------------------------------------------------------------------------ | :------- | :-------- |
-| `label`     | `string`                      | Optional label text displayed above the elements.                                                       | No       | `undefined` |
-| `description`| `string`                      | Optional description text displayed below the label.                                                    | No       | `undefined` |
+| `label`     | `string`                      |                                                                                                         | No       | `undefined` |
+| `description`| `string`                      |                                                                                                         | No       | `undefined` |
 | `elements`  | `Record<string, FormFieldConfig>` | An object containing configurations for nested form elements to be rendered within this section. | Yes      | `{}`      |
 
 ## FormContent
@@ -598,8 +600,8 @@ The `FormContent` element acts as a container to group and render other form ele
 
 | Name        | Type                          | Description                                               | Required | Default   |
 | :---------- | :---------------------------- | :-------------------------------------------------------- | :------- | :-------- |
-| `label`     | `string`                      | Optional label text displayed above the content area.     | No       | `undefined` |
-| `description`| `string`                      | Optional description text displayed below the label.      | No       | `undefined` |
+| `label`     | `string`                      |                                                           | No       | `undefined` |
+| `description`| `string`                      |                                                           | No       | `undefined` |
 | `elements`  | `Record<string, ElementConfig>` | An object containing configurations for nested elements. | Yes      | N/A       |
 
 ## FormDescription
@@ -611,7 +613,7 @@ Displays a description text within a form, supporting simple HTML content.
 | Name          | Type   | Description                                                    | Required | Default     |
 | ------------- | ------ | -------------------------------------------------------------- | -------- | ----------- |
 | `style`       | object | Custom styling for the description container View.             | No       | `{}`        |
-| `description` | string | The text content to display. Can contain simple HTML.        | No       | `null`      |
+| `description` | string |                                                              | No       | `null`      |
 | `numberOfLines`| number | Limits the number of lines displayed for the description text. | No       | `undefined` |
 
 ## FormFooter
@@ -622,8 +624,8 @@ Renders a footer section for a form, capable of displaying a label, description,
 
 | Name        | Type                         | Description                                                              | Required | Default |
 | :---------- | :--------------------------- | :----------------------------------------------------------------------- | :------- | :------ |
-| `label`     | `string`                     | An optional label for the footer section.                                | No       | `null`  |
-| `description` | `string`                     | An optional description for the footer section.                          | No       | `null`  |
+| `label`     | `string`                     |                                                                          | No       | `null`  |
+| `description` | `string`                     |                                                                          | No       | `null`  |
 | `elements`  | `Record<string, ElementConfig>` | An object containing configurations for nested form elements.          | Yes      | `{}`    |
 
 ## FormHeader
@@ -646,8 +648,8 @@ Renders a top section for a form, optionally displaying a label and description,
 
 | Name        | Type                          | Description                                                              | Required | Default     |
 | :---------- | :---------------------------- | :----------------------------------------------------------------------- | :------- | :---------- |
-| `label`     | `string`                      | Optional label text displayed at the top.                                | No       | `undefined` |
-| `description`| `string`                      | Optional description text displayed below the label.                     | No       | `undefined` |
+| `label`     | `string`                      |                                                                          | No       | `undefined` |
+| `description`| `string`                      |                                                                          | No       | `undefined` |
 | `elements`  | `Record<string, FormFieldConfig>` | Object containing configurations for nested form elements to be rendered. | Yes      | N/A         |
 
 ## FriendPicker
@@ -658,12 +660,12 @@ A form element that allows users to select one or multiple friends from a list, 
 
 | Name              | Type                                                                              | Description                                       | Required | Default     |
 | :---------------- | :-------------------------------------------------------------------------------- | :------------------------------------------------ | :------- | :---------- |
-| `fullWidth`       | `boolean`                                                                         | Controls if the element takes the full width.     | No       | `false`     |
-| `margin`          | `'none' \| 'dense' \| 'normal'`                                                   | Sets the margin around the element.               | No       | `'normal'`  |
-| `required`        | `boolean`                                                                         | Marks the field as required.                      | No       | `false`     |
+| `fullWidth`       | `boolean`                                                                         |                                                   | No       | `false`     |
+| `margin`          | `'none' \| 'dense' \| 'normal'`                                                   |                                                   | No       | `'normal'`  |
+| `required`        | `boolean`                                                                         |                                                   | No       | `false`     |
 | `variant`         | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Sets the visual style of the element.             | No       | `'standard'`|
-| `paddingBottom`   | `'none' \| 'dense' \| 'normal'`                                                   | Sets the bottom padding.                          | No       | `undefined` |
-| `label`           | `string`                                                                          | The label displayed for the field.                | No       | `''`        |
+| `paddingBottom`   | `'none' \| 'dense' \| 'normal'`                                                   |                                                   | No       | `undefined` |
+| `label`           | `string`                                                                          |                                                   | No       | `''`        |
 | `suboptions`      | `SubOptionsShape`                                                                 | Additional options or configurations.             | No       | `undefined` |
 | `initialValue`    | `OptionsItemShape[]`                                                              | Initial selected friend(s).                       | No       | `undefined` |
 | `disable_custom`  | `boolean`                                                                         | Disables custom privacy selection.                | No       | `false`     |
@@ -673,10 +675,10 @@ A form element that allows users to select one or multiple friends from a list, 
 | `enable_search`   | `boolean`                                                                         | Enables searching within the friend list.         | No       | `false`     |
 | `disable_uncheck` | `boolean`                                                                         | Prevents unselecting if required.                 | No       | `false`     |
 | `choice_type`     | `string`                                                                          | Type of choice mechanism.                         | No       | `undefined` |
-| `placeholder`     | `string`                                                                          | Placeholder text when no value is selected.       | No       | `undefined` |
+| `placeholder`     | `string`                                                                          |                                                   | No       | `undefined` |
 | `showWithoutOptions`| `boolean`                                                                         | Whether to show the field without options.        | No       | `undefined` |
 | `api_endpoint`    | `string`                                                                          | API endpoint to fetch friend suggestions.         | Yes      | `undefined` |
-| `disabled`        | `boolean`                                                                         | Disables the field input.                         | No       | `false`     |
+| `disabled`        | `boolean`                                                                         |                                                   | No       | `false`     |
 
 ## GatewayButton
 
@@ -686,17 +688,17 @@ Renders a button specific to a payment gateway (e.g., Apple Pay, Stripe). It han
 
 | Name             | Type                                                                               | Description                                                                                                | Required | Default    |
 | :--------------- | :--------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :--------- |
-| `label`          | `string`                                                                           | The text label displayed on the generic button.                                                            | Yes      |            |
+| `label`          | `string`                                                                           |                                                                                                            | Yes      |            |
 | `gateway_id`     | `string \| number`                                                                 | The unique identifier for the payment gateway this button represents.                                      | Yes      |            |
 | `variant`        | `'applepay' \| 'googlepay' \| 'stripe' \| 'paypal' \| 'activitypoint'`             | The type of gateway. Determines rendering logic, platform availability (Apple/Google Pay), and behavior. | Yes      |            |
 | `item`           | `any`                                                                              | Item data associated with the payment, passed to the form on submission.                                   | Yes      |            |
 | `gateway_config` | `any`                                                                              | Configuration specific to the selected payment gateway, passed to the form on submission.                  | Yes      |            |
-| `description`    | `string`                                                                           | Optional text description displayed below the button.                                                      | No       | `''`       |
+| `description`    | `string`                                                                           |                                                                                                            | No       | `''`       |
 | `icon`           | `string`                                                                           | Optional icon name (from the icon set) to display on the generic button.                                   | No       |            |
 | `confirmation`   | `{ title: string, message: string }`                                               | Optional configuration for a confirmation dialog shown before submission (used for `activitypoint` variant). | No       |            |
-| `disabled`       | `boolean`                                                                          | If `true`, the button is disabled and cannot be pressed.                                                   | No       | `false`    |
-| `fullWidth`      | `boolean`                                                                          | If `true`, the underlying form control takes the full available width.                                     | No       | `true`     |
-| `margin`         | `'none' \| 'dense' \| 'normal' \| 'small'`                                         | Margin size applied to the underlying form control.                                                        | No       | `'none'`   |
+| `disabled`       | `boolean`                                                                          |                                                                                                            | No       | `false`    |
+| `fullWidth`      | `boolean`                                                                          |                                                                                                            | No       | `true`     |
+| `margin`         | `'none' \| 'dense' \| 'normal' \| 'small'`                                         |                                                                                                            | No       | `'none'`   |
 | `size`           | `'small' \| 'medium' \| 'large'`                                                   | Size applied to the underlying form control (affects spacing/layout).                                      | No       |            |
 
 ## Hidden
@@ -718,15 +720,15 @@ This element renders a button styled as a link. It's primarily used for navigati
 
 | Name          | Type                                               | Description                                                                                                                               | Required | Default             |
 |---------------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|----------|---------------------|
-| `label`       | `string`                                           | The text displayed on the button.                                                                                                         | Yes      | -                   |
+| `label`       | `string`                                           |                                                                                                                                           | Yes      | -                   |
 | `textTransform`| `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'` | Controls the text transformation (e.g., uppercase, lowercase).                                                                            | No       | -                   |
-| `margin`      | `'normal'`                                         | Specifies the margin for the form control wrapper.                                                                                        | Yes      | -                   |
+| `margin`      | `'normal'`                                         |                                                                                                                                           | Yes      | -                   |
 | `link`        | `string`                                           | A URL path to navigate to when the button is pressed. Used if `action` is not provided.                                                   | No       | -                   |
 | `routerName`  | `string`                                           | The name of the route to navigate to, used with `actionName`. Primarily for navigation actions like 'reset'.                              | No       | `'forgot-password'` |
 | `actionName`  | `string`                                           | Specifies the type of navigation action (e.g., 'reset', 'navigate'). Used if `action` is not provided.                                     | No       | `'navigate'`        |
 | `action`      | `string`                                           | A Redux action type to dispatch when the button is pressed. Takes precedence over `link` and `actionName`/`routerName`.                   | No       | -                   |
 | `actionPayload`| `Record<string, any>`                              | The payload to include with the dispatched Redux action specified by `action`.                                                            | No       | `{}`                |
-| `description` | `string`                                           | Optional text displayed below the button to provide context or instructions.                                                              | No       | -                   |
+| `description` | `string`                                           |                                                                                                                                           | No       | -                   |
 
 ## Information
 
@@ -736,12 +738,12 @@ Displays HTML content fetched based on the field's value, typically representing
 
 | Name          | Type                                     | Description                                      | Required | Default     |
 |---------------|------------------------------------------|--------------------------------------------------|----------|-------------|
-| `fullWidth`   | `boolean`                                | Makes the control take the full available width. | No       | `false`     |
-| `margin`      | `'none' \| 'dense' \| 'normal'`            | Sets the margin spacing.                         | No       | `undefined` |
-| `paddingBottom`| `'none' \| 'dense' \| 'normal'`            | Sets the bottom padding spacing.                 | No       | `undefined` |
+| `fullWidth`   | `boolean`                                |                                                  | No       | `false`     |
+| `margin`      | `'none' \| 'dense' \| 'normal'`            |                                                  | No       | `undefined` |
+| `paddingBottom`| `'none' \| 'dense' \| 'normal'`            |                                                  | No       | `undefined` |
 | `variant`     | `'standard' \| 'outlined' \| 'filled'`   | Sets the visual style.                           | No       | `'standard'`|
-| `label`       | `string`                                 | The text label for the form element.             | Yes      |             |
-| `required`    | `boolean`                                | Marks the label with an asterisk if true.        | No       | `false`     |
+| `label`       | `string`                                 |                                                  | Yes      |             |
+| `required`    | `boolean`                                |                                                  | No       | `false`     |
 
 ## input
 
@@ -751,20 +753,20 @@ A standard text input field allowing users to enter text. It wraps the `TextFiel
 
 | Name                 | Type                                                     | Description                                                                      | Required | Default         |
 | :------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------- | :------- | :-------------- |
-| `label`              | `string`                                                 | The label displayed for the input field.                                         | No       |                 |
-| `placeholder`        | `string`                                                 | Text displayed when the input is empty.                                          | No       |                 |
-| `description`        | `string`                                                 | Help text displayed below the input.                                             | No       |                 |
+| `label`              | `string`                                                 |                                                                                  | No       |                 |
+| `placeholder`        | `string`                                                 |                                                                                  | No       |                 |
+| `description`        | `string`                                                 |                                                                                  | No       |                 |
 | `variant`            | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'`, `'livestream'` | Visual style of the input field.                                                 | No       | `'standard'`    |
-| `fullWidth`          | `boolean`                                                | If true, the input takes up the full width of its container.                     | No       | `false`         |
-| `margin`             | `'none'`, `'dense'`, `'normal'`                          | Margin size around the input field.                                              | No       | `'normal'`      |
-| `paddingBottom`      | `'none'`, `'dense'`, `'normal'`                          | Padding size below the input.                                                    | No       | `'normal'`      |
-| `required`           | `boolean`                                                | Whether the field is required (client-side).                                     | No       | `false`         |
-| `disabled`           | `boolean`                                                | If true, the input is disabled and not editable.                                 | No       | `false`         |
+| `fullWidth`          | `boolean`                                                |                                                                                  | No       | `false`         |
+| `margin`             | `'none'`, `'dense'`, `'normal'`                          |                                                                                  | No       | `'normal'`      |
+| `paddingBottom`      | `'none'`, `'dense'`, `'normal'`                          |                                                                                  | No       | `'normal'`      |
+| `required`           | `boolean`                                                |                                                                                  | No       | `false`         |
+| `disabled`           | `boolean`                                                |                                                                                  | No       | `false`         |
 | `editable`           | `boolean`                                                | If false, the text is not editable (overridden by `disabled`).                   | No       | `true`          |
 | `multiline`          | `boolean`                                                | If true, the input can span multiple lines.                                      | No       | `false`         |
-| `minHeight`          | `number`                                                 | Minimum height for the input, useful for multiline inputs.                       | No       |                 |
-| `maxLength`          | `number`                                                 | Maximum number of characters allowed.                                            | No       |                 |
-| `autoFocus`          | `boolean`                                                | If true, the input focuses automatically on mount.                               | No       | `false`         |
+| `minHeight`          | `number`                                                 |                                                                                  | No       |                 |
+| `maxLength`          | `number`                                                 |                                                                                  | No       |                 |
+| `autoFocus`          | `boolean`                                                |                                                                                  | No       | `false`         |
 | `autoCorrect`        | `boolean`                                                | Enable/disable auto-correction.                                                  | No       | `true`          |
 | `autoCapitalize`     | `'none'`, `'sentences'`, `'words'`, `'characters'`       | Auto-capitalization behavior.                                                    | No       | `'sentences'`   |
 | `clearButtonMode`    | `'never'`, `'while-editing'`, `'unless-editing'`, `'always'` | Controls when the clear button appears (iOS only).                               | No       | `'never'`       |
@@ -784,20 +786,20 @@ A form element that allows users to select one or multiple friends to invite, ty
 
 | Name            | Type                      | Description                                                      | Required | Default      |
 | --------------- | ------------------------- | ---------------------------------------------------------------- | -------- | ------------ |
-| `label`         | `string`                  | The label text displayed for the field.                          | Yes      | `''`         |
+| `label`         | `string`                  |                                                                  | Yes      | `''`         |
 | `api_endpoint`  | `string`                  | API endpoint URL to fetch friend suggestions.                    | Yes      | `''`         |
-| `fullWidth`     | `boolean`                 | If `true`, the element takes the full width of its container.    | No       | `false`      |
-| `margin`        | `'none' \| 'dense' \| 'normal'` | Controls the margin spacing around the element.                  | No       | `'normal'`   |
-| `required`      | `boolean`                 | If `true`, the field must have a value.                          | No       | `false`      |
+| `fullWidth`     | `boolean`                 |                                                                  | No       | `false`      |
+| `margin`        | `'none' \| 'dense' \| 'normal'` |                                                                  | No       | `'normal'`   |
+| `required`      | `boolean`                 |                                                                  | No       | `false`      |
 | `variant`       | `'standard' \| 'outlined' \| 'filled'` | The display style variant of the form control.                 | No       | `'standard'` |
-| `paddingBottom` | `'none' \| 'dense' \| 'normal'` | Controls the bottom padding spacing.                             | No       | `'normal'`   |
+| `paddingBottom` | `'none' \| 'dense' \| 'normal'` |                                                                  | No       | `'normal'`   |
 | `suboptions`    | `SubOptionsShape`         | Configuration for sub-options within the picker.                 | No       | `undefined`  |
 | `disable_custom`| `boolean`                 | If `true`, disables the custom privacy/selection option.         | No       | `false`      |
 | `multiple`      | `boolean`                 | If `true`, allows selecting multiple friends.                    | No       | `false`      |
 | `enable_search` | `boolean`                 | If `true`, enables search functionality within the picker screen. | No       | `false`      |
 | `disable_uncheck`| `boolean`                 | If `true`, prevents users from unselecting chosen options.       | No       | `false`      |
 | `choice_type`   | `string`                  | Specifies the type of choice (internal use).                     | No       | `''`         |
-| `placeholder`   | `string`                  | Text displayed when no value is selected.                        | No       | `''`         |
+| `placeholder`   | `string`                  |                                                                  | No       | `''`         |
 | `api_params`    | `Record<string, any>`     | Additional parameters sent with the API request.                 | No       | `{ q: ':q' }`|
 
 ## LinkButton
@@ -808,15 +810,15 @@ This form element renders a button styled as a link. It can be configured to nav
 
 | Name            | Type                                                    | Description                                                                                                | Required | Default           |
 | --------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------- | ----------------- |
-| `label`         | `string`                                                | The text displayed on the link button.                                                                     | Yes      |                   |
-| `description`   | `string`                                                | A description text displayed above the button.                                                             | No       |                   |
+| `label`         | `string`                                                |                                                                                                            | Yes      |                   |
+| `description`   | `string`                                                |                                                                                                            | No       |                   |
 | `link`          | `string`                                                | A URL path (relative) to navigate to when pressed. Takes precedence over `actionName`/`routerName` if `action` is not set. | No       |                   |
 | `action`        | `string`                                                | The type string of a Redux action to dispatch when pressed. Takes precedence over `link` and `actionName`/`routerName`. | No       |                   |
 | `actionPayload` | `Record<string, any>`                                   | The payload object to send with the dispatched Redux `action`.                                             | No       | `{}`              |
 | `actionName`    | `'navigate' \| 'reset'`                                 | Specifies the navigation action type. Used if `action` and `link` are not provided.                        | No       | `'navigate'`      |
 | `routerName`    | `string`                                                | The name of the route to navigate to. Used with `actionName`.                                              | No       | `'forgot-password'` |
 | `textTransform` | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'` | CSS text-transform property for the button label.                                                          | No       | `'none'`          |
-| `margin`        | `'normal'`                                              | Controls the margin around the form control.                                                               | No       | `'normal'`        |
+| `margin`        | `'normal'`                                              |                                                                                                            | No       | `'normal'`        |
 
 ## Location
 
@@ -826,14 +828,14 @@ A form field that allows users to select a geographical location using a native 
 
 | Name          | Type                                                                 | Description                                                                                                | Required | Default     |
 | :------------ | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :---------- |
-| `label`       | `string`                                                             | The label displayed for the form field.                                                                    | Yes      |             |
-| `placeholder` | `string`                                                             | Placeholder text shown when no location is selected (not shown for 'standard-outlined' variant).           | No       | `''`        |
+| `label`       | `string`                                                             |                                                                                                            | Yes      |             |
+| `placeholder` | `string`                                                             |                                                                                                            | No       | `''`        |
 | `variant`     | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Controls the visual style of the component.                                                                | No       | `'standard'`|
-| `fullWidth`   | `boolean`                                                            | If `true`, the component takes the full width of its container.                                            | No       | `false`     |
-| `margin`      | `'none' \| 'dense' \| 'normal'`                                        | Controls the margin around the component.                                                                  | No       | `'normal'`  |
-| `paddingBottom`| `'none' \| 'dense' \| 'normal'`                                        | Controls the bottom padding of the component.                                                              | No       | `'normal'`  |
-| `required`    | `boolean`                                                            | Marks the field as required in the form validation.                                                        | No       | `false`     |
-| `disabled`    | `boolean`                                                            | If `true`, the input field is disabled.                                                                    | No       | `false`     |
+| `fullWidth`   | `boolean`                                                            |                                                                                                            | No       | `false`     |
+| `margin`      | `'none' \| 'dense' \| 'normal'`                                        |                                                                                                            | No       | `'normal'`  |
+| `paddingBottom`| `'none' \| 'dense' \| 'normal'`                                        |                                                                                                            | No       | `'normal'`  |
+| `required`    | `boolean`                                                            |                                                                                                            | No       | `false`     |
+| `disabled`    | `boolean`                                                            |                                                                                                            | No       | `false`     |
 | `types`       | `PlaceType[]`                                                        | Filters the types of places returned by the location picker (e.g., 'address', 'geocode', 'establishment'). | No       | `undefined` |
 | `inline`      | `boolean`                                                            | Controls if the label is displayed inline with the input.                                                  | No       | `false`     |
 
@@ -845,18 +847,18 @@ The `MembershipQuestion` form element allows users to define a question with dif
 
 | Name                 | Type                                                       | Description                                                                      | Required | Default     |
 | :------------------- | :--------------------------------------------------------- | :------------------------------------------------------------------------------- | :------- | :---------- |
-| `label`              | string                                                     | The label text displayed above the element.                                      | No       | `undefined` |
-| `description`        | string                                                     | Additional descriptive text displayed below the label.                           | No       | `undefined` |
-| `required`           | boolean                                                    | Marks the field as required (visually).                                          | No       | `false`     |
+| `label`              | string                                                     |                                                                                  | No       | `undefined` |
+| `description`        | string                                                     |                                                                                  | No       | `undefined` |
+| `required`           | boolean                                                    |                                                                                  | No       | `false`     |
 | `multiline`          | boolean                                                    | Allows the question input field to accept multiple lines.                        | No       | `false`     |
 | `clearButtonMode`    | 'never' \| 'while-editing' \| 'unless-editing' \| 'always' | Determines when the clear button appears on the text input (iOS only).           | No       | `undefined` |
-| `disabled`           | boolean                                                    | Disables the entire form element.                                                | No       | `false`     |
-| `maxLength`          | number                                                     | Maximum number of answer options allowed for Checkbox/Multiple Choice types.     | No       | `5`         |
+| `disabled`           | boolean                                                    |                                                                                  | No       | `false`     |
+| `maxLength`          | number                                                     |                                                                                  | No       | `5`         |
 | `editable`           | boolean                                                    | Determines if the question text input can be edited.                             | No       | `true`      |
-| `minHeight`          | number                                                     | Sets the minimum height for the question text input.                             | No       | `undefined` |
-| `paddingBottom`      | string \| number                                           | Adds padding to the bottom of the form control.                                  | No       | `undefined` |
-| `margin`             | string                                                     | Sets the margin around the form control.                                         | No       | `undefined` |
-| `fullWidth`          | boolean                                                    | Makes the form control occupy the full available width.                          | No       | `false`     |
+| `minHeight`          | number                                                     |                                                                                  | No       | `undefined` |
+| `paddingBottom`      | string \| number                                           |                                                                                  | No       | `undefined` |
+| `margin`             | string                                                     |                                                                                  | No       | `undefined` |
+| `fullWidth`          | boolean                                                    |                                                                                  | No       | `false`     |
 
 ## MentionInput
 
@@ -866,12 +868,12 @@ The `MentionInput` element provides a text input field specifically designed for
 
 | Name             | Type                                                                 | Description                                                                 | Required | Default            |
 | :--------------- | :------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`          | `string`                                                             | The text label displayed above the input field.                             | Yes      | `''`               |
-| `required`       | `boolean`                                                            | Indicates if the field is mandatory.                                        | Yes      | `false`            |
+| `label`          | `string`                                                             |                                                                             | Yes      | `''`               |
+| `required`       | `boolean`                                                            |                                                                             | Yes      | `false`            |
 | `variant`        | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'`         | The visual style variant of the input.                                      | Yes      | `'standard-inlined'` |
-| `margin`         | `'none' \| 'dense' \| 'normal'`                                      | Controls the margin around the component.                                   | Yes      | `'normal'`         |
-| `fullWidth`      | `boolean`                                                            | If true, the input stretches to the full width of its container.            | No       | `false`            |
-| `paddingBottom`  | `'none' \| 'dense' \| 'normal'`                                      | Controls the bottom padding of the component.                               | No       | `'none'`           |
+| `margin`         | `'none' \| 'dense' \| 'normal'`                                      |                                                                             | Yes      | `'normal'`         |
+| `fullWidth`      | `boolean`                                                            |                                                                             | No       | `false`            |
+| `paddingBottom`  | `'none' \| 'dense' \| 'normal'`                                      |                                                                             | No       | `'none'`           |
 | `editable`       | `boolean`                                                            | If false, the text content cannot be modified by the user.                  | No       | `true`             |
 | `testId`         | `string`                                                             | A unique identifier used for testing purposes.                              | No       | `''`               |
 | `meta`           | `MetaShape`                                                          | Additional metadata associated with the field.                              | No       | `{}`               |
@@ -887,16 +889,16 @@ The `MultiChoice` form element allows users to select one or multiple options fr
 
 | Name               | Type                               | Description                                                                 | Required | Default      |
 | :----------------- | :--------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `label`            | `string`                           | The text label displayed for the field.                                     | Yes      |              |
-| `description`      | `string`                           | Additional descriptive text displayed below the field.                      | No       |              |
+| `label`            | `string`                           |                                                                             | Yes      |              |
+| `description`      | `string`                           |                                                                             | No       |              |
 | `options`          | `OptionsItemShape[]`               | An array of available options to select from.                               | Yes      | `[]`         |
 | `multiple`         | `boolean`                          | If true, allows selecting multiple options. Defaults to `true` for MultiChoice. | No       | `true`       |
-| `required`         | `boolean`                          | Whether the field is required.                                              | No       | `false`      |
-| `disabled`         | `boolean`                          | If true, disables the field.                                                | No       | `false`      |
+| `required`         | `boolean`                          |                                                                             | No       | `false`      |
+| `disabled`         | `boolean`                          |                                                                             | No       | `false`      |
 | `variant`          | `'standard', 'outlined', 'filled'` | The visual style of the component.                                          | No       | `'standard'` |
-| `margin`           | `'normal', 'dense', 'none'`        | Defines the margin size around the component.                               | No       | `'normal'`   |
-| `fullWidth`        | `boolean`                          | If true, the component takes up the full width of its container.            | No       | `false`      |
-| `placeholder`      | `string`                           | Placeholder text shown when no value is selected.                           | No       | `'select'`   |
+| `margin`           | `'normal', 'dense', 'none'`        |                                                                             | No       | `'normal'`   |
+| `fullWidth`        | `boolean`                          |                                                                             | No       | `false`      |
+| `placeholder`      | `string`                           |                                                                             | No       | `'select'`   |
 | `enable_search`    | `boolean`                          | If true, enables a search input within the option selector modal.           | No       | `false`      |
 | `disableClearable` | `boolean`                          | If true, prevents the user from clearing the selection (requires a value).  | No       | `false`      |
 | `value_type`       | `string`                           | Specifies the expected data type of the value ('array' or single value).    | No       | `'array'`    |
@@ -914,8 +916,8 @@ Allows users to select and upload multiple files (photos, videos, or other types
 
 | Name                  | Type                                       | Description                                                                 | Required | Default            |
 | :-------------------- | :----------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`               | `string`                                   | The label text for the field.                                               | Yes      | -                  |
-| `description`         | `string`                                   | Additional descriptive text below the label.                                | No       | -                  |
+| `label`               | `string`                                   |                                                                             | Yes      | -                  |
+| `description`         | `string`                                   |                                                                             | No       | -                  |
 | `multiple`            | `boolean`                                  | Allow selecting multiple files. Set to `true` for multi-file selection.     | No       | `false`            |
 | `file_type`           | `string`                                   | The type of file allowed ('photo', 'video', 'attachment', etc.).            | No       | `'photo'`          |
 | `item_type`           | `string`                                   | The resource type associated with the uploaded item (e.g., 'photo', 'blog'). | No       | `'unknown'`        |
@@ -927,13 +929,13 @@ Allows users to select and upload multiple files (photos, videos, or other types
 | `include_exif`        | `boolean`                                  | Include EXIF data with uploaded images.                                     | No       | `false`            |
 | `maxFilesDescription` | `string`                                   | Custom description related to the maximum file limit.                       | No       | -                  |
 | `current_files`       | `array`                                    | Array of pre-existing file objects (used for editing).                      | No       | `[]`               |
-| `fullWidth`           | `boolean`                                  | Whether the element should take up the full width.                          | No       | `false`            |
-| `margin`              | `'normal' \| 'dense' \| 'none'`            | Margin style.                                                               | No       | `'normal'`         |
+| `fullWidth`           | `boolean`                                  |                                                                             | No       | `false`            |
+| `margin`              | `'normal' \| 'dense' \| 'none'`            |                                                                             | No       | `'normal'`         |
 | `variant`             | `string`                                   | The display variant of the form control.                                    | No       | `'standard-inlined'` |
-| `required`            | `boolean`                                  | Whether the field is required (validation).                                 | No       | `false`            |
-| `disabled`            | `boolean`                                  | Disable the form element.                                                   | No       | `false`            |
+| `required`            | `boolean`                                  |                                                                             | No       | `false`            |
+| `disabled`            | `boolean`                                  |                                                                             | No       | `false`            |
 | `name`                | `string`                                   | The name of the field in the form state.                                    | Yes      | -                  |
-| `paddingBottom`       | `string`                                   | Custom padding at the bottom.                                               | No       | -                  |
+| `paddingBottom`       | `string`                                   |                                                                             | No       | -                  |
 
 ## NumberCode
 
@@ -943,16 +945,16 @@ A form input element designed for entering numerical codes (like One-Time Passwo
 
 | Name                  | Type                                | Description                                                    | Required | Default      |
 | :-------------------- | :---------------------------------- | :------------------------------------------------------------- | :------- | :----------- |
-| `label`               | `string`                            | The label displayed above the input fields.                    | No       | `undefined`  |
+| `label`               | `string`                            |                                                                | No       | `undefined`  |
 | `editable`            | `boolean`                           | Determines if the input fields are editable.                   | No       | `true`       |
 | `variant`             | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the form control.                  | No       | `'standard'` |
-| `paddingBottom`       | `'dense' \| 'normal' \| 'none'`     | Controls the bottom padding of the form control.               | No       | `'dense'`    |
-| `margin`              | `'dense' \| 'normal' \| 'none'`     | Controls the margin of the form control.                       | No       | `undefined`  |
-| `required`            | `boolean`                           | If true, marks the field as required.                          | No       | `false`      |
-| `fullWidth`           | `boolean`                           | If true, the component stretches to the full width available.  | No       | `false`      |
+| `paddingBottom`       | `'dense' \| 'normal' \| 'none'`     |                                                                | No       | `'dense'`    |
+| `margin`              | `'dense' \| 'normal' \| 'none'`     |                                                                | No       | `undefined`  |
+| `required`            | `boolean`                           |                                                                | No       | `false`      |
+| `fullWidth`           | `boolean`                           |                                                                | No       | `false`      |
 | `clearInputs`         | `boolean`                           | Controls input clearing behavior on press.                     | No       | `false`      |
 | `isAutoFillSupported` | `boolean`                           | Enables native OTP autofill support if available.              | No       | `false`      |
-| `isAutoFocus`         | `boolean`                           | If true, the first input box automatically receives focus.     | No       | `false`      |
+| `isAutoFocus`         | `boolean`                           |                                                                | No       | `false`      |
 | `codeLength`          | `number`                            | The number of digits/input boxes for the code.                 | No       | `6`          |
 | `keyboardType`        | `TextInputProps['keyboardType']`    | Specifies the type of keyboard to display (e.g., 'numeric'). | No       | `'numeric'`  |
 
@@ -966,13 +968,13 @@ The component accepts standard `FormFieldProps` along with a `config` object for
 
 | Name             | Type                                                              | Description                                                                 | Required | Default      |
 | :--------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `label`          | `string`                                                          | The label displayed above or alongside the input field.                     | No       | `''`         |
-| `placeholder`    | `string`                                                          | Placeholder text shown when the input field is empty.                       | No       | `''`         |
-| `required`       | `boolean`                                                         | Marks the field as mandatory, often visually indicated (e.g., with an asterisk). | No       | `false`      |
-| `disabled`       | `boolean`                                                         | If `true`, the input field is disabled and cannot be interacted with.       | No       | `false`      |
+| `label`          | `string`                                                          |                                                                             | No       | `''`         |
+| `placeholder`    | `string`                                                          |                                                                             | No       | `''`         |
+| `required`       | `boolean`                                                         |                                                                             | No       | `false`      |
+| `disabled`       | `boolean`                                                         |                                                                             | No       | `false`      |
 | `variant`        | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Defines the visual style of the input field (e.g., border, background).     | No       | `'standard'` |
-| `margin`         | `'none' \| 'dense' \| 'normal'`                                   | Controls the outer spacing around the form control.                         | No       | `'normal'`   |
-| `fullWidth`      | `boolean`                                                         | If `true`, the component stretches to the full width of its container.      | No       | `false`      |
+| `margin`         | `'none' \| 'dense' \| 'normal'`                                   |                                                                             | No       | `'normal'`   |
+| `fullWidth`      | `boolean`                                                         |                                                                             | No       | `false`      |
 | `editable`       | `boolean`                                                         | If `false`, the text content cannot be modified by the user.                | No       | `true`       |
 | `returnKeyType`  | `ReturnKeyTypeOptions`                                            | Specifies the appearance of the keyboard's return key.                      | No       | `'next'`     |
 | `inputWapperStyle` | `ViewStyle`                                                       | Custom styles applied to the wrapper view containing the `TextInput`.       | No       | `undefined`  |
@@ -988,7 +990,7 @@ Displays a calculated monetary amount based on a value from another form field, 
 
 | Name                | Type     | Description                                                                          | Required | Default |
 | :------------------ | :------- | :----------------------------------------------------------------------------------- | :------- | :------ |
-| `label`             | `string` | The base label text for the displayed amount (often an i18n key).                    | Yes      |         |
+| `label`             | `string` |                                                                                      | Yes      |         |
 | `exchangeRate`      | `number` | The numerical exchange rate used for conversion.                                     | Yes      |         |
 | `exchangeRatePattern`| `object` | An object defining the currency formatting rules (e.g., separators, precision). | Yes      |         |
 | `feePercentage`     | `number` | The fee percentage to be deducted (e.g., 0.05 for 5%).                               | Yes      |         |
@@ -1004,10 +1006,10 @@ A form element for managing a list of poll answers. Allows users to add, edit, a
 | :----------- | :------ | :------------------------------------------------ | :------- | :---------- |
 | `minAnswers` | number  | Minimum number of answers required.             | Yes      | *Varies*    |
 | `maxAnswers` | number  | Maximum number of answers allowed (0=unlimited). | Yes      | *Varies*    |
-| `maxLength`  | number  | Maximum character length for each answer.         | No       | `undefined` |
-| `disabled`   | boolean | Disables the input fields and add/delete buttons. | No       | `false`     |
+| `maxLength`  | number  |                                                   | No       | `undefined` |
+| `disabled`   | boolean |                                                   | No       | `false`     |
 | `variant`    | string  | Visual style variant ('standard', 'standard-outlined'). | No       | `'standard'`|
-| `fullWidth`  | boolean | If the element should occupy the full width.    | No       | `false`     |
+| `fullWidth`  | boolean |                                                   | No       | `false`     |
 
 ## PollCloseTime
 
@@ -1017,13 +1019,13 @@ This element renders a date and time picker input field, specifically configured
 
 | Name          | Type                               | Description                                                                 | Required | Default             |
 |---------------|------------------------------------|-----------------------------------------------------------------------------|----------|---------------------|
-| `label`       | `string`                           | The text label displayed for the input field.                               | No       | `'close_time'`      |
-| `placeholder` | `string`                           | Placeholder text shown when the input is empty.                             | No       |                     |
-| `description` | `string`                           | Additional descriptive text displayed below the input field.                | No       |                     |
-| `required`    | `boolean`                          | If `true`, the field must have a value for form submission.                 | No       | `false`             |
-| `disabled`    | `boolean`                          | If `true`, the input field is disabled and cannot be interacted with.       | No       | `false`             |
-| `fullWidth`   | `boolean`                          | If `true`, the input field spans the full width of its container.           | No       | `false`             |
-| `margin`      | `'dense' \| 'normal' \| 'none'`    | Specifies the margin spacing around the field.                              | No       | `'normal'`          |
+| `label`       | `string`                           |                                                                             | No       | `'close_time'`      |
+| `placeholder` | `string`                           |                                                                             | No       |                     |
+| `description` | `string`                           |                                                                             | No       |                     |
+| `required`    | `boolean`                          |                                                                             | No       | `false`             |
+| `disabled`    | `boolean`                          |                                                                             | No       | `false`             |
+| `fullWidth`   | `boolean`                          |                                                                             | No       | `false`             |
+| `margin`      | `'dense' \| 'normal' \| 'none'`    |                                                                             | No       | `'normal'`          |
 | `variant`     | `'standard' \| 'outlined' \| 'filled'` | Defines the visual style of the input field.                             | No       | `'standard'`        |
 | `datePickerMode` | `'date' \| 'time' \| 'datetime'` | Determines the type of picker displayed (date, time, or both).          | No       | `'datetime'`        |
 | `displayFormat` | `string`                           | The format used to display the selected date and time in the input field. | No       | `'DD/MM/YYYY - HH:mm'` |
@@ -1042,16 +1044,16 @@ Renders a set of price input fields, often used for different currencies or pric
 
 | Name          | Type                                                                                                | Description                                                                                                                               | Required | Default      |
 |---------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|----------|--------------|
-| `label`       | `string`                                                                                            | The label text displayed for the field.                                                                                                   | Yes      | -            |
-| `description` | `string`                                                                                            | Additional text displayed below the field for guidance.                                                                                   | No       | -            |
+| `label`       | `string`                                                                                            |                                                                                                                                           | Yes      | -            |
+| `description` | `string`                                                                                            |                                                                                                                                           | No       | -            |
 | `variant`     | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'`                                     | The visual style of the field.                                                                                                            | No       | `'standard'` |
 | `options`     | `Array<{ key: string, name: string, required?: boolean, requiredWhen?: object, ... }>`             | Defines the individual price inputs (e.g., currencies). Each object requires `key` (label/value key) and `name`. Can include `required`. | Yes      | `[]`         |
-| `maxLength`   | `number`                                                                                            | The maximum number of characters allowed in each price input defined in `options`.                                                        | No       | -            |
-| `required`    | `boolean`                                                                                           | Whether the field requires a value. Also influenced by `required` in individual `options`.                                                | No       | `false`      |
-| `disabled`    | `boolean`                                                                                           | If true, the field is disabled.                                                                                                           | No       | `false`      |
-| `fullWidth`   | `boolean`                                                                                           | If true, the control will take up the full width of its container.                                                                        | No       | `false`      |
-| `margin`      | `'normal' \| 'dense' \| 'none'`                                                                     | Margin for the form control.                                                                                                              | No       | -            |
-| `paddingBottom`| `string \| number`                                                                                  | Bottom padding for the form control.                                                                                                      | No       | -            |
+| `maxLength`   | `number`                                                                                            |                                                                                                                                           | No       | -            |
+| `required`    | `boolean`                                                                                           |                                                                                                                                           | No       | `false`      |
+| `disabled`    | `boolean`                                                                                           |                                                                                                                                           | No       | `false`      |
+| `fullWidth`   | `boolean`                                                                                           |                                                                                                                                           | No       | `false`      |
+| `margin`      | `'normal' \| 'dense' \| 'none'`                                                                     |                                                                                                                                           | No       | -            |
+| `paddingBottom`| `string \| number`                                                                                  |                                                                                                                                           | No       | -            |
 | `findReplace` | `{ find: string \| RegExp, replace: string }`                                                       | Defines rules for replacing characters in the input value.                                                                                | No       | -            |
 
 *Note: The component also accepts other standard `FormFieldProps` like `formik` which are not detailed here.*
@@ -1064,19 +1066,19 @@ This element provides a user interface for selecting privacy settings, typically
 
 | Name             | Type                                  | Description                                                                 | Required | Default            |
 | :--------------- | :------------------------------------ | :-------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`          | `string`                              | The text label displayed for the form field.                                | Yes      |                    |
+| `label`          | `string`                              |                                                                             | Yes      |                    |
 | `options`        | `PrivacyOptionItemShape[]`            | An array of predefined privacy options available for selection.             | Yes      | `[]`               |
 | `name`           | `string`                              | The unique identifier for the field within the form.                        | Yes      |                    |
-| `fullWidth`      | `boolean`                             | If `true`, the component will occupy the full width of its container.       | No       | `false`            |
-| `margin`         | `'dense' \| 'normal' \| 'none'`       | Specifies the margin spacing around the component.                          | No       | `'normal'`         |
-| `required`       | `boolean`                             | If `true`, the field must have a value for form submission.                 | No       | `false`            |
+| `fullWidth`      | `boolean`                             |                                                                             | No       | `false`            |
+| `margin`         | `'dense' \| 'normal' \| 'none'`       |                                                                             | No       | `'normal'`         |
+| `required`       | `boolean`                             |                                                                             | No       | `false`            |
 | `variant`        | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined' \| 'livestream'` | The visual style variant of the component.                                  | No       | `'standard-inlined'` |
 | `suboptions`     | `SubOptionsShape`                     | Additional options, often used for custom privacy lists or friend lists.    | No       | `[]`               |
 | `disable_custom` | `boolean`                             | If `true`, prevents users from selecting custom privacy options.            | No       | `false`            |
 | `multiple`       | `boolean`                             | If `true`, allows selecting multiple privacy options (currently single).    | No       | `false`            |
-| `paddingBottom`  | `'dense' \| 'normal' \| 'none'`       | Specifies the bottom padding spacing for the component.                     | No       | `undefined`        |
-| `description`    | `string`                              | Additional helper text displayed below the input field.                     | No       | `undefined`        |
-| `disabled`       | `boolean`                             | If `true`, the field is non-interactive.                                    | No       | `false`            |
+| `paddingBottom`  | `'dense' \| 'normal' \| 'none'`       |                                                                             | No       | `undefined`        |
+| `description`    | `string`                              |                                                                             | No       | `undefined`        |
+| `disabled`       | `boolean`                             |                                                                             | No       | `false`            |
 
 ## Progress
 
@@ -1086,10 +1088,10 @@ Renders a progress bar indicating the completion status, typically used within m
 
 | Name                | Type                                | Description                                                                                             | Required | Default      |
 | :------------------ | :---------------------------------- | :------------------------------------------------------------------------------------------------------ | :------- | :----------- |
-| `margin`            | `'none' \| 'dense' \| 'normal'`   | Sets the outer margin of the form control.                                                              | No       | `'normal'`   |
+| `margin`            | `'none' \| 'dense' \| 'normal'`   |                                                                                                         | No       | `'normal'`   |
 | `variant`           | `'standard' \| 'outlined' \| 'filled'` | The display variant of the form control.                                                              | No       | `'standard'` |
 | `paddingTop`        | `'none' \| 'dense' \| 'normal'`   | Sets the top inner padding of the form control.                                                         | No       | `undefined`  |
-| `paddingBottom`     | `'none' \| 'dense' \| 'normal'`   | Sets the bottom inner padding of the form control.                                                      | No       | `undefined`  |
+| `paddingBottom`     | `'none' \| 'dense' \| 'normal'`   |                                                                                                         | No       | `undefined`  |
 | `paddingRight`      | `'none' \| 'dense' \| 'normal'`   | Sets the right inner padding of the form control.                                                       | No       | `undefined`  |
 | `paddingLeft`       | `'none' \| 'dense' \| 'normal'`   | Sets the left inner padding of the form control.                                                        | No       | `undefined`  |
 | `relatedField`      | `string`                            | The name of the form field holding the current value (e.g., current step) for progress calculation. | Yes      |              |
@@ -1102,23 +1104,23 @@ This element renders a standard text input field. It is an alias for the `Text` 
 
 | Name                  | Type                                                     | Description                                                                 | Required | Default         |
 | --------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------- | -------- | --------------- |
-| `label`               | `string`                                                 | The label displayed for the input field.                                    | No       |                 |
-| `placeholder`         | `string`                                                 | The placeholder text displayed when the input is empty.                     | No       |                 |
-| `description`         | `string`                                                 | A description displayed below the input field.                              | No       |                 |
+| `label`               | `string`                                                 |                                                                             | No       |                 |
+| `placeholder`         | `string`                                                 |                                                                             | No       |                 |
+| `description`         | `string`                                                 |                                                                             | No       |                 |
 | `contextualDescription`| `string`                                                 | Additional description shown below the input, often used for dynamic info. | No       |                 |
 | `variant`             | `'standard'`, `'outlined'`, `'filled'`, `'livestream'` etc. | The visual style variant of the input field.                                | No       | `'standard'`    |
-| `fullWidth`           | `boolean`                                                | If `true`, the input field takes up the full width of its container.        | No       | `false`         |
-| `margin`              | `'normal'`, `'dense'`, `'none'` etc.                     | The margin applied around the form control.                                 | No       | `'normal'`      |
-| `paddingBottom`       | `'normal'`, `'dense'`, `'none'` etc.                     | The bottom padding applied.                                                 | No       |                 |
-| `required`            | `boolean`                                                | Whether the field is required (visual indicator, validation handled by form). | No       | `false`         |
-| `disabled`            | `boolean`                                                | If `true`, the input field is disabled and cannot be interacted with.       | No       | `false`         |
+| `fullWidth`           | `boolean`                                                |                                                                             | No       | `false`         |
+| `margin`              | `'normal'`, `'dense'`, `'none'` etc.                     |                                                                             | No       | `'normal'`      |
+| `paddingBottom`       | `'normal'`, `'dense'`, `'none'` etc.                     |                                                                             | No       |                 |
+| `required`            | `boolean`                                                |                                                                             | No       | `false`         |
+| `disabled`            | `boolean`                                                |                                                                             | No       | `false`         |
 | `editable`            | `boolean`                                                | If `false`, the text field value cannot be changed.                         | No       | `true`          |
 | `multiline`           | `boolean`                                                | If `true`, allows multiple lines of text input.                             | No       | `false`         |
-| `minHeight`           | `number`                                                 | Minimum height for the input field, useful with `multiline`.                | No       |                 |
-| `maxLength`           | `number`                                                 | The maximum number of characters allowed in the input field.                | No       |                 |
+| `minHeight`           | `number`                                                 |                                                                             | No       |                 |
+| `maxLength`           | `number`                                                 |                                                                             | No       |                 |
 | `autoCorrect`         | `boolean`                                                | Controls whether autocorrection should be enabled.                          | No       | `true`          |
 | `autoCapitalize`      | `'none'`, `'sentences'`, `'words'`, `'characters'`       | Controls how text input is automatically capitalized.                       | No       | `'sentences'`   |
-| `autoFocus`           | `boolean`                                                | If `true`, the input field automatically gains focus when mounted.          | No       | `false`         |
+| `autoFocus`           | `boolean`                                                |                                                                             | No       | `false`         |
 | `keyboardType`        | `string`                                                 | Specifies the type of keyboard to display (e.g., 'numeric', 'email-address'). | No       | `'default'`     |
 | `returnKeyType`       | `string`                                                 | Specifies the appearance of the return key (e.g., 'done', 'next').          | No       | `'done'`        |
 | `secureTextEntry`     | `boolean`                                                | If `true`, masks the text entered (for passwords).                          | No       | `false`         |
@@ -1140,19 +1142,19 @@ A form element for creating and managing a list of quiz questions, each with mul
 
 | Name              | Type                                    | Description                                                                 | Required | Default     |
 | :---------------- | :-------------------------------------- | :-------------------------------------------------------------------------- | :------- | :---------- |
-| `label`           | `string`                                | The label text displayed for the form element.                              | Yes      |             |
-| `fullWidth`       | `boolean`                               | If `true`, the element takes up the full width of its container.            | No       | `true`      |
-| `margin`          | `'normal'`, `'dense'`, `'none'`         | Defines the margin spacing around the element.                              | No       | `'normal'`  |
-| `required`        | `boolean`                               | If `true`, the field is marked as required.                                 | No       | `false`     |
+| `label`           | `string`                                |                                                                             | Yes      |             |
+| `fullWidth`       | `boolean`                               |                                                                             | No       | `true`      |
+| `margin`          | `'normal'`, `'dense'`, `'none'`         |                                                                             | No       | `'normal'`  |
+| `required`        | `boolean`                               |                                                                             | No       | `false`     |
 | `variant`         | `'standard'`, `'outlined'`, `'filled'`  | The display style variant of the form control.                              | No       | `'standard'`|
-| `paddingBottom`   | `'normal'`, `'dense'`, `'none'`         | Defines the bottom padding spacing for the element.                         | No       | `'normal'`  |
+| `paddingBottom`   | `'normal'`, `'dense'`, `'none'`         |                                                                             | No       | `'normal'`  |
 | `minQuestions`    | `number`                                | The minimum number of questions required.                                   | No       | `1`         |
 | `maxQuestions`    | `number`                                | The maximum number of questions allowed.                                    | No       | `10`        |
 | `minAnswers`      | `number`                                | The minimum number of answers required per question.                        | No       | `2`         |
 | `maxAnswers`      | `number`                                | The maximum number of answers allowed per question.                         | No       | `20`        |
 | `defaultAnswers`  | `number`                                | The default number of answer fields to show when adding a new question.     | No       | `2`         |
-| `disabled`        | `boolean`                               | If `true`, the entire element is disabled.                                  | No       | `false`     |
-| `maxLength`       | `number`                                | The maximum character length allowed for the question text.                 | No       | `undefined` |
+| `disabled`        | `boolean`                               |                                                                             | No       | `false`     |
+| `maxLength`       | `number`                                |                                                                             | No       | `undefined` |
 | `maxAnswerLength` | `number`                                | The maximum character length allowed for each answer text.                  | No       | `undefined` |
 
 ## RadioGroup
@@ -1163,10 +1165,10 @@ A form element that displays a group of radio buttons, allowing the user to sele
 
 | Name                | Type                                                                 | Description                                                                                                | Required | Default |
 | :------------------ | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :------ |
-| `label`             | `string`                                                             | The text label displayed above the radio group.                                                            | Yes      |         |
+| `label`             | `string`                                                             |                                                                                                            | Yes      |         |
 | `options`           | `Array<{label: string, value: any, description?: string}>`           | An array of objects defining each radio button. Each object needs `label` and `value`. `description` is optional. | Yes      | `[]`    |
-| `description`       | `string`                                                             | Optional helper text displayed below the radio group.                                                      | No       | `''`    |
-| `required`          | `boolean`                                                            | Whether the field must have a selection.                                                                   | No       | `false` |
+| `description`       | `string`                                                             |                                                                                                            | No       | `''`    |
+| `required`          | `boolean`                                                            |                                                                                                            | No       | `false` |
 | `initialValue`      | `string`                                                             | The initial value/selection for the radio group.                                                           | No       | `''`    |
 | `variant`           | `'outlined' \| 'filled' \| 'standard' \| 'horizontal' \| 'vertical'` | The visual style variant.                                                                                  | No       |         |
 | `order`             | `number`                                                             | Optional number to prefix the label for ordering.                                                          | No       |         |
@@ -1179,16 +1181,16 @@ Renders a group of radio buttons, visually styled using circular icons, allowing
 
 | Name              | Type                                                                 | Description                                                                                                | Required | Default     |
 | :---------------- | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :---------- |
-| `label`           | `string`                                                             | The main label displayed above the radio group.                                                            | Yes      |             |
+| `label`           | `string`                                                             |                                                                                                            | Yes      |             |
 | `options`         | `Array<{ value: string, label?: string, disable?: boolean }>`        | An array of objects defining each radio option. `value` is required, `label` and `disable` are optional. | Yes      | `[]`        |
 | `variant`         | `'standard' \| 'outlined' \| 'filled' \| string`                     | The visual style variant of the form control.                                                              | No       | `'standard'`|
-| `margin`          | `'normal' \| 'dense' \| 'none' \| string`                            | Defines the margin spacing for the form control.                                                           | No       | `'normal'`  |
-| `fullWidth`       | `boolean`                                                            | If `true`, the form control will occupy the full width of its container.                                   | No       | `false`     |
-| `disabled`        | `boolean`                                                            | If `true`, the entire radio group will be disabled. Can also be set via the top-level `disabled` prop.   | No       | `false`     |
-| `required`        | `boolean`                                                            | If `true`, marks the field as required (e.g., adds an asterisk to the label).                              | No       | `false`     |
+| `margin`          | `'normal' \| 'dense' \| 'none' \| string`                            |                                                                                                            | No       | `'normal'`  |
+| `fullWidth`       | `boolean`                                                            |                                                                                                            | No       | `false`     |
+| `disabled`        | `boolean`                                                            |                                                                                                            | No       | `false`     |
+| `required`        | `boolean`                                                            |                                                                                                            | No       | `false`     |
 | `hasFormOrder`    | `boolean`                                                            | If `true`, prepends the `order` number to the `label`.                                                     | No       | `false`     |
 | `order`           | `number`                                                             | The numerical order to display before the label when `hasFormOrder` is `true`.                             | No       |             |
-| `paddingBottom`   | `string`                                                             | Adds padding to the bottom of the form control.                                                            | No       |             |
+| `paddingBottom`   | `string`                                                             |                                                                                                            | No       |             |
 
 ## Range
 
@@ -1198,12 +1200,12 @@ A form element that renders a dual-handle slider, allowing users to select a ran
 
 | Name          | Type                                                     | Description                                                                                                | Required | Default     |
 |---------------|----------------------------------------------------------|------------------------------------------------------------------------------------------------------------|----------|-------------|
-| `label`       | `string`                                                 | The label text for the form field.                                                                         | No       |             |
-| `description` | `string`                                                 | Additional descriptive text displayed below the input.                                                     | No       |             |
-| `required`    | `boolean`                                                | Whether the field is required. Adds a visual indicator to the label.                                       | No       | `false`     |
-| `fullWidth`   | `boolean`                                                | If `true`, the component takes up the full width of its container.                                         | No       | `false`     |
-| `margin`      | `'none' \| 'dense' \| 'normal'`                        | Controls the margin spacing around the component.                                                          | No       | `'normal'`  |
-| `paddingBottom`| `'none' \| 'dense' \| 'normal'`                         | Controls the bottom padding of the form control wrapper.                                                   | No       |             |
+| `label`       | `string`                                                 |                                                                                                            | No       |             |
+| `description` | `string`                                                 |                                                                                                            | No       |             |
+| `required`    | `boolean`                                                |                                                                                                            | No       | `false`     |
+| `fullWidth`   | `boolean`                                                |                                                                                                            | No       | `false`     |
+| `margin`      | `'none' \| 'dense' \| 'normal'`                        |                                                                                                            | No       | `'normal'`  |
+| `paddingBottom`| `'none' \| 'dense' \| 'normal'`                         |                                                                                                            | No       |             |
 | `variant`     | `'standard' \| 'outlined' \| 'filled'`                 | The visual style variant of the form control.                                                              | No       | `'standard'`|
 | `step`        | `number`                                                 | The granularity that the slider can step through values.                                                   | Yes      |             |
 | `min`         | `object { label: string, name: string, value: number }`  | Config for the minimum value handle. `name` is the formik field name, `value` is the slider minimum limit. | Yes      |             |
@@ -1218,7 +1220,7 @@ This element renders a button used within a search or filter form. When clicked,
 | Name           | Type     | Description                                                                 | Required | Default                           |
 | -------------- | -------- | --------------------------------------------------------------------------- | -------- | --------------------------------- |
 | `targetFields` | `string[]` | An array of field names within the form that this component should reset. | No       | `['sort', 'when', 'category_id']` |
-| `label`        | `string` | The text label displayed on the reset button.                               | No       | `'reset'`                         |
+| `label`        | `string` |                                                                             | No       | `'reset'`                         |
 | `title`        | `string` | A title associated with the element (specific usage may vary).              | No       | `'filter'`                        |
 | `align`        | `string` | Alignment setting (specific usage may vary).                                | No       | `'right'`                         |
 | `variant`      | `string` | Controls the visual style or variant of the form control wrapper.           | No       | `'standard'`                      |
@@ -1243,10 +1245,10 @@ A form element intended for search input fields. Currently, this component displ
 
 | Name             | Type      | Description                                                     | Required | Default    |
 | :--------------- | :-------- | :-------------------------------------------------------------- | :------- | :--------- |
-| `placeholder`      | `string`  | Placeholder text displayed in the search input when empty.      | No       |            |
+| `placeholder`      | `string`  |                                                                 | No       |            |
 | `size`             | `string`  | Defines the size of the input field (e.g., 'small', 'medium').  | No       |            |
-| `margin`           | `string`  | Specifies the margin around the form control ('none', 'normal', 'dense'). | No       | `'normal'` |
-| `fullWidth`        | `boolean` | If `true`, the input field will occupy the full available width.  | No       | `true`     |
+| `margin`           | `string`  |                                                                           | No       | `'normal'` |
+| `fullWidth`        | `boolean` |                                                                           | No       | `true`     |
 | `className`        | `string`  | An optional CSS class name to apply to the component for styling. | No       |            |
 
 ## Select
@@ -1257,13 +1259,13 @@ The `Select` form element provides a dropdown or list interface for users to cho
 
 | Name                 | Type                                                                                             | Description                                                                 | Required | Default     |
 | :------------------- | :----------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :---------- |
-| `label`              | `string`                                                                                         | The text label displayed for the select field.                              | Yes      |             |
+| `label`              | `string`                                                                                         |                                                                             | Yes      |             |
 | `options`            | `OptionsItemShape[]`                                                                             | An array of available options for the select field.                         | Yes      | `[]`        |
-| `fullWidth`          | `boolean`                                                                                        | If `true`, the select field takes up the full width of its container.       | No       | `false`     |
-| `margin`             | `'none' \| 'dense' \| 'normal'`                                                                  | Defines the margin spacing around the select field.                         | No       | `'normal'`  |
-| `required`           | `boolean`                                                                                        | If `true`, the field must have a value.                                     | No       | `false`     |
+| `fullWidth`          | `boolean`                                                                                        |                                                                             | No       | `false`     |
+| `margin`             | `'none' \| 'dense' \| 'normal'`                                                                  |                                                                             | No       | `'normal'`  |
+| `required`           | `boolean`                                                                                        |                                                                             | No       | `false`     |
 | `variant`            | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'`                    | The visual style variant of the select field.                               | No       | `'standard'`|
-| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                                                  | Defines the bottom padding spacing for the select field.                    | No       | `'normal'`  |
+| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                                                  |                                                                             | No       | `'normal'`  |
 | `suboptions`         | `SubOptionsShape`                                                                                | Additional options grouped under main options (e.g., for dependent selects). | No       | `undefined` |
 | `multiple`           | `boolean`                                                                                        | If `true`, allows selecting multiple options.                               | No       | `false`     |
 | `disable_custom`     | `boolean`                                                                                        | If `true`, disables the ability to add custom options (if applicable).      | No       | `false`     |
@@ -1271,11 +1273,11 @@ The `Select` form element provides a dropdown or list interface for users to cho
 | `enable_search`      | `boolean`                                                                                        | If `true`, enables a search input within the options list.                  | No       | `false`     |
 | `disableClearable`   | `boolean`                                                                                        | If `true`, prevents the user from clearing the selected value.              | No       | `false`     |
 | `choice_type`        | `string`                                                                                         | Specifies the type of choice control (e.g., 'radio', 'checkbox').           | No       | `undefined` |
-| `placeholder`        | `string`                                                                                         | Placeholder text displayed when no value is selected.                       | No       | `'select'`  |
+| `placeholder`        | `string`                                                                                         |                                                                             | No       | `'select'`  |
 | `showWithoutOptions` | `boolean`                                                                                        | If `true`, renders the field even if the `options` array is empty.          | No       | `false`     |
 | `useSectionList`     | `boolean`                                                                                        | If `true`, uses a SectionList to display options (requires specific data structure). | No       | `false`     |
-| `disabled`           | `boolean`                                                                                        | If `true`, the select field is disabled and cannot be interacted with.      | No       | `false`     |
-| `description`        | `string`                                                                                         | Additional text displayed below the select field for guidance.              | No       | `undefined` |
+| `disabled`           | `boolean`                                                                                        |                                                                             | No       | `false`     |
+| `description`        | `string`                                                                                         |                                                                             | No       | `undefined` |
 | `resetValue`         | `boolean`                                                                                        | If `true`, indicates the value should be reset under certain conditions.    | No       | `false`     |
 
 ## SelectSubForm
@@ -1288,12 +1290,12 @@ The component accepts standard `FormFieldProps` (`name`, `disabled`, `formik`) a
 
 | Name               | Type                                | Description                                                                                                | Required | Default      |
 | :----------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :----------- |
-| `fullWidth`        | `boolean`                           | If true, the element takes the full width of its container.                                                | No       | `false`      |
-| `margin`           | `'dense' \| 'normal' \| 'none'`     | Margin around the control.                                                                                 | No       | `'normal'`   |
-| `required`         | `boolean`                           | Marks the field as required (visual indicator might depend on `FormControl`).                              | No       | `false`      |
+| `fullWidth`        | `boolean`                           |                                                                                                            | No       | `false`      |
+| `margin`           | `'dense' \| 'normal' \| 'none'`     |                                                                                                            | No       | `'normal'`   |
+| `required`         | `boolean`                           |                                                                                                            | No       | `false`      |
 | `variant`          | `'standard' \| 'outlined' \| ...` | Visual style variant of the control.                                                                       | No       | `'standard'` |
-| `paddingBottom`    | `'dense' \| 'normal' \| 'none'`     | Padding below the control.                                                                                 | No       | `undefined`  |
-| `label`            | `string`                            | Label for the form element (may be used by `FormControl`).                                                 | No       | `''`         |
+| `paddingBottom`    | `'dense' \| 'normal' \| 'none'`     |                                                                                                            | No       | `undefined`  |
+| `label`            | `string`                            |                                                                                                            | No       | `''`         |
 | `options`          | `OptionsItemShape[]`                | An array of primary options to be displayed in the sub-form.                                               | Yes      | `[]`         |
 | `suboptions`       | `SubOptionsShape`                   | An object containing secondary options, often dependent on the primary selection.                          | No       | `undefined`  |
 | `initialValue`     | `any`                               | The initial value of the form field.                                                                       | No       | `undefined`  |
@@ -1303,7 +1305,7 @@ The component accepts standard `FormFieldProps` (`name`, `disabled`, `formik`) a
 | `enable_search`    | `boolean`                           | If true, enables a search input within the sub-form.                                                       | No       | `false`      |
 | `disable_uncheck`  | `boolean`                           | If true, prevents users from deselecting an already selected option.                                       | No       | `false`      |
 | `choice_type`      | `string`                            | Defines the selection mechanism in the sub-form (e.g., 'radio', 'checkbox').                               | No       | `undefined`  |
-| `placeholder`      | `string`                            | Placeholder text, potentially shown when no value is selected or in the sub-form's search.                 | No       | `undefined`  |
+| `placeholder`      | `string`                            |                                                                                                            | No       | `undefined`  |
 | `showWithoutOptions`| `boolean`                           | If true, the element is rendered even when no `options` are provided.                                      | No       | `false`      |
 | `useSectionList`   | `boolean`                           | If true, the sub-form uses a `SectionList` for displaying options, suitable for grouped data.              | No       | `false`      |
 | `icon`             | `string`                            | The name of the Lineficon icon to display next to the selected value.                                      | Yes      | `''`         |
@@ -1316,12 +1318,12 @@ The `SFAutocomplete` element provides an autocomplete input field, allowing user
 
 | Name              | Type                     | Description                                                                          | Required | Default    |
 | :---------------- | :----------------------- | :----------------------------------------------------------------------------------- | :------- | :--------- |
-| `fullWidth`       | `boolean`                | If true, the component takes up the full width.                                      | No       | `false`    |
-| `margin`          | `normal`, `dense`, `none` | Margin size.                                                                         | No       | `normal`   |
-| `required`        | `boolean`                | Whether the field is required.                                                       | No       | `false`    |
+| `fullWidth`       | `boolean`                |                                                                                      | No       | `false`    |
+| `margin`          | `normal`, `dense`, `none` |                                                                                      | No       | `normal`   |
+| `required`        | `boolean`                |                                                                                      | No       | `false`    |
 | `variant`         | `standard`, `outlined`   | Visual style variant.                                                                | No       | `standard` |
-| `paddingBottom`   | `normal`, `dense`, `none` | Bottom padding size.                                                                 | No       | `normal`   |
-| `label`           | `string`                 | The label text for the form element.                                                 | No       | `''`       |
+| `paddingBottom`   | `normal`, `dense`, `none` |                                                                                      | No       | `normal`   |
+| `label`           | `string`                 |                                                                                      | No       | `''`       |
 | `multiple`        | `boolean`                | Allow multiple selections.                                                           | No       | `false`    |
 | `disable_uncheck` | `boolean`                | Prevent unselecting the current value (makes selection required if a value exists). | No       | `false`    |
 | `search_endpoint` | `string`                 | API endpoint URL to fetch options dynamically.                                       | No       | `undefined`|
@@ -1331,7 +1333,7 @@ The `SFAutocomplete` element provides an autocomplete input field, allowing user
 | `useOptionContext`| `boolean`                | Whether to use a shared option context for managing selected options.                | No       | `false`    |
 | `option_default`  | `Array<any>`             | Default options to use if `useOptionContext` is true and no context value exists.    | No       | `[]`       |
 | `canLoadMore`     | `boolean`                | Whether more options can be loaded (pagination) from the search endpoint.            | No       | `false`    |
-| `placeholder`     | `string`                 | Placeholder text when no value is selected.                                          | No       | `undefined`|
+| `placeholder`     | `string`                 |                                                                                      | No       | `undefined`|
 | `options`         | `OptionsItemShape[]`     | Predefined options list (used if `search_endpoint` is not provided).                 | No       | `[]`       |
 
 ## SFDate
@@ -1342,14 +1344,14 @@ A form element that allows users to select a date, time, or both using a native 
 
 | Name               | Type                         | Description                                                                              | Required | Default             |
 |--------------------|------------------------------|------------------------------------------------------------------------------------------|----------|---------------------|
-| `fullWidth`        | `boolean`                    | Controls if the element takes the full width.                                            | No       | `false`             |
-| `margin`           | `'none' \| 'dense' \| 'normal'` | Margin spacing around the element.                                                       | No       | `'normal'`          |
-| `paddingBottom`    | `'none' \| 'dense' \| 'normal'` | Bottom padding below the element.                                                        | No       | `'none'`            |
+| `fullWidth`        | `boolean`                    |                                                                                          | No       | `false`             |
+| `margin`           | `'none' \| 'dense' \| 'normal'` |                                                                                          | No       | `'normal'`          |
+| `paddingBottom`    | `'none' \| 'dense' \| 'normal'` |                                                                                          | No       | `'none'`            |
 | `variant`          | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input field.                                             | No       | `'standard'`        |
 | `time_zone_gmt`    | `string`                     | The GMT timezone string (e.g., 'Asia/Ho_Chi_Minh') for date calculations.                | No       | `undefined`         |
-| `label`            | `string`                     | The label text displayed for the field.                                                  | No       | `'close_time'`      |
-| `placeholder`      | `string`                     | Placeholder text shown when no value is selected.                                        | No       | `undefined`         |
-| `required`         | `boolean`                    | Marks the field as mandatory.                                                            | No       | `false`             |
+| `label`            | `string`                     |                                                                                          | No       | `'close_time'`      |
+| `placeholder`      | `string`                     |                                                                                          | No       | `undefined`         |
+| `required`         | `boolean`                    |                                                                                          | No       | `false`             |
 | `editable`         | `boolean`                    | If `false`, the text input part is not directly editable (picker still works).           | No       | `true`              |
 | `minDate`          | `string`                     | The minimum selectable date/time (ISO 8601 format or format specified by `momentResultFormat`). | No       | `undefined`         |
 | `maxDate`          | `string`                     | The maximum selectable date/time (ISO 8601 format or format specified by `momentResultFormat`). | No       | `undefined`         |
@@ -1369,15 +1371,15 @@ A form input element that allows users to select a date, time, or both using a n
 
 | Name             | Type                      | Description                                                                                             | Required | Default                  |
 | :--------------- | :------------------------ | :------------------------------------------------------------------------------------------------------ | :------- | :----------------------- |
-| `label`          | `string`                  | The label text for the input field (can be a translation key).                                          | Yes      | `'close_time'`           |
-| `placeholder`    | `string`                  | Placeholder text shown when the input is empty.                                                         | Yes      | -                        |
+| `label`          | `string`                  |                                                                                                         | Yes      | `'close_time'`           |
+| `placeholder`    | `string`                  |                                                                                                         | Yes      | -                        |
 | `datePickerMode` | `'date'\|'time'\|'datetime'` | Determines if the picker selects date, time, or both.                                           | Yes      | `'datetime'`             |
 | `displayFormat`  | `string`                  | Moment.js format for displaying the selected date/time in the input.                                    | Yes      | `'DD/MM/YYYY - HH:mm'`   |
-| `required`       | `boolean`                 | Marks the field as required for form validation.                                                        | Yes      | `false`                  |
-| `disabled`       | `boolean`                 | Disables the input field.                                                                               | No       | `false`                  |
+| `required`       | `boolean`                 |                                                                                                         | Yes      | `false`                  |
+| `disabled`       | `boolean`                 |                                                                                                         | No       | `false`                  |
 | `variant`        | `'standard'\|'outlined'\|...` | The visual style variant of the input.                                                                  | Yes      | `'standard'`             |
-| `fullWidth`      | `boolean`                 | If true, the component takes up the full width of its container.                                        | No       | `false`                  |
-| `margin`         | `'none'\|'dense'\|'normal'` | Controls the margin around the component.                                                               | Yes      | `'normal'` (assumed)     |
+| `fullWidth`      | `boolean`                 |                                                                                                         | No       | `false`                  |
+| `margin`         | `'none'\|'dense'\|'normal'` |                                                                                                         | Yes      | `'normal'` (assumed)     |
 | `minDate`        | `string`                  | Minimum selectable date (ISO 8601 format).                                                              | No       | -                        |
 | `maxDate`        | `string`                  | Maximum selectable date (ISO 8601 format).                                                              | No       | -                        |
 | `time_zone_gmt`  | `string`                  | IANA time zone name (e.g., 'Asia/Saigon') for date calculations. Defaults to device timezone if omitted. | Yes      | Device Timezone          |
@@ -1396,12 +1398,12 @@ This form element renders a button, typically represented by an icon. When press
 
 | Name               | Type                   | Description                                                                 | Required | Default      |
 | :----------------- | :--------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `fullWidth`        | `boolean`              | Determines if the element should occupy the full width of its container.    | No       | `false`      |
+| `fullWidth`        | `boolean`              |                                                                             | No       | `false`      |
 | `variant`          | `keyof typeof Variant` | Specifies the visual style variant (e.g., 'standard', 'outlined').          | No       | `'standard'` |
-| `margin`           | `keyof typeof SizeEnum`  | Sets the margin size around the element.                                    | No       | `undefined`  |
-| `required`         | `boolean`              | Indicates if a selection is required (validation handled in the sub-form).  | No       | `false`      |
-| `paddingBottom`    | `keyof typeof SizeEnum`  | Sets the bottom padding size.                                             | No       | `undefined`  |
-| `label`            | `string`               | Label text (primarily for accessibility or layout context).                 | No       | `''`         |
+| `margin`           | `keyof typeof SizeEnum`  |                                                                             | No       | `undefined`  |
+| `required`         | `boolean`              |                                                                             | No       | `false`      |
+| `paddingBottom`    | `keyof typeof SizeEnum`  |                                                                             | No       | `undefined`  |
+| `label`            | `string`               |                                                                             | No       | `''`         |
 | `suboptions`       | `SubOptionsShape`      | Configuration for sub-options within the filter form.                       | No       | `undefined`  |
 | `initialValue`     | `OptionsItemShape[]`   | Default selected values for the filter options.                             | No       | `undefined`  |
 | `disable_custom`   | `boolean`              | If `true`, disables custom value input in the filter form.                  | No       | `false`      |
@@ -1411,7 +1413,7 @@ This form element renders a button, typically represented by an icon. When press
 | `enable_search`    | `boolean`              | If `true`, enables a search input within the filter form options.           | No       | `false`      |
 | `disable_uncheck`  | `boolean`              | If `true`, prevents users from unselecting an already selected option.      | No       | `false`      |
 | `choice_type`      | `string`               | Defines the selection mechanism (e.g., 'radio', 'checkbox').                | No       | `undefined`  |
-| `placeholder`      | `string`               | Placeholder text (likely used within the filter form, not the button).      | No       | `''`         |
+| `placeholder`      | `string`               |                                                                             | No       | `''`         |
 | `showWithoutOptions`| `boolean`              | If `true`, the button is shown even when there are no `config.options`.     | No       | `false`      |
 | `useSectionList`   | `boolean`              | If `true`, uses a `SectionList` component to render options in the filter form. | No       | `false`      |
 
@@ -1423,11 +1425,11 @@ Renders a button that opens a bottom sheet containing a sub-form, typically used
 
 | Name               | Type                  | Description                                                                 | Required   | Default     |
 | :----------------- | :-------------------- | :-------------------------------------------------------------------------- | :--------- | :---------- |
-| `fullWidth`        | `boolean`             | Determines if the control takes the full available width.                   | No         | `false`     |
-| `margin`           | `normal` \| `dense` \| `none` | Sets the outer margin of the control.                                     | No         | `normal`    |
+| `fullWidth`        | `boolean`             |                                                                             | No         | `false`     |
+| `margin`           | `normal` \| `dense` \| `none` |                                                                             | No         | `normal`    |
 | `variant`          | `standard` \| `outlined` \| `filled` | The visual style variant of the control.                                  | No         | `standard`  |
-| `paddingBottom`    | `normal` \| `dense` \| `none` | Sets the bottom padding of the control.                                   | No         | `normal`    |
-| `label`            | `string`              | Label for the form control (not directly displayed on the button).          | No         | `undefined` |
+| `paddingBottom`    | `normal` \| `dense` \| `none` |                                                                             | No         | `normal`    |
+| `label`            | `string`              |                                                                             | No         | `undefined` |
 | `suboptions`       | `SubOptionsShape`     | Configuration for the sub-form displayed in the bottom sheet.             | Yes        | `undefined` |
 | `initialValue`     | `OptionsItemShape[]`  | Initial values for the filter options within the sub-form.                | No         | `undefined` |
 | `disable_custom`   | `boolean`             | Disables custom options in the sub-form.                                  | No         | `false`     |
@@ -1437,7 +1439,7 @@ Renders a button that opens a bottom sheet containing a sub-form, typically used
 | `enable_search`    | `boolean`             | Enables a search input within the sub-form.                               | No         | `false`     |
 | `disable_uncheck`  | `boolean`             | Prevents unselecting options once selected in the sub-form.               | No         | `false`     |
 | `choice_type`      | `string`              | Specifies the type of choice input used in the sub-form (e.g., 'checkbox'). | No         | `undefined` |
-| `placeholder`      | `string`              | Placeholder text (context might vary depending on sub-form implementation). | No         | `undefined` |
+| `placeholder`      | `string`              |                                                                             | No         | `undefined` |
 | `showWithoutOptions`| `boolean`             | Determines if the filter button should be shown even when no options exist. | No         | `false`     |
 | `useSectionList`   | `boolean`             | Uses a `SectionList` for displaying options in the sub-form if true.      | No         | `false`     |
 
@@ -1449,7 +1451,7 @@ The `SFFilterPrice` element provides a form input for selecting a price range (m
 
 | Name                 | Type                     | Description                                                          | Required | Default        |
 | :------------------- | :----------------------- | :------------------------------------------------------------------- | :------- | :------------- |
-| `label`              | `string`                 | The main label displayed for the filter element.                     | Yes      | -              |
+| `label`              | `string`                 |                                                                      | Yes      | -              |
 | `fromFieldName`      | `string`                 | The formik field name for the minimum price value.                   | No       | `'price_from'` |
 | `toFieldName`        | `string`                 | The formik field name for the maximum price value.                   | No       | `'price_to'`   |
 | `fromFieldLabel`     | `string`                 | Label for the minimum price input in the bottom sheet.               | No       | -              |
@@ -1457,10 +1459,10 @@ The `SFFilterPrice` element provides a form input for selecting a price range (m
 | `fromFieldPlaceholder` | `string`                 | Placeholder text for the minimum price input in the bottom sheet.    | No       | -              |
 | `toFieldPlaceholder` | `string`                 | Placeholder text for the maximum price input in the bottom sheet.    | No       | -              |
 | `variant`            | `string`                 | Specifies the visual style ('standard', 'standard-outlined', etc.).  | No       | `'standard'`   |
-| `fullWidth`          | `boolean`                | Controls if the element takes the full available width.              | No       | `false`        |
-| `margin`             | `string`                 | Sets the margin around the element ('none', 'dense', 'normal').      | No       | -              |
-| `paddingBottom`      | `string`                 | Sets the padding below the element ('none', 'dense', 'normal').      | No       | -              |
-| `required`           | `boolean`                | Marks the field as required.                                         | No       | `false`        |
+| `fullWidth`          | `boolean`                |                                                                      | No       | `false`        |
+| `margin`             | `string`                 |                                                                      | No       | -              |
+| `paddingBottom`      | `string`                 |                                                                      | No       | -              |
+| `required`           | `boolean`                |                                                                      | No       | `false`        |
 | `enable_search`      | `boolean`                | Configuration passed to the bottom sheet component (FilterPriceField). | No       | `false`        |
 | `findReplace`        | `any`                    | Configuration passed to the bottom sheet component (FilterPriceField). | No       | -              |
 
@@ -1473,7 +1475,7 @@ A form element that renders its child elements within a horizontal ScrollView. I
 | Name          | Type                                | Description                                                                          | Required | Default         |
 | ------------- | ----------------------------------- | ------------------------------------------------------------------------------------ | -------- | --------------- |
 | `elements`      | `Record<string, ElementConfig>` | Defines the child form elements to render within the scroll view.                  | Yes      | N/A             |
-| `paddingBottom` | `string`                            | Sets the bottom padding of the scroll view. If set to 'none', padding is 0. | No       | `paddingBase` |
+| `paddingBottom` | `string`                            |                                                                             | No       | `paddingBase` |
 
 ## SFSearchBox
 
@@ -1485,22 +1487,22 @@ The component accepts standard `FormFieldProps` (`name`, `config`, `disabled`, `
 
 | Name             | Type                                                          | Description                                       | Required | Default         |
 | :--------------- | :------------------------------------------------------------ | :------------------------------------------------ | :------- | :-------------- |
-| `placeholder`    | `string`                                                      | Placeholder text for the input.                   | No       | `undefined`     |
+| `placeholder`    | `string`                                                      |                                                   | No       | `undefined`     |
 | `clearButtonMode`| `'never' \| 'while-editing' \| 'unless-editing' \| 'always'`  | How the clear button behaves (iOS only).          | No       | `undefined`     |
 | `editable`       | `boolean`                                                     | If the input is editable.                         | No       | `true`          |
-| `required`       | `boolean`                                                     | If the field is required.                         | No       | `false`         |
+| `required`       | `boolean`                                                     |                                                   | No       | `false`         |
 | `variant`        | `keyof typeof Variant`                                        | Visual style variant.                             | No       | `undefined`     |
 | `multipleline`   | `boolean`                                                     | If the input allows multiple lines.               | No       | `false`         |
 | `showSearchIcon` | `boolean`                                                     | Whether to show the search icon.                  | No       | `true`          |
-| `fullWidth`      | `boolean`                                                     | If the component should take full width.          | No       | `false`         |
-| `margin`         | `keyof typeof SizeEnum`                                       | Margin size.                                      | No       | `undefined`     |
-| `paddingBottom`  | `keyof typeof SizeEnum`                                       | Bottom padding size.                              | No       | `undefined`     |
-| `minHeight`      | `number`                                                      | Minimum height of the input.                      | No       | `undefined`     |
-| `maxLength`      | `number`                                                      | Maximum input length.                             | No       | `undefined`     |
+| `fullWidth`      | `boolean`                                                     |                                                   | No       | `false`         |
+| `margin`         | `keyof typeof SizeEnum`                                       |                                                   | No       | `undefined`     |
+| `paddingBottom`  | `keyof typeof SizeEnum`                                       |                                                   | No       | `undefined`     |
+| `minHeight`      | `number`                                                      |                                                   | No       | `undefined`     |
+| `maxLength`      | `number`                                                      |                                                   | No       | `undefined`     |
 | `autoCorrect`    | `boolean`                                                     | Enable/disable auto-correction.                   | No       | `false`         |
 | `autoCapitalize` | `'none' \| 'sentences' \| 'words' \| 'characters'`            | Auto-capitalization behavior.                     | No       | `'none'`        |
-| `autoFocus`      | `boolean`                                                     | If the input should auto-focus on mount.          | No       | `true` if empty |
-| `description`    | `string`                                                      | Description text (not directly rendered by default). | No       | `undefined`     |
+| `autoFocus`      | `boolean`                                                     |                                                   | No       | `true` if empty |
+| `description`    | `string`                                                      |                                                      | No       | `undefined`     |
 
 ## SFSelect
 
@@ -1510,13 +1512,13 @@ The `SFSelect` element provides a dropdown-like selection interface, typically o
 
 | Name                 | Type                               | Description                                                                 | Required | Default     |
 | :------------------- | :--------------------------------- | :-------------------------------------------------------------------------- | :------- | :---------- |
-| `label`              | `string`                           | The label displayed for the form element.                                   | Yes      | `undefined` |
+| `label`              | `string`                           |                                                                             | Yes      | `undefined` |
 | `options`            | `OptionsItemShape[]`               | The list of selectable options.                                             | Yes      | `[]`        |
-| `fullWidth`          | `boolean`                          | If true, the component takes up the full width.                             | No       | `false`     |
-| `margin`             | `'dense' \| 'normal' \| 'none'`    | Margin size.                                                                | No       | `'normal'`  |
-| `required`           | `boolean`                          | Whether the field is required.                                              | No       | `false`     |
+| `fullWidth`          | `boolean`                          |                                                                             | No       | `false`     |
+| `margin`             | `'dense' \| 'normal' \| 'none'`    |                                                                             | No       | `'normal'`  |
+| `required`           | `boolean`                          |                                                                             | No       | `false`     |
 | `variant`            | `'standard' \| 'outlined' \| etc.` | Visual style variant.                                                       | No       | `'standard'`|
-| `paddingBottom`      | `'dense' \| 'normal' \| 'none'`    | Bottom padding size.                                                        | No       | `'normal'`  |
+| `paddingBottom`      | `'dense' \| 'normal' \| 'none'`    |                                                                             | No       | `'normal'`  |
 | `suboptions`         | `SubOptionsShape`                  | Additional options grouped under main options.                              | No       | `undefined` |
 | `initialValue`       | `OptionsItemShape[]`               | Initial selected value(s).                                                  | No       | `undefined` |
 | `disable_custom`     | `boolean`                          | Disables custom privacy options if applicable.                              | No       | `false`     |
@@ -1525,7 +1527,7 @@ The `SFSelect` element provides a dropdown-like selection interface, typically o
 | `enable_search`      | `boolean`                          | Enables searching within the options list in the bottom sheet.              | No       | `false`     |
 | `disableClearable`   | `boolean`                          | Prevents clearing/unselecting the chosen option(s).                         | No       | `false`     |
 | `choice_type`        | `string`                           | Type of choice mechanism (used internally, e.g., 'radio', 'checkbox').      | No       | `undefined` |
-| `placeholder`        | `string`                           | Placeholder text displayed when no value is selected.                       | No       | `undefined` |
+| `placeholder`        | `string`                           |                                                                             | No       | `undefined` |
 | `showWithoutOptions` | `boolean`                          | Renders the component even if no `options` are provided.                    | No       | `false`     |
 | `useSectionList`     | `boolean`                          | Uses a SectionList for displaying options in the bottom sheet if true.      | No       | `false`     |
 | `autoSubmit`         | `boolean`                          | Submits the form automatically on value change.                             | No       | `false`     |
@@ -1541,15 +1543,15 @@ A form element that renders a switch (toggle) control. It allows users to select
 
 | Name           | Type                               | Description                                                                 | Required | Default           |
 | -------------- | ---------------------------------- | --------------------------------------------------------------------------- | -------- | ----------------- |
-| `label`          | string                             | The text label displayed next to the switch.                                | Yes      |                   |
-| `fullWidth`      | boolean                            | If `true`, the component takes up the full width of its container.          | No       | `false`           |
-| `margin`         | 'dense' \| 'normal' \| 'none'      | Defines the margin spacing around the component.                            | No       | `normal`          |
-| `required`       | boolean                            | If `true`, marks the field as required.                                     | No       | `false`           |
+| `label`          | string                             |                                                                             | Yes      |                   |
+| `fullWidth`      | boolean                            |                                                                             | No       | `false`           |
+| `margin`         | 'dense' \| 'normal' \| 'none'      |                                                                             | No       | `normal`          |
+| `required`       | boolean                            |                                                                             | No       | `false`           |
 | `variant`        | 'standard' \| 'outlined' \| 'filled' \| 'standard-inlined' | The visual style of the form control. (Note: Hardcoded to 'standard-inlined' in the component implementation) | No       | `'standard-inlined'` |
-| `paddingBottom`  | 'dense' \| 'normal' \| 'none'      | Defines the bottom padding spacing for the component.                       | No       | `normal`          |
+| `paddingBottom`  | 'dense' \| 'normal' \| 'none'      |                                                                             | No       | `normal`          |
 | `checkedValue`   | boolean \| number                  | The value assigned to the field when the switch is checked (on).            | No       | `1`               |
 | `uncheckedValue` | boolean \| number                  | The value assigned to the field when the switch is unchecked (off).         | No       | `0`               |
-| `description`    | string                             | Additional text displayed below the switch for context or instructions.     | No       | `''`              |
+| `description`    | string                             |                                                                             | No       | `''`              |
 
 ## SFTabSelect
 
@@ -1572,23 +1574,23 @@ The `SFText` element renders a standard text input field within a form. It suppo
 
 | Name                 | Type                                                     | Description                                                                 | Required | Default         |
 | -------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------- | -------- | --------------- |
-| `label`              | `string`                                                 | The label displayed above the input.                                        | No       | `undefined`     |
-| `placeholder`        | `string`                                                 | Placeholder text shown when the input is empty.                             | No       | `undefined`     |
-| `description`        | `string`                                                 | Help text displayed below the input.                                        | No       | `undefined`     |
+| `label`              | `string`                                                 |                                                                             | No       | `undefined`     |
+| `placeholder`        | `string`                                                 |                                                                             | No       | `undefined`     |
+| `description`        | `string`                                                 |                                                                             | No       | `undefined`     |
 | `contextualDescription` | `string`                                              | Additional description text.                                                | No       | `undefined`     |
 | `variant`            | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'`, `'livestream'` | Visual style of the input.                                                  | No       | `'standard'`    |
-| `fullWidth`          | `boolean`                                                | Makes the input take the full width.                                        | No       | `false`         |
-| `margin`             | `'none'`, `'dense'`, `'normal'`                          | Controls the margin around the element.                                     | No       | `'normal'`      |
-| `paddingBottom`      | `'none'`, `'dense'`, `'normal'`                          | Controls the bottom padding.                                                | No       | `'normal'`      |
-| `required`           | `boolean`                                                | Marks the field as required (visual indicator).                             | No       | `false`         |
-| `disabled`           | `boolean`                                                | Disables the input field (passed directly, not in `config`).                | No       | `false`         |
+| `fullWidth`          | `boolean`                                                |                                                                             | No       | `false`         |
+| `margin`             | `'none'`, `'dense'`, `'normal'`                          |                                                                             | No       | `'normal'`      |
+| `paddingBottom`      | `'none'`, `'dense'`, `'normal'`                          |                                                                             | No       | `'normal'`      |
+| `required`           | `boolean`                                                |                                                                             | No       | `false`         |
+| `disabled`           | `boolean`                                                |                                                                             | No       | `false`         |
 | `editable`           | `boolean`                                                | If `false`, the text is not editable.                                       | No       | `true`          |
 | `multiline`          | `boolean`                                                | Allows multiple lines of text input.                                        | No       | `false`         |
-| `minHeight`          | `number`                                                 | Minimum height for the input, useful for multiline.                         | No       | `undefined`     |
-| `maxLength`          | `number`                                                 | Maximum number of characters allowed.                                       | No       | `undefined`     |
+| `minHeight`          | `number`                                                 |                                                                             | No       | `undefined`     |
+| `maxLength`          | `number`                                                 |                                                                             | No       | `undefined`     |
 | `autoCorrect`        | `boolean`                                                | Enables auto-correction.                                                    | No       | `true`          |
 | `autoCapitalize`     | `'none'`, `'sentences'`, `'words'`, `'characters'`       | Controls automatic capitalization.                                          | No       | `'sentences'`   |
-| `autoFocus`          | `boolean`                                                | Automatically focuses the input on mount.                                   | No       | `false`         |
+| `autoFocus`          | `boolean`                                                |                                                                             | No       | `false`         |
 | `clearButtonMode`    | `'never'`, `'while-editing'`, `'unless-editing'`, `'always'` | Controls the visibility of the clear button (iOS only).                     | No       | `'never'`       |
 | `validateAction`     | `string`                                                 | Action name for backend validation on blur.                                 | No       | `undefined`     |
 | `findReplace`        | `{ find: string, replace: string }`                      | Defines find/replace rules for generating a slug displayed below the input. | No       | `undefined`     |
@@ -1606,15 +1608,15 @@ A form element that allows users to select one or multiple friends from a search
 
 | Name             | Type                                  | Description                                       | Required | Default                          |
 | :--------------- | :------------------------------------ | :------------------------------------------------ | :------- | :------------------------------- |
-| `fullWidth`      | `boolean`                             | If `true`, the component takes up the full width. | No       | `false`                          |
-| `margin`         | `'none' \| 'dense' \| 'normal'`       | Defines the margin spacing around the element.    | No       | `'normal'`                       |
-| `required`       | `boolean`                             | If `true`, the field must have a value.           | No       | `false`                          |
+| `fullWidth`      | `boolean`                             |                                                   | No       | `false`                          |
+| `margin`         | `'none' \| 'dense' \| 'normal'`       |                                                   | No       | `'normal'`                       |
+| `required`       | `boolean`                             |                                                   | No       | `false`                          |
 | `variant`        | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input field.      | No       | `'standard'`                     |
-| `paddingBottom`  | `'none' \| 'dense' \| 'normal'`       | Defines the bottom padding spacing.               | No       | `undefined`                      |
-| `label`          | `string`                              | The label text for the form field.                | No       | `''`                             |
+| `paddingBottom`  | `'none' \| 'dense' \| 'normal'`       |                                                   | No       | `undefined`                      |
+| `label`          | `string`                              |                                                   | No       | `''`                             |
 | `initialValue`   | `OptionsItemShape[]`                  | An array of initially selected friend objects.    | No       | `[]`                             |
 | `multiple`       | `boolean`                             | If `true`, allows selecting multiple friends.     | No       | `false`                          |
-| `placeholder`    | `string`                              | Placeholder text for the search input field.      | No       | `'Search friends by their name'` |
+| `placeholder`    | `string`                              |                                                   | No       | `'Search friends by their name'` |
 | `onFocus`        | `(event: any) => void`                | Callback function triggered when the input focuses. | No       | `undefined`                      |
 
 ## SingleUpdateInputField
@@ -1627,7 +1629,7 @@ A form element that currently renders a 'Coming Soon' placeholder. It is intende
 | :--------- | :--------------------------------- | :-------------------------------------------------------------------------- | :------- | :------ |
 | `name`     | `string`                           | The unique identifier for the form field within the form.                   | Yes      |         |
 | `config`   | `object`                           | An object containing configuration properties specific to the form element. | Yes      | `{}`    |
-| `disabled` | `boolean`                          | If `true`, the input field will be disabled and non-interactive.            | No       | `false` |
+| `disabled` | `boolean`                          |                                                                             | No       | `false` |
 | `formik`   | `FormikContextType<any>`           | The Formik context object, providing access to form state and helpers.      | Yes      |         |
 
 ## SingleVideoFile
@@ -1638,11 +1640,11 @@ This form element allows users to select a single video, either by uploading a f
 
 | Name                  | Type                                          | Description                                                                                                | Required | Default        |
 | :-------------------- | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :------------- |
-| `label`               | `string`                                      | The display label for the form field.                                                                      | No       | -              |
-| `required`            | `boolean`                                     | Whether the field is required.                                                                             | No       | `false`        |
-| `fullWidth`           | `boolean`                                     | If `true`, the control stretches to full width.                                                            | No       | `false`        |
-| `margin`              | `'normal' \| 'dense' \| 'none'`               | Controls the margin around the element.                                                                    | No       | `'normal'`     |
-| `paddingBottom`       | `'normal' \| 'dense' \| 'none'`               | Controls the bottom padding of the element.                                                                | No       | `'normal'`     |
+| `label`               | `string`                                      |                                                                                                            | No       | -              |
+| `required`            | `boolean`                                     |                                                                                                            | No       | `false`        |
+| `fullWidth`           | `boolean`                                     |                                                                                                            | No       | `false`        |
+| `margin`              | `'normal' \| 'dense' \| 'none'`               |                                                                                                            | No       | `'normal'`     |
+| `paddingBottom`       | `'normal' \| 'dense' \| 'none'`               |                                                                                                            | No       | `'normal'`     |
 | `variant`             | `'standard' \| 'outlined' \| 'filled'`        | The visual style variant of the form control.                                                              | No       | `'standard'`   |
 | `item_type`           | `string`                                      | Specifies the type of item being uploaded (e.g., 'video').                                                 | Yes      | -              |
 | `upload_url`          | `string`                                      | The endpoint URL for uploading the file.                                                                   | Yes      | -              |
@@ -1661,11 +1663,11 @@ A form element that allows users to select a value from a specified range by sli
 
 | Name           | Type                               | Description                                                               | Required | Default           |
 | :------------- | :--------------------------------- | :------------------------------------------------------------------------ | :------- | :---------------- |
-| `label`        | `string`                           | The text label displayed for the slider.                                  | Yes      |                   |
-| `fullWidth`    | `boolean`                          | If true, the component takes up the full width of its container.          | No       | `false`           |
-| `margin`       | `'none' \| 'dense' \| 'normal'`    | Defines the margin spacing around the control.                            | No       | `'normal'`        |
-| `required`     | `boolean`                          | Marks the field as required, often indicated visually.                    | No       | `false`           |
-| `paddingBottom`| `'none' \| 'dense' \| 'normal'`    | Defines the bottom padding spacing.                                       | No       | `undefined`       |
+| `label`        | `string`                           |                                                                           | Yes      |                   |
+| `fullWidth`    | `boolean`                          |                                                                           | No       | `false`           |
+| `margin`       | `'none' \| 'dense' \| 'normal'`    |                                                                           | No       | `'normal'`        |
+| `required`     | `boolean`                          |                                                                           | No       | `false`           |
+| `paddingBottom`| `'none' \| 'dense' \| 'normal'`    |                                                                           | No       | `undefined`       |
 | `minimumValue` | `number`                           | The minimum value of the slider.                                          | No       | `undefined`       |
 | `maximumValue` | `number`                           | The maximum value of the slider.                                          | No       | `undefined`       |
 | `step`         | `number`                           | The granularity with which the slider can step through values.            | No       | `undefined`       |
@@ -1692,17 +1694,17 @@ This element renders a text input field, often accompanied by an image, designed
 
 | Name                 | Type                                                              | Description                                                                 | Required | Default            |
 | :------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`              | `string`                                                          | The text label displayed for the field.                                     | No       |                    |
-| `placeholder`        | `string`                                                          | Placeholder text shown in the input field when empty.                       | No       |                    |
-| `required`           | `boolean`                                                         | Indicates if the field must be filled out.                                  | No       | `false`            |
-| `disabled`           | `boolean`                                                         | Disables the input field, making it non-interactive.                        | No       | `false`            |
-| `fullWidth`          | `boolean`                                                         | If `true`, the component will expand to take up the full available width.   | No       | `false`            |
-| `margin`             | `'none' \| 'dense' \| 'normal'`                                   | Controls the margin spacing around the component.                           | No       | `undefined`        |
+| `label`              | `string`                                                          |                                                                             | No       |                    |
+| `placeholder`        | `string`                                                          |                                                                             | No       |                    |
+| `required`           | `boolean`                                                         |                                                                             | No       | `false`            |
+| `disabled`           | `boolean`                                                         |                                                                             | No       | `false`            |
+| `fullWidth`          | `boolean`                                                         |                                                                             | No       | `false`            |
+| `margin`             | `'none' \| 'dense' \| 'normal'`                                   |                                                                             | No       | `undefined`        |
 | `variant`            | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'`      | Defines the visual style of the input field.                                | No       | `'standard-inlined'` |
 | `imageUri`           | `string`                                                          | The URI for the image associated with the spam question.                    | Yes      |                    |
 | `editable`           | `boolean`                                                         | Determines if the text input field can be edited by the user.               | No       | `true`             |
 | `clearButtonMode`    | `'never' \| 'while-editing' \| 'unless-editing' \| 'always'` | Controls when the clear text button appears in the input field (iOS only). | No       | `undefined`        |
-| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                   | Controls the padding at the bottom of the component.                        | No       | `undefined`        |
+| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                   |                                                                             | No       | `undefined`        |
 
 ## SponsorCalculatorCost
 
@@ -1712,15 +1714,15 @@ This form element provides a numeric input field that calculates and displays a 
 
 | Name                  | Type                                                          | Description                                                                 | Required | Default        |
 | :-------------------- | :------------------------------------------------------------ | :-------------------------------------------------------------------------- | :------- | :------------- |
-| `label`               | `string`                                                      | The display label for the form field.                                       | No       |                |
-| `description`         | `string`                                                      | Additional descriptive text displayed below the input.                      | No       |                |
-| `placeholder`         | `string`                                                      | Placeholder text shown when the input is empty.                             | No       |                |
-| `required`            | `boolean`                                                     | Visually marks the field label as required.                                 | No       | `false`        |
-| `disabled`            | `boolean`                                                     | Disables the input field.                                                   | No       | `false`        |
+| `label`               | `string`                                                      |                                                                             | No       |                |
+| `description`         | `string`                                                      |                                                                             | No       |                |
+| `placeholder`         | `string`                                                      |                                                                             | No       |                |
+| `required`            | `boolean`                                                     |                                                                             | No       | `false`        |
+| `disabled`            | `boolean`                                                     |                                                                             | No       | `false`        |
 | `variant`             | `'standard' \| 'outlined' \| 'filled' \| 'livestream' \| 'standard-outlined'` | The visual style variant of the input field.                              | No       | `'standard'`   |
-| `margin`              | `'none' \| 'dense' \| 'normal'`                               | Controls the vertical margin of the form control.                           | No       | `'normal'`     |
-| `fullWidth`           | `boolean`                                                     | If `true`, the input field spans the full width of its container.           | No       | `false`        |
-| `maxLength`           | `number`                                                      | Maximum number of characters allowed in the input.                          | No       |                |
+| `margin`              | `'none' \| 'dense' \| 'normal'`                               |                                                                             | No       | `'normal'`     |
+| `fullWidth`           | `boolean`                                                     |                                                                             | No       | `false`        |
+| `maxLength`           | `number`                                                      |                                                                             | No       |                |
 | `initialUnit`         | `number`                                                      | The base unit used for the cost calculation (e.g., number of impressions).  | Yes      |                |
 | `initialPrice`        | `number`                                                      | The price per `initialUnit`.                                                | Yes      |                |
 | `pricePattern`        | `object`                                                      | An object defining the currency format (`symbol`, `currency_code`, etc.). | Yes      |                |
@@ -1734,12 +1736,12 @@ A button element designed for multi-step forms, allowing navigation between step
 
 | Name                 | Type                             | Description                                                                                   | Required | Default                     |
 | :------------------- | :------------------------------- | :-------------------------------------------------------------------------------------------- | :------- | :-------------------------- |
-| `label`              | `string`                         | The text displayed on the button.                                                             | Yes      | `''`                        |
+| `label`              | `string`                         |                                                                                               | Yes      | `''`                        |
 | `actionType`         | `'previous' \| 'next' \| 'submit'` | Determines the button's behavior (navigate previous, next, or submit).                        | Yes      | `undefined`                 |
-| `fullWidth`          | `boolean`                        | Whether the button control should occupy the full width.                                      | No       | `false`                     |
-| `margin`             | `'small' \| 'medium' \| 'large' \| 'none'` | Sets the margin around the button control.                                                    | No       | `undefined`                 |
+| `fullWidth`          | `boolean`                        |                                                                                               | No       | `false`                     |
+| `margin`             | `'small' \| 'medium' \| 'large' \| 'none'` |                                                                                               | No       | `undefined`                 |
 | `variant`            | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the surrounding form control.                                     | No       | `'standard'`                |
-| `paddingBottom`      | `'small' \| 'medium' \| 'large' \| 'none'` | Sets the bottom padding for the form control.                                                 | No       | `undefined`                 |
+| `paddingBottom`      | `'small' \| 'medium' \| 'large' \| 'none'` |                                                                                               | No       | `undefined`                 |
 | `currentStepName`    | `string`                         | The name of the form field tracking the current step index.                                   | No       | `FormStepVariable.CURRENT_KEY` |
 | `style`              | `ViewStyle`                      | Custom styling applied to the surrounding form control.                                       | No       | `undefined`                 |
 
@@ -1751,11 +1753,11 @@ A button element used to trigger form submission. It integrates with Formik to h
 
 | Name                 | Type                                                              | Description                                                                                   | Required | Default      |
 | :------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :------- | :----------- |
-| `label`              | `string`                                                          | The text displayed on the button.                                                             | Yes      |              |
+| `label`              | `string`                                                          |                                                                                               | Yes      |              |
 | `icon`               | `string`                                                          | Name of the icon to display on the button.                                                    | No       |              |
-| `fullWidth`          | `boolean`                                                         | If true, the button takes up the full width of its container.                                 | No       | `false`      |
-| `margin`             | `'none' \| 'dense' \| 'normal'`                                   | Controls the margin around the button's container.                                            | No       | `'normal'`   |
-| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                   | Controls the bottom padding of the button's container.                                        | No       | `'normal'`   |
+| `fullWidth`          | `boolean`                                                         |                                                                                               | No       | `false`      |
+| `margin`             | `'none' \| 'dense' \| 'normal'`                                   |                                                                                               | No       | `'normal'`   |
+| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                   |                                                                                               | No       | `'normal'`   |
 | `variant`            | `'standard' \| 'outlined' \| 'contained'`                         | The visual style variant of the button's container.                                           | No       | `'standard'` |
 | `color`              | `'primary' \| 'secondary' \| 'error' \| 'warning' \| 'info' \| 'success' \| 'inherit' \| string` | The color of the button. Defaults to 'gray' when disabled.                                | No       | `'primary'`  |
 | `size`               | `'small' \| 'medium' \| 'large' \| 'string'`                      | The size of the button. Note: The component internally uses 'normal'.                         | No       | `'medium'`   |
@@ -1763,7 +1765,7 @@ A button element used to trigger form submission. It integrates with Formik to h
 | `textTransform`      | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'`            | Controls the text transformation (e.g., uppercase).                                           | No       |              |
 | `round`              | `boolean`                                                         | If true, makes the button round (intended for icon buttons).                                  | No       | `false`      |
 | `first`              | `boolean`                                                         | Style adjustment if it's the first element in a group.                                        | No       | `false`      |
-| `disabled`           | `boolean`                                                         | Disables the button. Note: The component also has internal disable logic (`disableWhenClean`). | No       | `false`      |
+| `disabled`           | `boolean`                                                         |                                                                                               | No       | `false`      |
 | `testID`             | `string`                                                          | Test identifier for automation.                                                               | No       |              |
 | `transparent`        | `boolean`                                                         | Makes the button background transparent.                                                      | No       | `false`      |
 | `outline`            | `boolean`                                                         | Applies an outline style to the button.                                                       | No       | `false`      |
@@ -1779,7 +1781,7 @@ This element renders a submit button, typically placed within a form's header ar
 
 | Name          | Type                               | Description                                  | Required | Default    |
 | :------------ | :--------------------------------- | :------------------------------------------- | :------- | :--------- |
-| `label`       | `string`                           | The text displayed on the button.            | Yes      |            |
+| `label`       | `string`                           |                                              | Yes      |            |
 | `icon`        | `string`                           | Icon name to display on the button.          | No       |            |
 | `color`       | `string`                           | Button color (e.g., 'primary', 'secondary'). | No       |            |
 | `size`        | `'small' \| 'medium' \| 'large'`   | Button size.                                 | No       |            |
@@ -1787,9 +1789,9 @@ This element renders a submit button, typically placed within a form's header ar
 | `textTransform` | `string`                           | Button text transformation (e.g., 'uppercase'). | No       |            |
 | `transparent` | `boolean`                          | Makes the button background transparent.     | No       | `false`    |
 | `outline`     | `boolean`                          | Applies an outline style to the button.      | No       | `false`    |
-| `fullWidth`   | `boolean`                          | If true, the surrounding control takes full width. | No       | `false`    |
-| `margin`      | `'none' \| 'dense' \| 'normal'`    | Margin for the surrounding control.          | No       |            |
-| `paddingBottom` | `'none' \| 'dense' \| 'normal'`    | Padding bottom for the surrounding control.  | No       | `'normal'` |
+| `fullWidth`   | `boolean`                          |                                                  | No       | `false`    |
+| `margin`      | `'none' \| 'dense' \| 'normal'`    |                                              | No       |            |
+| `paddingBottom` | `'none' \| 'dense' \| 'normal'`    |                                              | No       | `'normal'` |
 | `variant`     | `'standard' \| 'outlined' \| 'filled'` | Variant style for the surrounding control.   | No       | `'standard'`|
 
 ## Switch
@@ -1800,12 +1802,12 @@ A form element that renders a toggle switch input, allowing users to select betw
 
 | Name                | Type                         | Description                                       | Required | Default     |
 | ------------------- | ---------------------------- | ------------------------------------------------- | -------- | ----------- |
-| `label`             | `string`                     | The label displayed next to the switch.           | Yes      | `undefined` |
-| `description`       | `string`                     | Optional helper text displayed below the switch.  | No       | `''`        |
-| `disabled`          | `boolean`                    | Disables the switch input.                        | No       | `false`     |
-| `required`          | `boolean`                    | Marks the field as required.                      | No       | `false`     |
-| `fullWidth`         | `boolean`                    | Makes the component take the full width available.| No       | `false`     |
-| `margin`            | `'none'\|'normal'\|'dense'` | Sets the margin spacing around the component.     | No       | `'normal'`  |
+| `label`             | `string`                     |                                                   | Yes      | `undefined` |
+| `description`       | `string`                     |                                                   | No       | `''`        |
+| `disabled`          | `boolean`                    |                                                   | No       | `false`     |
+| `required`          | `boolean`                    |                                                   | No       | `false`     |
+| `fullWidth`         | `boolean`                    |                                                   | No       | `false`     |
+| `margin`            | `'none'\|'normal'\|'dense'` |                                                   | No       | `'normal'`  |
 | `checkedValue`      | `any`                        | The value submitted when the switch is turned on. | No       | `1`         |
 | `uncheckedValue`    | `any`                        | The value submitted when the switch is turned off.| No       | `0`         |
 
@@ -1817,14 +1819,14 @@ A form element that allows users to input and manage a list of tags. Users can t
 
 | Name             | Type                                                     | Description                                                                 | Required | Default      |
 | :--------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `label`          | `string`                                                 | The text label displayed for the field.                                     | No       |              |
-| `description`    | `string`                                                 | Helper text displayed below the input.                                      | No       |              |
-| `placeholder`    | `string`                                                 | Placeholder text shown when the input is empty.                             | No       | `'enter text'` |
+| `label`          | `string`                                                 |                                                                             | No       |              |
+| `description`    | `string`                                                 |                                                                             | No       |              |
+| `placeholder`    | `string`                                                 |                                                                             | No       | `'enter text'` |
 | `variant`        | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input.                                      | No       | `'standard'` |
-| `fullWidth`      | `boolean`                                                | If true, the element spans the full width of its container.                 | No       | `false`      |
-| `margin`         | `'normal' \| 'dense' \| 'none'`                          | Controls the margin around the form control.                                | No       |              |
-| `required`       | `boolean`                                                | Marks the field as mandatory.                                               | No       | `false`      |
-| `paddingBottom`  | `'normal' \| 'dense' \| 'none'`                          | Controls the bottom padding of the form control.                            | No       | `'normal'`   |
+| `fullWidth`      | `boolean`                                                |                                                                             | No       | `false`      |
+| `margin`         | `'normal' \| 'dense' \| 'none'`                          |                                                                             | No       |              |
+| `required`       | `boolean`                                                |                                                                             | No       | `false`      |
+| `paddingBottom`  | `'normal' \| 'dense' \| 'none'`                          |                                                                             | No       | `'normal'`   |
 | `clearButtonMode`| `string`                                                 | Determines the visibility of the clear button (standard TextInput prop).    | No       |              |
 | `editable`       | `boolean`                                                | If false, the input cannot be edited (standard TextInput prop).             | No       | `true`       |
 
@@ -1836,20 +1838,20 @@ A standard text input field for forms, allowing users to enter single or multipl
 
 | Name                  | Type                                                              | Description                                                                 | Required | Default         |
 | :-------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :-------------- |
-| `label`        | `string`                                                          | The label displayed above the input field.                                  | No       |                 |
-| `placeholder`  | `string`                                                          | Placeholder text shown when the input is empty.                             | No       |                 |
-| `description`  | `string`                                                          | Help text displayed below the input field.                                  | No       |                 |
+| `label`        | `string`                                                          |                                                                             | No       |                 |
+| `placeholder`  | `string`                                                          |                                                                             | No       |                 |
+| `description`  | `string`                                                          |                                                                             | No       |                 |
 | `variant`      | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | The visual style variant of the input field.                              | No       | `'standard'`    |
-| `fullWidth`    | `boolean`                                                         | If `true`, the input field takes the full width of its container.           | No       | `false`         |
-| `margin`       | `'none' \| 'normal' \| 'dense'`                                     | The margin applied around the form control.                                 | No       | `'normal'`      |
+| `fullWidth`    | `boolean`                                                         |                                                                             | No       | `false`         |
+| `margin`       | `'none' \| 'normal' \| 'dense'`                                     |                                                                             | No       | `'normal'`      |
 | `multiline`    | `boolean`                                                         | If `true`, allows multiple lines of text input (textarea).                  | No       | `false`         |
-| `minHeight`    | `number`                                                          | Minimum height for the input field, especially useful with `multiline`.     | No       |                 |
-| `maxLength`    | `number`                                                          | Maximum number of characters allowed in the input.                          | No       |                 |
-| `autoFocus`    | `boolean`                                                         | If `true`, the input field automatically gains focus when mounted.          | No       | `false`         |
+| `minHeight`    | `number`                                                          |                                                                             | No       |                 |
+| `maxLength`    | `number`                                                          |                                                                             | No       |                 |
+| `autoFocus`    | `boolean`                                                         |                                                                             | No       | `false`         |
 | `autoCorrect`  | `boolean`                                                         | Enables or disables auto-correction for the input.                          | No       | `true`          |
 | `autoCapitalize`| `'none' \| 'sentences' \| 'words' \| 'characters'`                | Controls automatic capitalization behavior.                                 | No       | `'sentences'`   |
 | `editable`     | `boolean`                                                         | If `false`, the text input is not editable.                                 | No       | `true`          |
-| `required`     | `boolean`                                                         | Visually marks the field as required (e.g., with an asterisk).              | No       | `false`         |
+| `required`     | `boolean`                                                         |                                                                             | No       | `false`         |
 | `clearButtonMode`| `'never' \| 'while-editing' \| 'unless-editing' \| 'always'`      | (iOS only) When to display the clear text button.                           | No       | `'never'`       |
 | `validateAction`| `string`                                                          | Name of a registered action for backend validation triggered on blur.       | No       |                 |
 | `findReplace`  | `{ find: string, replace: string }`                               | Configuration to automatically generate a slug-like value based on input. | No       |                 |
@@ -1868,17 +1870,17 @@ Provides a multi-line text input field for forms.
 | Name                  | Type                                               | Description                                                                                                | Required | Default          |
 | :-------------------- | :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :------- | :--------------- |
 | `name`                | `string`                                           | The name of the field used in the form state.                                                              | Yes      |                  |
-| `label`               | `string`                                           | The label displayed for the field.                                                                         | No       |                  |
-| `placeholder`         | `string`                                           | Placeholder text shown when the input is empty.                                                            | No       |                  |
-| `description`         | `string`                                           | Helper text displayed below the input field.                                                               | No       |                  |
-| `required`            | `boolean`                                          | Marks the field as required, often visually indicated.                                                     | No       | `false`          |
-| `disabled`            | `boolean`                                          | If true, the input field is disabled and cannot be interacted with.                                        | No       | `false`          |
-| `fullWidth`           | `boolean`                                          | If true, the component stretches to the full width of its container.                                       | No       | `false`          |
-| `margin`              | `'none' \| 'normal' \| 'dense'`                    | Controls the margin spacing around the field.                                                              | No       | `'normal'`       |
+| `label`               | `string`                                           |                                                                                                            | No       |                  |
+| `placeholder`         | `string`                                           |                                                                                                            | No       |                  |
+| `description`         | `string`                                           |                                                                                                            | No       |                  |
+| `required`            | `boolean`                                          |                                                                                                            | No       | `false`          |
+| `disabled`            | `boolean`                                          |                                                                                                            | No       | `false`          |
+| `fullWidth`           | `boolean`                                          |                                                                                                            | No       | `false`          |
+| `margin`              | `'none' \| 'normal' \| 'dense'`                    |                                                                                                            | No       | `'normal'`       |
 | `variant`             | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input field.                                                               | No       | `'standard'`     |
-| `minHeight`           | `number`                                           | Specifies the minimum height of the textarea input area in pixels.                                         | No       |                  |
-| `maxLength`           | `number`                                           | Maximum number of characters allowed in the input.                                                         | No       |                  |
-| `autoFocus`           | `boolean`                                          | If true, the input field automatically gains focus when the component mounts.                              | No       | `false`          |
+| `minHeight`           | `number`                                           |                                                                                                            | No       |                  |
+| `maxLength`           | `number`                                           |                                                                                                            | No       |                  |
+| `autoFocus`           | `boolean`                                          |                                                                                                            | No       | `false`          |
 | `autoCorrect`         | `boolean`                                          | Enables or disables autocorrection for the input.                                                          | No       | Platform default |
 | `autoCapitalize`      | `'none' \| 'sentences' \| 'words' \| 'characters'` | Controls the automatic capitalization behavior of the text input.                                          | No       | `'none'`         |
 | `editable`            | `boolean`                                          | If false, the text content cannot be modified by the user.                                                 | No       | `true`           |
@@ -1894,17 +1896,17 @@ A form element that allows users to select a specific time using a native time p
 
 | Name             | Type                                       | Description                                                                 | Required | Default                  |
 |------------------|--------------------------------------------|-----------------------------------------------------------------------------|----------|--------------------------|
-| `label`          | `string`                                   | The label displayed for the time input.                                     | Yes      | -                        |
-| `description`    | `string`                                   | Optional help text displayed below the input.                               | No       | `undefined`              |
-| `placeholder`    | `string`                                   | Placeholder text shown when the input is empty.                             | No       | `undefined`              |
+| `label`          | `string`                                   |                                                                             | Yes      | -                        |
+| `description`    | `string`                                   |                                                                             | No       | `undefined`              |
+| `placeholder`    | `string`                                   |                                                                             | No       | `undefined`              |
 | `displayFormat`  | `string`                                   | The format used to display the selected time (e.g., 'HH:mm', 'h:mm A').     | No       | `'HH:mm'` (Recommended)  |
 | `resultFormat`   | `string`                                   | The format the selected time is stored in. Defaults to ISO 8601 format if unset. | No       | ISO 8601 String        |
 | `timeFormat`     | `12 \| 24`                               | Specifies whether to use 12-hour or 24-hour format in the picker.         | No       | Locale default           |
 | `initialValue`   | `string`                                   | An initial time value for the field (must match resultFormat if specified, otherwise ISO 8601). | No       | `undefined`              |
-| `disabled`       | `boolean`                                  | If `true`, the input field is disabled.                                     | No       | `false`                  |
-| `required`       | `boolean`                                  | If `true`, the field must have a value.                                     | No       | `false`                  |
-| `fullWidth`      | `boolean`                                  | If `true`, the element spans the full width of its container.               | No       | `false`                  |
-| `margin`         | `'none' \| 'dense' \| 'normal'`            | Sets the outer margin of the form control.                                  | No       | `'normal'`               |
+| `disabled`       | `boolean`                                  |                                                                             | No       | `false`                  |
+| `required`       | `boolean`                                  |                                                                             | No       | `false`                  |
+| `fullWidth`      | `boolean`                                  |                                                                             | No       | `false`                  |
+| `margin`         | `'none' \| 'dense' \| 'normal'`            |                                                                             | No       | `'normal'`               |
 | `variant`        | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input.                                      | No       | `'standard'`             |
 | `time_zone_gmt`  | `string`                                   | Timezone identifier (e.g., 'UTC', 'America/New_York') for display formatting. | No       | User's current timezone |
 
@@ -1918,10 +1920,10 @@ Renders styled text content within a form, suitable for labels, descriptions, or
 
 | Name            | Type     | Description                                                              | Required | Default     |
 | --------------- | -------- | ------------------------------------------------------------------------ | -------- | ----------- |
-| `label`         | `string` | The main text label to display.                                          | No       | `undefined` |
+| `label`         | `string` |                                                                          | No       | `undefined` |
 | `numberOfLines` | `number` | Maximum number of lines for the label and description.                   | No       | `undefined` |
 | `plainText`     | `string` | HTML content to render. Takes precedence over label/description if provided. | No       | `undefined` |
-| `description`   | `string` | Additional descriptive text displayed below the label.                   | No       | `undefined` |
+| `description`   | `string` |                                                                          | No       | `undefined` |
 | `style`         | `object` | Custom style object for the label.                                       | No       | `undefined` |
 
 ## VideoUrl
