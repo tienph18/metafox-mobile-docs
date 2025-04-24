@@ -1565,6 +1565,8 @@ A form element that allows users to input and manage a list of tags. Users can t
 
 A standard text input field for forms, allowing users to enter single or multiple lines of text.
 
+For a visual reference, see [Text Gallery](./form-elements/Text.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1585,12 +1587,12 @@ A standard text input field for forms, allowing users to enter single or multipl
 | `margin` | `'none' \| 'normal' \| 'dense'` | | | `'normal'` |
 | `maxLength` | `number` | | | |
 | `minHeight` | `number` | | | |
-| `multiline` | `boolean` | If `true`, allows multiple lines of text input (textarea). | | `false` |
+| `multipleline` | `boolean` | If `true`, allows multiple lines of text input (textarea). | | `false` |
 | `placeholder` | `string` | | | |
 | `qrScannerParamName` | `string` | Query parameter name to extract from the scanned QR code URL. | | `'invite_code'` |
 | `required` | `boolean` | | | `false` |
 | `validateAction` | `string` | Name of a registered action for backend validation triggered on blur. | | |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'standard-inlined' \| 'standard-outlined' \| 'outlined'` | The visual style variant of the input field. | | `'standard'` |
 
 ## Textarea
 
