@@ -2,7 +2,7 @@
 
 The `AdvertiseCalculatorCost` element is a specialized text input field designed for calculating advertising costs based on a selected placement and a numeric input value (e.g., number of impressions, clicks). It displays the calculated total cost dynamically based on the input and the price associated with the selected placement option.
 
-For a visual reference, see [AdvertiseCalculatorCost Props Gallery](./form-elements/AdvertiseCalculatorCost.md)
+For a visual reference, see [AdvertiseCalculatorCost Gallery](./form-elements/AdvertiseCalculatorCost.md)
 
 ### Props
 
@@ -12,7 +12,6 @@ For a visual reference, see [AdvertiseCalculatorCost Props Gallery](./form-eleme
 | `autoCorrect` | `boolean` | | | `true` |
 | `autoFocus` | `boolean` | | | `false` |
 | `clearButtonMode` | `'never'`, `'while-editing'`, `'unless-editing'`, `'always'` | When to show the clear button (iOS only). | | `'never'` |
-| `description` | `string` | | | |
 | `disabled` | `boolean` | | | `false` |
 | `editable` | `boolean` | Whether the input is editable. | | `true` |
 | `fullWidth` | `boolean` | | | `false` |
@@ -29,7 +28,7 @@ For a visual reference, see [AdvertiseCalculatorCost Props Gallery](./form-eleme
 | `relatedInitialPrice` | `string` | The name of the form field holding the selected placement/option key. | Yes | |
 | `required` | `boolean` | | | `false` |
 | `totalNameLabel` | `string` | The translation key for the "Total Cost" label prefix. | | `total_cost` |
-| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard'`, `'outlined'`, `'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Alert
 
