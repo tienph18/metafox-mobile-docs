@@ -140,6 +140,8 @@ For a visual reference, see [Autocomplete Gallery](./form-elements/Autocomplete.
 
 A form element that allows users to select and upload an avatar image, displaying a preview. It integrates with the device's image picker and handles basic validation display.
 
+For a visual reference, see [AvatarUpload Gallery](./form-elements/AvatarUpload.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -153,11 +155,12 @@ A form element that allows users to select and upload an avatar image, displayin
 | `size` | `string` | Size of the avatar preview (e.g., 'small', 'medium', 'xxlarge'). | | `'xxlarge'` |
 | `spaceColor` | `string` | Color of the space around the avatar image. | | `undefined` |
 | `spaceWidth` | `number` | Width of the space around the avatar image. | | `undefined` |
-| `variant` | `Variant` | Specifies the visual style of the component. | | `undefined` |
 
 ## Birthday
 
-The `Birthday` element provides a user-friendly interface for selecting a date, specifically intended for capturing a user's date of birth. It utilizes a native date picker interface.
+This component internally uses element `Date`, refer it for more information.
+
+For a visual reference, see [Date Gallery](./form-elements/Date.md)
 
 ### Props
 
@@ -176,11 +179,11 @@ The `Birthday` element provides a user-friendly interface for selecting a date, 
 | `required` | `boolean` | | | `false` |
 | `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
-**Note:** This component internally uses a date picker (`DatePickerField`). While the underlying component supports time selection (`datePickerMode`), the `Birthday` element is intended for date selection only. The `maxDate` prop should typically be configured to prevent selecting future dates for birthdays.
-
 ## Button
 
 A form element that renders a toggleable button. Its text changes based on its internal state (0 or 1), typically used to trigger an action or represent a binary choice within a form.
+
+For a visual reference, see [Button Gallery](./form-elements/Button.md)
 
 ### Props
 
@@ -197,6 +200,8 @@ A form element that renders a toggleable button. Its text changes based on its i
 
 A form element that renders a checkbox input field. It allows users to toggle between a checked and unchecked state, typically representing a boolean value or a specific selection.
 
+For a visual reference, see [Checkbox Gallery](./form-elements/Checkbox.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -211,11 +216,13 @@ A form element that renders a checkbox input field. It allows users to toggle be
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `'normal'` |
 | `required` | `boolean` | | | `false` |
 | `uncheckedValue` | `any` | The value submitted when the checkbox is unchecked. | | `0` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
+| `variant` | `'outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## CheckboxGroup
 
 This element renders a group of checkboxes, allowing users to select multiple options from a predefined list. It integrates with Formik for state management and validation.
+
+For a visual reference, see [CheckboxGroup Gallery](./form-elements/CheckboxGroup.md)
 
 ### Props
 
@@ -235,6 +242,8 @@ This element renders a group of checkboxes, allowing users to select multiple op
 ## Chip
 
 Renders a group of selectable chip buttons. Selecting a chip updates the form's `title` and `description` fields with the corresponding values from the selected option.
+
+For a visual reference, see [Chip Gallery](./form-elements/Chip.md)
 
 ### Props
 
@@ -260,6 +269,8 @@ This element displays a title and a conditional "Reset" button within a form. Th
 ## Clickable
 
 A form element that displays a label and a right arrow, acting as a button. When clicked, it dispatches a specified Redux action with given parameters. It's typically used to navigate to another screen or trigger a modal for further input or selection.
+
+For a visual reference, see [Clickable Gallery](./form-elements/Clickable.md)
 
 ### Props
 
@@ -324,6 +335,8 @@ The `Container` element acts as a layout wrapper for grouping other form element
 
 This form element provides an input field that allows users to select a country and associated city/state code. It typically opens a dedicated selection interface (modal or screen) for browsing and choosing the appropriate code.
 
+For a visual reference, see [CountryCityCode Gallery](./form-elements/CountryCityCode.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -342,7 +355,7 @@ This form element provides an input field that allows users to select a country 
 
 ## countryStatePicker
 
-This element provides a specialized picker for selecting a country and its corresponding state or province. It typically fetches state/province options dynamically based on the selected country.
+This element provides a specialized picker for selecting a country and its corresponding state or province. It typically fetches state/province options dynamically based on the selected country from `CountryCityCode`.
 
 ### Props
 
@@ -366,6 +379,8 @@ This element provides a specialized picker for selecting a country and its corre
 
 A form element that renders a button which dispatches a custom Redux action when pressed.
 
+For a visual reference, see [CustomButton Gallery](./form-elements/CustomButton.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -379,6 +394,8 @@ A form element that renders a button which dispatches a custom Redux action when
 ## Date
 
 A form element that allows users to select a date, time, or both using a native modal picker.
+
+For a visual reference, see [Date Gallery](./form-elements/Date.md)
 
 ### Props
 
@@ -399,11 +416,13 @@ A form element that allows users to select a date, time, or both using a native 
 | `startOfDay` | `boolean` | If `true`, sets the selected time to the start of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | Timezone identifier (e.g., 'Asia/Ho_Chi_Minh') for display formatting. | | User's timezone |
 | `timeFormat` | `12 \| 24` | Specifies 12 or 24-hour time format for the picker. | | `12` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined' \| 'outlined-inlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## DateBasic
 
 A form element component that provides a user interface for selecting a date, time, or datetime using a native modal picker. It integrates with Formik for form state management.
+
+For a visual reference, see [Date Gallery](./form-elements/Date.md)
 
 ### Props
 
@@ -426,15 +445,15 @@ A form element component that provides a user interface for selecting a date, ti
 | `time_zone_gmt` | `string` | Specifies the GMT timezone offset (e.g., "+07:00"). | | `''` |
 | `timeFormat` | `number` | Specifies the time format (e.g., `12` or `24` for 12/24 hour format). | | `12` |
 | `valueFormat` | `string` | The Moment.js format string for displaying and storing the selected value. | | `'DD/MM/YYYY'` |
-| `variant` | `string` | Specifies the visual style of the component. | | `standard` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined' \| 'outlined-inlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Datetime
 
-The same with element Date.
+*Note: This element inherits most props from the base `Date` element.*
+
+For a visual reference, see [Date Gallery](./form-elements/Date.md)
 
 ### Props
-
-Props are configured via the `config` object passed to the component.
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :-------- | :------- |
@@ -456,9 +475,7 @@ Props are configured via the `config` object passed to the component.
 | `startOfDay` | `boolean` | If true, sets the selected date's time to the start of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | The timezone identifier (e.g., 'America/New_York') used for formatting. | | |
 | `timeFormat` | `12 \| 24` | Specifies 12-hour or 24-hour time format for the picker. | | (Locale default) |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
-
-*Note: The component also accepts standard `FormFieldProps` like `name` (required) and `formik` (required), as well as top-level `disabled` and `required` props that can override the corresponding settings within `config`.*
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined' \| 'outlined-inlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Description
 
@@ -492,7 +509,9 @@ Displays a dynamic description text based on the value of a related form field. 
 
 ## Editor
 
-The same with element Text.
+*Note: This element inherits most props from the base `Text` element.*
+
+For a visual reference, see [Text Gallery](./form-elements/Text.md)
 
 ### Props
 
@@ -525,6 +544,8 @@ The same with element Text.
 
 *Note: This element inherits most props from the base `Text` element.*
 
+For a visual reference, see [Text Gallery](./form-elements/Text.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -551,6 +572,8 @@ The same with element Text.
 
 The `File` form element allows users to select and upload a single file, typically an image or video. It provides options to choose from the device library or capture directly using the camera. It handles file preview, upload progress (implicitly via `SinglePhotoItemView`), deletion, and file size validation.
 
+For a visual reference, see [File Gallery](./form-elements/File.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -569,7 +592,7 @@ The `File` form element allows users to select and upload a single file, typical
 | `preview_url` | `string` | URL of an existing image/file to preview initially. | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `upload_url` | `string` | The API endpoint for direct file uploads. | | `/file` |
-| `variant` | `string` | Specifies the visual style of the component. | | `standard-inlined` |
+| `variant` | `'standard' \| 'outlined' \| 'outlined-inlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `standard-inlined` |
 
 ## Form
 
@@ -660,6 +683,8 @@ Renders a top section for a form, optionally displaying a label and description,
 
 A form element that allows users to select one or multiple friends from a list, typically fetched via an API. It presents a user-friendly interface for friend selection within forms.
 
+For a visual reference, see [FriendPicker Gallery](./form-elements/FriendPicker.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -682,11 +707,13 @@ A form element that allows users to select one or multiple friends from a list, 
 | `showWithoutOptions` | `boolean` | Whether to show the field without options. | | `undefined` |
 | `suboptions` | `SubOptionsShape` | Additional options or configurations. | | `undefined` |
 | `value_type` | `string` | Specifies the type of value returned. | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-inlined' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## GatewayButton
 
 Renders a button specific to a payment gateway (e.g., Apple Pay, Stripe). It handles setting the selected gateway ID, passing relevant data, and triggering form submission upon click. It can display platform-specific buttons (Apple Pay/Google Pay) or a generic button based on the `variant` prop.
+
+For a visual reference, see [GatewayButton Gallery](./form-elements/GatewayButton.md)
 
 ### Props
 
@@ -718,7 +745,9 @@ A form element that stores a value in the form state without rendering any visib
 
 ## HtmlLink
 
-This element renders a button styled as a link. It's primarily used for navigation or triggering specific actions within a form, often without directly manipulating form field values. While named `HtmlLink` for consistency with web counterparts, it utilizes the `LinkButtonField` component internally for mobile implementation.
+*Note: This element inherits most props from the base `LinkButton` element.*
+
+For a visual reference, see [LinkButton Gallery](./form-elements/LinkButton.md)
 
 ### Props
 
@@ -751,7 +780,9 @@ Displays HTML content fetched based on the field's value, typically representing
 
 ## input
 
-A standard text input field allowing users to enter text. It wraps the `TextField` component, providing various configurations for appearance, behavior, validation, and integration with features like QR scanning and copy-to-clipboard.
+*Note: This element inherits most props from the base `Text` element.*
+
+For a visual reference, see [Text Gallery](./form-elements/Text.md)
 
 ### Props
 
@@ -781,6 +812,8 @@ A standard text input field allowing users to enter text. It wraps the `TextFiel
 
 Renders a set of price input fields, often used for different currencies or price types. The actual input fields are defined by the `options` prop. This component conditionally renders different implementations based on the API version, but this documentation focuses on the behavior for API version 5.1.8 and later.
 
+For a visual reference, see [Price Gallery](./form-elements/Price.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -795,7 +828,7 @@ Renders a set of price input fields, often used for different currencies or pric
 | `options` | `Array<{ key: string, name: string, required?: boolean, requiredWhen?: object, ... }>` | Defines the individual price inputs (e.g., currencies). Each object requires `key` (label/value key) and `name`. Can include `required`. | Yes | `[]` |
 | `paddingBottom` | `string \| number` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Privacy
 

@@ -2,18 +2,32 @@
 
 A form element that renders a checkbox input field. It allows users to toggle between a checked and unchecked state, typically representing a boolean value or a specific selection.
 
-## Props
+## Visual Examples
 
-| Name                | Type                                                   | Description                                                     | Required | Default            |
-| :------------------ | :----------------------------------------------------- | :-------------------------------------------------------------- | :------- | :----------------- |
-| `label`             | `string`                                               | The text label displayed next to the checkbox.                  | Yes      |                    |
-| `fullWidth`         | `boolean`                                              | If true, the control takes up the full available width.         | No       | `false`            |
-| `margin`            | `'none' \| 'dense' \| 'normal'`                        | Margin size around the control.                                 | No       | `'normal'`         |
-| `required`          | `boolean`                                              | Whether the field is required (validation).                     | No       | `false`            |
-| `variant`           | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Visual style variant of the control.                            | No       | `'standard-inlined'` |
-| `paddingBottom`     | `'none' \| 'dense' \| 'normal'`                        | Padding below the control.                                      | No       | `'normal'`         |
-| `checkedValue`      | `any`                                                  | The value submitted when the checkbox is checked.               | No       | `1`                |
-| `uncheckedValue`    | `any`                                                  | The value submitted when the checkbox is unchecked.             | No       | `0`                |
-| `description`       | `string`                                               | Additional descriptive text displayed below the label.          | No       | `''`               |
-| `disabled`          | `boolean`                                              | If true, the checkbox is disabled and cannot be interacted with. | No       | `false`            |
-| `isReverse`         | `boolean`                                              | If true, reverses the order of the label and checkbox control.  | No       | `false`            |
+**Variant: standard-inlined (Default)**
+
+![Standard Inlined variant](../assets/Checkbox/standard-inlined.png)
+
+**Variant: outlined**
+
+![Outlined variant](../assets/Checkbox/outlined.png)
+
+**isReverse: true**
+
+![isReverse true](../assets/Checkbox/isReverse-true.png)
+
+### Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `checkedValue` | `any` | The value submitted when the checkbox is checked. | | `1` |
+| `description` | `string` | | | `''` |
+| `disabled` | `boolean` | | | `false` |
+| `fullWidth` | `boolean` | | | `false` |
+| `isReverse` | `boolean` | If true, reverses the order of the label and checkbox control. | | `false` |
+| `label` | `string` | | Yes | |
+| `margin` | `'none' \| 'dense' \| 'normal'` | | | `'normal'` |
+| `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `'normal'` |
+| `required` | `boolean` | | | `false` |
+| `uncheckedValue` | `any` | The value submitted when the checkbox is unchecked. | | `0` |
+| `variant` | `'outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |

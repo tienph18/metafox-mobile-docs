@@ -1,13 +1,13 @@
-# Description
+## Description
 
 Displays a simple text label within a form, often used for informational purposes or section descriptions.
 
-## Props
+### Props
 
-| Name          | Type                     | Description                                      | Required | Default      |
-| ------------- | ------------------------ | ------------------------------------------------ | -------- | ------------ |
-| `label`       | `string`                 | The text content to display.                     | Yes      |              |
-| `variant`     | `keyof typeof Variant`   | The visual style variant (e.g., 'standard').     | No       | `'standard'` |
-| `fullWidth`   | `boolean`                | Determines if the element takes up full width.   | No       | `false`      |
-| `margin`      | `keyof typeof SizeEnum`  | Sets the margin around the element.              | No       | `undefined`  |
-| `paddingBottom`| `keyof typeof SizeEnum`  | Sets the bottom padding of the element.          | No       | `undefined`  |
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `fullWidth` | `boolean` | | | `false` |
+| `label` | `string` | | Yes | |
+| `margin` | `keyof typeof SizeEnum` | | | `undefined` |
+| `paddingBottom` | `keyof typeof SizeEnum` | | | `undefined` |
+| `variant` | `keyof typeof Variant` | Specifies the visual style of the component. | | `'standard'` |

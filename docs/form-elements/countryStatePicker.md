@@ -1,21 +1,21 @@
-# countryStatePicker
+## countryStatePicker
 
-This element provides a specialized picker for selecting a country and its corresponding state or province. It typically fetches state/province options dynamically based on the selected country.
+This element provides a specialized picker for selecting a country and its corresponding state or province. It typically fetches state/province options dynamically based on the selected country from `CountryCityCode`.
 
-## Props
+### Props
 
-| Name              | Type                                  | Description                                                                 | Required | Default     |
-| :---------------- | :------------------------------------ | :-------------------------------------------------------------------------- | :------- | :---------- |
-| `label`           | `string`                              | The text label displayed for the element.                                   | Yes      | `''`        |
-| `fullWidth`       | `boolean`                             | If true, the element takes the full width.                                  | No       | `false`     |
-| `margin`          | `'normal' \| 'dense' \| 'none'`       | Controls the margin around the element.                                     | No       | `'normal'`  |
-| `required`        | `boolean`                             | If true, the field is mandatory.                                            | No       | `false`     |
-| `variant`         | `'standard' \| 'outlined' \| 'filled'`| The display style of the form element.                                      | No       | `'standard'`|
-| `paddingBottom`   | `'normal' \| 'dense' \| 'none'`       | Controls the bottom padding.                                                | No       | `'normal'`  |
-| `placeholder`     | `string`                              | Placeholder text when no value is selected.                                 | No       | `undefined` |
-| `search_endpoint` | `string`                              | API endpoint to fetch options dynamically (e.g., states based on country). | No       | `undefined` |
-| `search_params`   | `object`                              | Additional parameters for the search API endpoint.                          | No       | `undefined` |
-| `enable_search`   | `boolean`                             | Enables searching within the options list (if applicable).                  | No       | `false`     |
-| `disable_uncheck` | `boolean`                             | Prevents unselecting the current value if the field is required.            | No       | `false`     |
-| `backgroundColor` | `string`                              | Background color for the element (used in specific variants).               | No       | `undefined` |
-| `disabled`        | `boolean`                             | If true, the element is disabled.                                           | No       | `false`     |
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `backgroundColor` | `string` | Background color for the element (used in specific variants). | | `undefined` |
+| `disable_uncheck` | `boolean` | Prevents unselecting the current value if the field is required. | | `false` |
+| `disabled` | `boolean` | | | `false` |
+| `enable_search` | `boolean` | Enables searching within the options list (if applicable). | | `false` |
+| `fullWidth` | `boolean` | | | `false` |
+| `label` | `string` | | Yes | `''` |
+| `margin` | `'normal' \| 'dense' \| 'none'` | | | `'normal'` |
+| `paddingBottom` | `'normal' \| 'dense' \| 'none'` | | | `'normal'` |
+| `placeholder` | `string` | | | `undefined` |
+| `required` | `boolean` | | | `false` |
+| `search_endpoint` | `string` | API endpoint to fetch options dynamically (e.g., states based on country). | | `undefined` |
+| `search_params` | `object` | Additional parameters for the search API endpoint. | | `undefined` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
