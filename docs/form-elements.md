@@ -34,17 +34,21 @@ For a visual reference, see [AdvertiseCalculatorCost Gallery](./form-elements/Ad
 
 Displays a styled alert box containing an HTML message. The appearance (color, icon) depends on the `severity` and `variant`.
 
+For a visual reference, see [Alert Gallery](./form-elements/Alert.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :-------- | :------- |
 | `message` | `string` | The HTML content to display in the alert. | Yes | |
 | `severity` | `'success' \| 'info' \| 'warning' \| 'error'` | Determines the alert type (info, success, warning, error), affecting color and icon. | | `'info'` |
-| `variant` | `'standard'` | Controls the overall style variant of the alert. | | `'standard'` |
+| `variant` | `'standard'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Attachment
 
 The Attachment element allows users to upload one or more files (photos, videos, or other types) within a form. It provides options for selecting files from the device library or capturing directly from the camera.
+
+For a visual reference, see [Attachment Gallery](./form-elements/Attachment.md)
 
 ### Props
 
@@ -68,11 +72,11 @@ The Attachment element allows users to upload one or more files (photos, videos,
 | `multiple` | `boolean` | Allows selecting multiple files if `true`. | | `false` |
 | `paddingBottom` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | The display style variant. | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## AttachPoll
 
-Allows users to attach, view, edit, or remove a poll within a form. It presents a button to initiate the poll creation/editing process via a separate form screen (`form.edit` route) using the provided `config.formUrl`, and displays a preview of the attached poll using the `ui.AttachPollPreview` component.
+Allows users to attach, view, edit, or remove a poll within a form. It presents a button to initiate the poll creation/editing process via a separate form screen (`form.edit` route) using the provided `formUrl`, and displays a preview of the attached poll using the `ui.AttachPollPreview` component.
 
 ### Props
 
@@ -91,22 +95,26 @@ Allows users to attach, view, edit, or remove a poll within a form. It presents 
 
 Displays a QR code, typically used for setting up two-factor authentication (2FA). It shows the QR code image, a button to attempt opening a 2FA app, a manual setup key (description), and a button to copy the key.
 
+For a visual reference, see [AuthenticatorQrCode Gallery](./form-elements/AuthenticatorQrCode.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :-------- | :------- |
-| `content` | `string` | The content/data to encode in the QR code and the URL to open 2FA apps. | | `undefined` |
+| `content` | `string` | The content/data to encode in the QR code and the URL to open 2FA apps. | Yes | `undefined` |
 | `description` | `string` | | | `undefined` |
 | `fullWidth` | `boolean` | | | `false` |
 | `label` | `string` | | | `undefined` |
-| `margin` | `'none'`, `'dense'`, `'normal'` | | Yes | - |
+| `margin` | `'none'`, `'dense'`, `'normal'` | | | - |
 | `paddingBottom` | `'none'`, `'dense'`, `'normal'` | | Yes | - |
 | `placeholder` | `string` | | | `undefined` |
-| `variant` | `'standard'`, `'outlined'`, `'filled'` | The visual style variant of the form control. | | `'standard'` |
+| `variant` | `'standard'`, `'standard-inlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Autocomplete
 
 A form element allowing users to select one or multiple options from a list, often populated dynamically via an API search. It presents the selected value(s) and opens a dedicated interface for searching and selecting options.
+
+For a visual reference, see [Autocomplete Gallery](./form-elements/Autocomplete.md)
 
 ### Props
 
@@ -126,7 +134,7 @@ A form element allowing users to select one or multiple options from a list, oft
 | `search_endpoint` | `string` | API endpoint URL used to fetch options dynamically based on user input. | Yes | |
 | `search_params` | `object` | Additional parameters to include in the API request to `search_endpoint`. | | `{}` |
 | `size` | `string` ('medium', 'small') | The size of the form field. | | `'medium'` |
-| `variant` | `string` ('outlined', 'standard', ...) | Visual style of the form field. | | `'outlined'` |
+| `variant` | `'standard'`, `'standard-inlined'`, `'standard-outlined'`, `'outlined'`, `'livestream'` | Specifies the visual style of the component. | | `'outlined'` |
 
 ## AvatarUpload
 
@@ -145,7 +153,7 @@ A form element that allows users to select and upload an avatar image, displayin
 | `size` | `string` | Size of the avatar preview (e.g., 'small', 'medium', 'xxlarge'). | | `'xxlarge'` |
 | `spaceColor` | `string` | Color of the space around the avatar image. | | `undefined` |
 | `spaceWidth` | `number` | Width of the space around the avatar image. | | `undefined` |
-| `variant` | `Variant` | Visual style variant of the form control. | | `undefined` |
+| `variant` | `Variant` | Specifies the visual style of the component. | | `undefined` |
 
 ## Birthday
 
@@ -166,7 +174,7 @@ The `Birthday` element provides a user-friendly interface for selecting a date, 
 | `minDate` | `string` | The earliest selectable date in ISO 8601 format (e.g., "1900-01-01"). | | - |
 | `placeholder` | `string` | | | - |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Defines the visual style of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 **Note:** This component internally uses a date picker (`DatePickerField`). While the underlying component supports time selection (`datePickerMode`), the `Birthday` element is intended for date selection only. The `maxDate` prop should typically be configured to prevent selecting future dates for birthdays.
 
@@ -203,7 +211,7 @@ A form element that renders a checkbox input field. It allows users to toggle be
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `'normal'` |
 | `required` | `boolean` | | | `false` |
 | `uncheckedValue` | `any` | The value submitted when the checkbox is unchecked. | | `0` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Visual style variant of the control. | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## CheckboxGroup
 
@@ -222,7 +230,7 @@ This element renders a group of checkboxes, allowing users to select multiple op
 | `order` | `number` | The numerical order to display before the label (if `hasFormOrder` is true). | | `undefined` |
 | `paddingBottom` | `string` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the form control wrapper. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Chip
 
@@ -265,7 +273,7 @@ A form element that displays a label and a right arrow, acting as a button. When
 | `paddingBottom` | `boolean` | | | `false` |
 | `params` | `object` | The payload to send with the dispatched action. | Yes | |
 | `severity` | `'error' \| 'warning' \| 'info' \| 'success'` | Sets the text color based on severity (e.g., for validation). | | |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## ComposerInput
 
@@ -289,7 +297,7 @@ A specialized text input field designed for composer interfaces within MetaFox f
 | `maxLength` | `number` | | | `undefined` |
 | `placeholder` | `string` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Container
 
@@ -308,7 +316,7 @@ The `Container` element acts as a layout wrapper for grouping other form element
 | `label` | `string` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `sx` | `object` | Style object for applying custom styles to the root wrapper component. | | `{}` |
-| `variant` | `'vertical' \| 'horizontal' \| 'livestream'` | Controls the layout arrangement of elements. | | `'vertical'` |
+| `variant` | `'vertical' \| 'horizontal' \| 'livestream'` | Specifies the visual style of the component. | | `'vertical'` |
 | `wrapAs` | `React.ElementType` | A custom React component to use as the wrapper instead of the default `View`. | | `undefined` |
 | `wrapperProps` | `object` | Additional props to pass directly to the root wrapper component. | | `{}` |
 
@@ -330,7 +338,7 @@ This form element provides an input field that allows users to select a country 
 | `required` | `boolean` | | | `false` |
 | `search_endpoint` | `string` | API endpoint used for searching options if `enable_search` is true. | | `undefined` |
 | `search_params` | `object` | Additional parameters for the search request. Values can be dynamically sourced from the form context. | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the form field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## countryStatePicker
 
@@ -352,7 +360,7 @@ This element provides a specialized picker for selecting a country and its corre
 | `required` | `boolean` | | | `false` |
 | `search_endpoint` | `string` | API endpoint to fetch options dynamically (e.g., states based on country). | | `undefined` |
 | `search_params` | `object` | Additional parameters for the search API endpoint. | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The display style of the form element. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## CustomButton
 
@@ -391,7 +399,7 @@ A form element that allows users to select a date, time, or both using a native 
 | `startOfDay` | `boolean` | If `true`, sets the selected time to the start of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | Timezone identifier (e.g., 'Asia/Ho_Chi_Minh') for display formatting. | | User's timezone |
 | `timeFormat` | `12 \| 24` | Specifies 12 or 24-hour time format for the picker. | | `12` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## DateBasic
 
@@ -418,7 +426,7 @@ A form element component that provides a user interface for selecting a date, ti
 | `time_zone_gmt` | `string` | Specifies the GMT timezone offset (e.g., "+07:00"). | | `''` |
 | `timeFormat` | `number` | Specifies the time format (e.g., `12` or `24` for 12/24 hour format). | | `12` |
 | `valueFormat` | `string` | The Moment.js format string for displaying and storing the selected value. | | `'DD/MM/YYYY'` |
-| `variant` | `string` | The visual style variant (`standard`, `outlined`, `filled`). | | `standard` |
+| `variant` | `string` | Specifies the visual style of the component. | | `standard` |
 
 ## Datetime
 
@@ -448,7 +456,7 @@ Props are configured via the `config` object passed to the component.
 | `startOfDay` | `boolean` | If true, sets the selected date's time to the start of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | The timezone identifier (e.g., 'America/New_York') used for formatting. | | |
 | `timeFormat` | `12 \| 24` | Specifies 12-hour or 24-hour time format for the picker. | | (Locale default) |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 *Note: The component also accepts standard `FormFieldProps` like `name` (required) and `formik` (required), as well as top-level `disabled` and `required` props that can override the corresponding settings within `config`.*
 
@@ -464,7 +472,7 @@ Displays a simple text label within a form, often used for informational purpose
 | `label` | `string` | | Yes | |
 | `margin` | `keyof typeof SizeEnum` | | | `undefined` |
 | `paddingBottom` | `keyof typeof SizeEnum` | | | `undefined` |
-| `variant` | `keyof typeof Variant` | The visual style variant (e.g., 'standard'). | | `'standard'` |
+| `variant` | `keyof typeof Variant` | Specifies the visual style of the component. | | `'standard'` |
 
 ## DynamicTypo
 
@@ -480,7 +488,7 @@ Displays a dynamic description text based on the value of a related form field. 
 | `paddingBottom` | `'dense' \| 'normal' \| 'none'` | | | |
 | `relatedField` | `string` | Name of the form field whose value determines the displayed description. | Yes | |
 | `required` | `boolean` | | | |
-| `variant` | `'outlined' \| 'filled' \| 'standard'` | The visual style variant of the element. | | |
+| `variant` | `'outlined' \| 'filled' \| 'standard'` | Specifies the visual style of the component. | | |
 
 ## Editor
 
@@ -511,7 +519,7 @@ The same with element Text.
 | `qrScannerParamName` | `string` | Query parameter name to extract from the scanned QR code URL. | | `'invite_code'` |
 | `required` | `boolean` | | | `false` |
 | `validateAction` | `string` | Name of a registered action for backend validation triggered on blur. | | |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Email
 
@@ -537,7 +545,7 @@ The same with element Text.
 | `returnKeyType` | `string` | Determines how the return key should look. | | `'default'` |
 | `textContentType` | `string` | Give the keyboard and the system information about the expected semantic meaning for the content. For Email, defaults to 'emailAddress'. | | `'emailAddress'` |
 | `validateAction` | `string` | Name of a registered action for backend validation on blur. | | `undefined` |
-| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'` | The visual style of the input field. | | `'standard'` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## File
 
@@ -561,7 +569,7 @@ The `File` form element allows users to select and upload a single file, typical
 | `preview_url` | `string` | URL of an existing image/file to preview initially. | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `upload_url` | `string` | The API endpoint for direct file uploads. | | `/file` |
-| `variant` | `string` | Visual style variant ('standard', 'outlined', 'filled', 'standard-inlined', 'livestream'). | | `standard-inlined` |
+| `variant` | `string` | Specifies the visual style of the component. | | `standard-inlined` |
 
 ## Form
 
@@ -674,7 +682,7 @@ A form element that allows users to select one or multiple friends from a list, 
 | `showWithoutOptions` | `boolean` | Whether to show the field without options. | | `undefined` |
 | `suboptions` | `SubOptionsShape` | Additional options or configurations. | | `undefined` |
 | `value_type` | `string` | Specifies the type of value returned. | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Sets the visual style of the element. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## GatewayButton
 
@@ -739,7 +747,7 @@ Displays HTML content fetched based on the field's value, typically representing
 | `margin` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Sets the visual style. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## input
 
@@ -767,7 +775,7 @@ A standard text input field allowing users to enter text. It wraps the `TextFiel
 | `startOfDay` | `boolean` | If `true`, sets the selected time to the beginning of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | Timezone identifier (e.g., 'America/New_York') for calculations. | | User's setting |
 | `timeFormat` | `12 \| 24` | Specifies whether to use 12-hour or 24-hour format in the time picker. | | User's setting |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Defines the visual style of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Price
 
@@ -787,7 +795,7 @@ Renders a set of price input fields, often used for different currencies or pric
 | `options` | `Array<{ key: string, name: string, required?: boolean, requiredWhen?: object, ... }>` | Defines the individual price inputs (e.g., currencies). Each object requires `key` (label/value key) and `name`. Can include `required`. | Yes | `[]` |
 | `paddingBottom` | `string \| number` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style of the field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Privacy
 
@@ -809,7 +817,7 @@ This element provides a user interface for selecting privacy settings, typically
 | `paddingBottom` | `'dense' \| 'normal' \| 'none'` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `suboptions` | `SubOptionsShape` | Additional options, often used for custom privacy lists or friend lists. | | `[]` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined' \| 'livestream'` | The visual style variant of the component. | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## Progress
 
@@ -825,7 +833,7 @@ Renders a progress bar indicating the completion status, typically used within m
 | `paddingRight` | `'none' \| 'dense' \| 'normal'` | Sets the right inner padding of the form control. | | `undefined` |
 | `paddingTop` | `'none' \| 'dense' \| 'normal'` | Sets the top inner padding of the form control. | | `undefined` |
 | `relatedField` | `string` | The name of the form field holding the current value (e.g., current step) for progress calculation. | Yes | |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The display variant of the form control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## question
 
@@ -861,7 +869,7 @@ This element renders a standard text input field. It is an alias for the `Text` 
 | `returnKeyType` | `string` | Specifies the appearance of the return key (e.g., 'done', 'next'). | | `'done'` |
 | `secureTextEntry` | `boolean` | If `true`, masks the text entered (for passwords). | | `false` |
 | `validateAction` | `string` | Name of a resource action used for asynchronous backend validation on blur. | | |
-| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'livestream'` etc. | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'livestream'` etc. | Specifies the visual style of the component. | | `'standard'` |
 
 *Note: This component inherits standard `TextInput` props. Only the most common and element-specific configuration props are listed here.*
 
@@ -886,7 +894,7 @@ A form element for creating and managing a list of quiz questions, each with mul
 | `minQuestions` | `number` | The minimum number of questions required. | | `1` |
 | `paddingBottom` | `'normal'`, `'dense'`, `'none'` | | | `'normal'` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard'`, `'outlined'`, `'filled'` | The display style variant of the form control. | | `'standard'` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## RadioGroup
 
@@ -902,7 +910,7 @@ A form element that displays a group of radio buttons, allowing the user to sele
 | `options` | `Array<{label: string, value: any, description?: string}>` | An array of objects defining each radio button. Each object needs `label` and `value`. `description` is optional. | Yes | `[]` |
 | `order` | `number` | Optional number to prefix the label for ordering. | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'outlined' \| 'filled' \| 'standard' \| 'horizontal' \| 'vertical'` | The visual style variant. | | |
+| `variant` | `'outlined' \| 'filled' \| 'standard' \| 'horizontal' \| 'vertical'` | Specifies the visual style of the component. | | |
 
 ## RadioLabelGroup
 
@@ -921,7 +929,7 @@ Renders a group of radio buttons, visually styled using circular icons, allowing
 | `order` | `number` | The numerical order to display before the label when `hasFormOrder` is `true`. | | |
 | `paddingBottom` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| string` | The visual style variant of the form control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| string` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Range
 
@@ -940,7 +948,7 @@ A form element that renders a dual-handle slider, allowing users to select a ran
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | |
 | `required` | `boolean` | | | `false` |
 | `step` | `number` | The granularity that the slider can step through values. | Yes | |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the form control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## ResetSearch
 
@@ -954,7 +962,7 @@ This element renders a button used within a search or filter form. When clicked,
 | `label` | `string` | | | `'reset'` |
 | `targetFields` | `string[]` | An array of field names within the form that this component should reset. | | `['sort', 'when', 'category_id']` |
 | `title` | `string` | A title associated with the element (specific usage may vary). | | `'filter'` |
-| `variant` | `string` | Controls the visual style or variant of the form control wrapper. | | `'standard'` |
+| `variant` | `string` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Row
 
@@ -1009,7 +1017,7 @@ The `Select` form element provides a dropdown or list interface for users to cho
 | `suboptions` | `SubOptionsShape` | Additional options grouped under main options (e.g., for dependent selects). | | `undefined` |
 | `useSectionList` | `boolean` | If `true`, uses a SectionList to display options (requires specific data structure). | | `false` |
 | `value_type` | `string` | Specifies the type of value to store (e.g., 'array'). | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | The visual style variant of the select field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SelectSubForm
 
@@ -1039,7 +1047,7 @@ The component accepts standard `FormFieldProps` (`name`, `disabled`, `formik`) a
 | `suboptions` | `SubOptionsShape` | An object containing secondary options, often dependent on the primary selection. | | `undefined` |
 | `useSectionList` | `boolean` | If true, the sub-form uses a `SectionList` for displaying options, suitable for grouped data. | | `false` |
 | `value_type` | `string` | Specifies the data type of the value (e.g., 'string', 'number'). | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| ...` | Visual style variant of the control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| ...` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SFAutocomplete
 
@@ -1065,7 +1073,7 @@ The `SFAutocomplete` element provides an autocomplete input field, allowing user
 | `search_params` | `object` | Additional parameters for the search API endpoint. | | `{}` |
 | `useOptionContext` | `boolean` | Whether to use a shared option context for managing selected options. | | `false` |
 | `valueKey` | `string` | Key to use for the option's value. | | `'id'` |
-| `variant` | `standard`, `outlined` | Visual style variant. | | `standard` |
+| `variant` | `standard`, `outlined` | Specifies the visual style of the component. | | `standard` |
 
 ## SFDate
 
@@ -1092,7 +1100,7 @@ A form element that allows users to select a date, time, or both using a native 
 | `startOfDay` | `boolean` | If true, sets the selected date's time to the start of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | The GMT timezone string (e.g., 'Asia/Ho_Chi_Minh') for date calculations. | | `undefined` |
 | `timeFormat` | `12 \| 24` | Specifies 12 or 24-hour time format for the time picker. | | `12` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SFDatetime
 
@@ -1117,7 +1125,7 @@ A form input element that allows users to select a date, time, or both using a n
 | `startOfDay` | `boolean` | Set selected date's value to the start of the day (00:00:00). | | `false` |
 | `time_zone_gmt` | `string` | IANA time zone name (e.g., 'Asia/Saigon') for date calculations. Defaults to device timezone if omitted. | Yes | Device Timezone |
 | `timeFormat` | `12 \| 24` | Use 12-hour or 24-hour format in the time picker. | | System Default |
-| `variant` | `'standard'\|'outlined'\|...` | The visual style variant of the input. | Yes | `'standard'` |
+| `variant` | `'standard'\|'outlined'\|...` | Specifies the visual style of the component. | Yes | `'standard'` |
 
 *Note: `required` status is based on the TypeScript `Config` type definition. Default values are inferred from code logic where possible.*
 
@@ -1146,7 +1154,7 @@ This form element renders a button, typically represented by an icon. When press
 | `suboptions` | `SubOptionsShape` | Configuration for sub-options within the filter form. | | `undefined` |
 | `useSectionList` | `boolean` | If `true`, uses a `SectionList` component to render options in the filter form. | | `false` |
 | `value_type` | `string` | Specifies the expected data type of the filter value. | | `undefined` |
-| `variant` | `keyof typeof Variant` | Specifies the visual style variant (e.g., 'standard', 'outlined'). | | `'standard'` |
+| `variant` | `keyof typeof Variant` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SFFilterForm
 
@@ -1172,7 +1180,7 @@ Renders a button that opens a bottom sheet containing a sub-form, typically used
 | `suboptions` | `SubOptionsShape` | Configuration for the sub-form displayed in the bottom sheet. | Yes | `undefined` |
 | `useSectionList` | `boolean` | Uses a `SectionList` for displaying options in the sub-form if true. | | `false` |
 | `value_type` | `string` | Specifies the expected data type of the selected value(s) in the sub-form. | | `undefined` |
-| `variant` | `standard` \| `outlined` \| `filled` | The visual style variant of the control. | | `standard` |
+| `variant` | `standard` \| `outlined` \| `filled` | Specifies the visual style of the component. | | `standard` |
 
 ## SFFilterPrice
 
@@ -1195,7 +1203,7 @@ The `SFFilterPrice` element provides a form input for selecting a price range (m
 | `toFieldLabel` | `string` | Label for the maximum price input in the bottom sheet. | | |
 | `toFieldName` | `string` | The formik field name for the maximum price value. | | `'price_to'` |
 | `toFieldPlaceholder` | `string` | Placeholder text for the maximum price input in the bottom sheet. | | |
-| `variant` | `string` | Specifies the visual style ('standard', 'standard-outlined', etc.). | | `'standard'` |
+| `variant` | `string` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SFScrollView
 
@@ -1233,7 +1241,7 @@ The component accepts standard `FormFieldProps` (`name`, `config`, `disabled`, `
 | `placeholder` | `string` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `showSearchIcon` | `boolean` | Whether to show the search icon. | | `true` |
-| `variant` | `keyof typeof Variant` | Visual style variant. | | `undefined` |
+| `variant` | `keyof typeof Variant` | Specifies the visual style of the component. | | `undefined` |
 
 ## SFSelect
 
@@ -1264,7 +1272,7 @@ The `SFSelect` element provides a dropdown-like selection interface, typically o
 | `suboptions` | `SubOptionsShape` | Additional options grouped under main options. | | `undefined` |
 | `useSectionList` | `boolean` | Uses a SectionList for displaying options in the bottom sheet if true. | | `false` |
 | `value_type` | `string` | Specifies the type of value expected (e.g., 'string', 'number'). | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| etc.` | Visual style variant. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| etc.` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SFSwitch
 
@@ -1282,7 +1290,7 @@ A form element that renders a switch (toggle) control. It allows users to select
 | `paddingBottom` | `'dense' \| 'normal' \| 'none'` | | | `normal` |
 | `required` | `boolean` | | | `false` |
 | `uncheckedValue` | `boolean \| number` | The value assigned to the field when the switch is unchecked (off). | | `0` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | 'standard-inlined' | The visual style of the form control. (Note: Hardcoded to 'standard-inlined' in the component implementation) | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | 'standard-inlined' | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## SFTabSelect
 
@@ -1329,7 +1337,7 @@ The `SFText` element renders a standard text input field within a form. It suppo
 | `qrScannerParamName` | `string` | Query parameter name to extract from the scanned QR code URL. | | `'invite_code'` |
 | `required` | `boolean` | | | `false` |
 | `validateAction` | `string` | Action name for backend validation on blur. | | `undefined` |
-| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'`, `'livestream'` | Visual style of the input. | | `'standard'` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'`, `'livestream'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SimpleFriendPicker
 
@@ -1348,7 +1356,7 @@ A form element that allows users to select one or multiple friends from a search
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
 | `placeholder` | `string` | | | `'Search friends by their name'` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SingleUpdateInputField
 
@@ -1384,7 +1392,7 @@ This form element allows users to select a single video, either by uploading a f
 | `required` | `boolean` | | | `false` |
 | `storage_id` | `number \| null` | Optional ID for a specific storage service. | | `null` |
 | `upload_url` | `string` | The endpoint URL for uploading the file. | Yes | |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the form control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Slider
 
@@ -1404,7 +1412,7 @@ A form element that allows users to select a value from a specified range by sli
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `step` | `number` | The granularity with which the slider can step through values. | | `undefined` |
-| `variant` | `keyof typeof Variant` | The visual style variant of the form control. (Currently fixed internally) | | `'standard-inlined'` |
+| `variant` | `keyof typeof Variant` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## SocialButtons
 
@@ -1435,7 +1443,7 @@ This element renders a text input field, often accompanied by an image, designed
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
 | `placeholder` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Defines the visual style of the input field. | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## SponsorCalculatorCost
 
@@ -1457,7 +1465,7 @@ This form element provides a numeric input field that calculates and displays a 
 | `pricePattern` | `object` | An object defining the currency format (`symbol`, `currency_code`, etc.). | Yes | |
 | `required` | `boolean` | | | `false` |
 | `totalNameLabel` | `string` | The translation key for the label prefix before the calculated total cost. | | `'total_cost'` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'livestream' \| 'standard-outlined'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'livestream' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## StepButton
 
@@ -1474,7 +1482,7 @@ A button element designed for multi-step forms, allowing navigation between step
 | `margin` | `'small' \| 'medium' \| 'large' \| 'none'` | | | `undefined` |
 | `paddingBottom` | `'small' \| 'medium' \| 'large' \| 'none'` | | | `undefined` |
 | `style` | `ViewStyle` | Custom styling applied to the surrounding form control. | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | The visual style variant of the surrounding form control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Submit
 
@@ -1501,7 +1509,7 @@ A button element used to trigger form submission. It integrates with Formik to h
 | `style` | `object` | Custom styles to apply to the FormControl container. | | |
 | `textTransform` | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'` | Controls the text transformation (e.g., uppercase). | | |
 | `transparent` | `boolean` | Makes the button background transparent. | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'contained'` | The visual style variant of the button's container. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'contained'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SubmitHeader
 
@@ -1522,7 +1530,7 @@ This element renders a submit button, typically placed within a form's header ar
 | `size` | `'small' \| 'medium' \| 'large'` | Button size. | | |
 | `textTransform` | `string` | Button text transformation (e.g., 'uppercase'). | | |
 | `transparent` | `boolean` | Makes the button background transparent. | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Variant style for the surrounding control. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Switch
 
@@ -1558,7 +1566,7 @@ A form element that allows users to input and manage a list of tags. Users can t
 | `paddingBottom` | `'normal' \| 'dense' \| 'none'` | | | `'normal'` |
 | `placeholder` | `string` | | | `'enter text'` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Text
 
@@ -1591,7 +1599,7 @@ For a visual reference, see [Text Gallery](./form-elements/Text.md)
 | `qrScannerParamName` | `string` | Query parameter name to extract from the scanned QR code URL. | | `'invite_code'` |
 | `required` | `boolean` | | | `false` |
 | `validateAction` | `string` | Name of a registered action for backend validation triggered on blur. | | |
-| `variant` | `'standard' \| 'standard-inlined' \| 'standard-outlined' \| 'outlined'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'standard-inlined' \| 'standard-outlined' \| 'outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Textarea
 
@@ -1618,7 +1626,7 @@ Provides a multi-line text input field for forms.
 | `name` | `string` | The name of the field used in the form state. | Yes | |
 | `placeholder` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input field. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Time
 
@@ -1640,7 +1648,7 @@ A form element that allows users to select a specific time using a native time p
 | `resultFormat` | `string` | The format the selected time is stored in. Defaults to ISO 8601 format if unset. | | ISO 8601 String |
 | `time_zone_gmt` | `string` | Timezone identifier (e.g., 'UTC', 'America/New_York') for display formatting. | | User's current timezone |
 | `timeFormat` | `12 \| 24` | Specifies whether to use 12-hour or 24-hour format in the picker. | | Locale default |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 **Note:** This element utilizes the `DatePickerField` component internally with its `datePickerMode` prop implicitly set to `'time'`. Props like `minDate`, `maxDate`, `startOfDay`, and `endOfDay` from `DatePickerField` are technically available but may have limited relevance or unexpected behavior in a time-only context.
 
