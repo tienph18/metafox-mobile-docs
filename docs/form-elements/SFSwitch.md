@@ -1,17 +1,19 @@
-# SFSwitch
+## SFSwitch
 
 A form element that renders a switch (toggle) control. It allows users to select between two states, typically representing on/off or true/false.
 
-## Props
+*Note: This element is only used in a search form.*
 
-| Name           | Type                               | Description                                                                 | Required | Default           |
-| -------------- | ---------------------------------- | --------------------------------------------------------------------------- | -------- | ----------------- |
-| `label`          | string                             | The text label displayed next to the switch.                                | Yes      |                   |
-| `fullWidth`      | boolean                            | If `true`, the component takes up the full width of its container.          | No       | `false`           |
-| `margin`         | 'dense' \| 'normal' \| 'none'      | Defines the margin spacing around the component.                            | No       | `normal`          |
-| `required`       | boolean                            | If `true`, marks the field as required.                                     | No       | `false`           |
-| `variant`        | 'standard' \| 'outlined' \| 'filled' \| 'standard-inlined' | The visual style of the form control. (Note: Hardcoded to 'standard-inlined' in the component implementation) | No       | `'standard-inlined'` |
-| `paddingBottom`  | 'dense' \| 'normal' \| 'none'      | Defines the bottom padding spacing for the component.                       | No       | `normal`          |
-| `checkedValue`   | boolean \| number                  | The value assigned to the field when the switch is checked (on).            | No       | `1`               |
-| `uncheckedValue` | boolean \| number                  | The value assigned to the field when the switch is unchecked (off).         | No       | `0`               |
-| `description`    | string                             | Additional text displayed below the switch for context or instructions.     | No       | `''`              |
+### Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `checkedValue` | `boolean \| number` | The value assigned to the field when the switch is checked (on). | | `1` |
+| `description` | `string` | | | `''` |
+| `fullWidth` | `boolean` | | | `false` |
+| `label` | `string` | | Yes | |
+| `margin` | `'dense' \| 'normal' \| 'none'` | | | `normal` |
+| `paddingBottom` | `'dense' \| 'normal' \| 'none'` | | | `normal` |
+| `required` | `boolean` | | | `false` |
+| `uncheckedValue` | `boolean \| number` | The value assigned to the field when the switch is unchecked (off). | | `0` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | 'standard-inlined' | Specifies the visual style of the component. | | `'standard-inlined'` |

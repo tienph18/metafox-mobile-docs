@@ -1,18 +1,40 @@
-# Tags
+## Tags
 
 A form element that allows users to input and manage a list of tags. Users can type tags and press Enter/Done to add them. Existing tags can be removed by clicking the close icon on the tag.
 
-## Props
+### Visual Examples
 
-| Name             | Type                                                     | Description                                                                 | Required | Default      |
-| :--------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------- |
-| `label`          | `string`                                                 | The text label displayed for the field.                                     | No       |              |
-| `description`    | `string`                                                 | Helper text displayed below the input.                                      | No       |              |
-| `placeholder`    | `string`                                                 | Placeholder text shown when the input is empty.                             | No       | `'enter text'` |
-| `variant`        | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | The visual style variant of the input.                                      | No       | `'standard'` |
-| `fullWidth`      | `boolean`                                                | If true, the element spans the full width of its container.                 | No       | `false`      |
-| `margin`         | `'normal' \| 'dense' \| 'none'`                          | Controls the margin around the form control.                                | No       |              |
-| `required`       | `boolean`                                                | Marks the field as mandatory.                                               | No       | `false`      |
-| `paddingBottom`  | `'normal' \| 'dense' \| 'none'`                          | Controls the bottom padding of the form control.                            | No       | `'normal'`   |
-| `clearButtonMode`| `string`                                                 | Determines the visibility of the clear button (standard TextInput prop).    | No       |              |
-| `editable`       | `boolean`                                                | If false, the input cannot be edited (standard TextInput prop).             | No       | `true`       |
+**Variant: standard**
+
+![Standard variant](../assets/Tags/standard.png)
+
+**Variant: outlined**
+
+![Outlined variant](../assets/Tags/outlined.png)
+
+**Variant: outlined-inlined**
+
+![Outlined Inlined variant](../assets/Tags/outlined-inlined.png)
+
+**Variant: standard-outlined**
+
+![Standard Outlined variant](../assets/Tags/standard-outlined.png)
+
+**Variant: standard-inlined**
+
+![Standard Inlined variant](../assets/Tags/standard-inlined.png)
+
+### Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `clearButtonMode` | `string` | Determines the visibility of the clear button (standard TextInput prop). | | |
+| `description` | `string` | | | |
+| `editable` | `boolean` | If false, the input cannot be edited (standard TextInput prop). | | `true` |
+| `fullWidth` | `boolean` | | | `false` |
+| `label` | `string` | | | |
+| `margin` | `'normal' \| 'dense' \| 'none'` | | | |
+| `paddingBottom` | `'normal' \| 'dense' \| 'none'` | | | `'normal'` |
+| `placeholder` | `string` | | | `'enter text'` |
+| `required` | `boolean` | | | `false` |
+| `variant` | `'standard' \| 'outlined' \| 'outlined-inlined' \| 'standard-outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard'` |

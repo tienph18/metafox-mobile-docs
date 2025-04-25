@@ -808,6 +808,8 @@ For a visual reference, see [Text Gallery](./form-elements/Text.md)
 | `timeFormat` | `12 \| 24` | Specifies whether to use 12-hour or 24-hour format in the time picker. | | User's setting |
 | `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
+<!-- Missing from InviteFriendPicker to PollCloseTime -->
+
 ## Price
 
 Renders a set of price input fields, often used for different currencies or price types. The actual input fields are defined by the `options` prop. This component conditionally renders different implementations based on the API version, but this documentation focuses on the behavior for API version 5.1.8 and later.
@@ -834,6 +836,8 @@ For a visual reference, see [Price Gallery](./form-elements/Price.md)
 
 This element provides a user interface for selecting privacy settings, typically used for controlling who can see a piece of content (e.g., a post). It displays the currently selected privacy option (with an icon and label) and opens a dedicated selector view (`SelectPrivacyView`) when tapped.
 
+For a visual reference, see [Privacy Gallery](./form-elements/Privacy.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -846,11 +850,11 @@ This element provides a user interface for selecting privacy settings, typically
 | `margin` | `'dense' \| 'normal' \| 'none'` | | | `'normal'` |
 | `multiple` | `boolean` | If `true`, allows selecting multiple privacy options (currently single). | | `false` |
 | `name` | `string` | The unique identifier for the field within the form. | Yes | |
-| `options` | `PrivacyOptionItemShape[]` | An array of predefined privacy options available for selection. | Yes | `[]` |
+| `options` | `Array<{ label: string, value: string }>` | An array of predefined privacy options available for selection. | Yes | `[]` |
 | `paddingBottom` | `'dense' \| 'normal' \| 'none'` | | | `undefined` |
 | `required` | `boolean` | | | `false` |
 | `suboptions` | `SubOptionsShape` | Additional options, often used for custom privacy lists or friend lists. | | `[]` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## Progress
 
@@ -870,7 +874,9 @@ Renders a progress bar indicating the completion status, typically used within m
 
 ## question
 
-This element renders a standard text input field. It is an alias for the `Text` element (`form.element.Text`).
+*Note: This element inherits most props from the base `Text` element.*
+
+For a visual reference, see [Text Gallery](./form-elements/Text.md)
 
 ### Props
 
@@ -904,11 +910,11 @@ This element renders a standard text input field. It is an alias for the `Text` 
 | `validateAction` | `string` | Name of a resource action used for asynchronous backend validation on blur. | | |
 | `variant` | `'standard'`, `'outlined'`, `'filled'`, `'livestream'` etc. | Specifies the visual style of the component. | | `'standard'` |
 
-*Note: This component inherits standard `TextInput` props. Only the most common and element-specific configuration props are listed here.*
-
 ## QuizQuestion
 
 A form element for creating and managing a list of quiz questions, each with multiple answers and a designated correct answer. Users can add/remove questions and answers within specified limits.
+
+For a visual reference, see [QuizQuestion Gallery](./form-elements/QuizQuestion.md)
 
 ### Props
 
@@ -927,11 +933,12 @@ A form element for creating and managing a list of quiz questions, each with mul
 | `minQuestions` | `number` | The minimum number of questions required. | | `1` |
 | `paddingBottom` | `'normal'`, `'dense'`, `'none'` | | | `'normal'` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard'`, `'outlined'`, `'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## RadioGroup
 
 A form element that displays a group of radio buttons, allowing the user to select a single option.
+
+For a visual reference, see [RadioGroup Gallery](./form-elements/RadioGroup.md)
 
 ### Props
 
@@ -943,11 +950,12 @@ A form element that displays a group of radio buttons, allowing the user to sele
 | `options` | `Array<{label: string, value: any, description?: string}>` | An array of objects defining each radio button. Each object needs `label` and `value`. `description` is optional. | Yes | `[]` |
 | `order` | `number` | Optional number to prefix the label for ordering. | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'outlined' \| 'filled' \| 'standard' \| 'horizontal' \| 'vertical'` | Specifies the visual style of the component. | | |
 
 ## RadioLabelGroup
 
 Renders a group of radio buttons, visually styled using circular icons, allowing the user to select only one option from a list. This element is typically used for membership questions or similar single-choice scenarios within a form.
+
+For a visual reference, see [RadioLabelGroup Gallery](./form-elements/RadioLabelGroup.md)
 
 ### Props
 
@@ -962,11 +970,12 @@ Renders a group of radio buttons, visually styled using circular icons, allowing
 | `order` | `number` | The numerical order to display before the label when `hasFormOrder` is `true`. | | |
 | `paddingBottom` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| string` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Range
 
 A form element that renders a dual-handle slider, allowing users to select a range of values. It uses two separate field names (defined in `min.name` and `max.name` props) to store the selected minimum and maximum values in the form state.
+
+For a visual reference, see [Range Gallery](./form-elements/Range.md)
 
 ### Props
 
@@ -981,7 +990,6 @@ A form element that renders a dual-handle slider, allowing users to select a ran
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | |
 | `required` | `boolean` | | | `false` |
 | `step` | `number` | The granularity that the slider can step through values. | Yes | |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## ResetSearch
 
@@ -1009,23 +1017,11 @@ Renders child form elements horizontally in a row, allowing control over their a
 | `justifyContent` | `'space-between' \| 'flex-start' \| 'flex-end' \| 'center' \| 'space-around' \| 'space-evenly'` | Specifies the alignment of child elements along the main axis. | | `'space-between'` |
 | `style` | `ViewStyle` | Custom styles applied to the row container. | | |
 
-## SearchBox
-
-A form element intended for search input fields. Currently, this component displays a "Coming Soon" placeholder, indicating the feature is under development.
-
-### Props
-
-| Name | Type | Description | Required | Default |
-| :--- | :--- | :---------- | :-------- | :------- |
-| `className` | `string` | An optional CSS class name to apply to the component for styling. | | |
-| `fullWidth` | `boolean` | | | `true` |
-| `margin` | `string` | | | `'normal'` |
-| `placeholder` | `string` | | | |
-| `size` | `string` | Defines the size of the input field (e.g., 'small', 'medium'). | | |
-
 ## Select
 
 The `Select` form element provides a dropdown or list interface for users to choose one or multiple options from a predefined set. It supports various configurations like search, multiple selections, and different visual styles.
+
+For a visual reference, see [Select Gallery](./form-elements/Select.md)
 
 ### Props
 
@@ -1050,7 +1046,7 @@ The `Select` form element provides a dropdown or list interface for users to cho
 | `suboptions` | `SubOptionsShape` | Additional options grouped under main options (e.g., for dependent selects). | | `undefined` |
 | `useSectionList` | `boolean` | If `true`, uses a SectionList to display options (requires specific data structure). | | `false` |
 | `value_type` | `string` | Specifies the type of value to store (e.g., 'array'). | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## SelectSubForm
 
@@ -1086,6 +1082,8 @@ The component accepts standard `FormFieldProps` (`name`, `disabled`, `formik`) a
 
 The `SFAutocomplete` element provides an autocomplete input field, allowing users to search and select one or multiple options from a predefined list or dynamically fetched data source. It opens a bottom sheet for option selection.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1111,6 +1109,8 @@ The `SFAutocomplete` element provides an autocomplete input field, allowing user
 ## SFDate
 
 A form element that allows users to select a date, time, or both using a native modal picker. It displays the selected value in a specified format.
+
+*Note: This element is only used in a search form.*
 
 ### Props
 
@@ -1139,6 +1139,8 @@ A form element that allows users to select a date, time, or both using a native 
 
 A form input element that allows users to select a date, time, or both using a native modal picker. It displays the selected value in a formatted text input. This element is an alias for `SFDate` but typically configured with `datePickerMode: 'datetime'`.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1160,11 +1162,11 @@ A form input element that allows users to select a date, time, or both using a n
 | `timeFormat` | `12 \| 24` | Use 12-hour or 24-hour format in the time picker. | | System Default |
 | `variant` | `'standard'\|'outlined'\|...` | Specifies the visual style of the component. | Yes | `'standard'` |
 
-*Note: `required` status is based on the TypeScript `Config` type definition. Default values are inferred from code logic where possible.*
-
 ## SFFilterButton
 
 This form element renders a button, typically represented by an icon. When pressed, it opens a bottom sheet containing a sub-form (`ui.SubFormBuilder`) based on the main form's schema. This allows users to configure and apply filter criteria, which are then reflected in the main form's values upon submission of the sub-form.
+
+*Note: This element is only used in a search form.*
 
 ### Props
 
@@ -1193,6 +1195,8 @@ This form element renders a button, typically represented by an icon. When press
 
 Renders a button that opens a bottom sheet containing a sub-form, typically used for applying filters within a larger form. Pressing the button navigates to a dedicated screen (`FORM_BOTTOM_SHEET`) where the filter options, defined by the `options` and `suboptions` props, are presented.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1219,6 +1223,8 @@ Renders a button that opens a bottom sheet containing a sub-form, typically used
 
 The `SFFilterPrice` element provides a form input for selecting a price range (minimum and maximum). It displays the selected range and opens a bottom sheet for users to enter or modify the 'from' and 'to' price values.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1242,6 +1248,8 @@ The `SFFilterPrice` element provides a form input for selecting a price range (m
 
 A form element that renders its child elements within a horizontal ScrollView. It allows users to scroll horizontally through a set of form inputs or components.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1252,6 +1260,8 @@ A form element that renders its child elements within a horizontal ScrollView. I
 ## SFSearchBox
 
 The `SFSearchBox` component renders a search input field integrated directly into the screen's header navigation bar. It automatically handles focus, clearing, and debounced value updates for form submission.
+
+*Note: This element is only used in a search form.*
 
 ### Props
 
@@ -1279,6 +1289,8 @@ The component accepts standard `FormFieldProps` (`name`, `config`, `disabled`, `
 ## SFSelect
 
 The `SFSelect` element provides a dropdown-like selection interface, typically opening a bottom sheet for users to choose one or multiple options from a list. It supports features like search, sections, and conditional options based on other fields.
+
+*Note: This element is only used in a search form.*
 
 ### Props
 
@@ -1311,6 +1323,8 @@ The `SFSelect` element provides a dropdown-like selection interface, typically o
 
 A form element that renders a switch (toggle) control. It allows users to select between two states, typically representing on/off or true/false.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1329,6 +1343,8 @@ A form element that renders a switch (toggle) control. It allows users to select
 
 A form element that renders a horizontal list of tabs, allowing the user to select one option. The selected value is stored in the form state.
 
+*Note: This element is only used in a search form.*
+
 ### Props
 
 Props are passed via the `config` object within the form definition.
@@ -1341,6 +1357,8 @@ Props are passed via the `config` object within the form definition.
 ## SFText
 
 The `SFText` element renders a standard text input field within a form. It supports various configurations like multiline input, validation, QR code scanning, and copy-to-clipboard functionality.
+
+*Note: This element is only used in a search form.*
 
 ### Props
 
@@ -1391,22 +1409,11 @@ A form element that allows users to select one or multiple friends from a search
 | `required` | `boolean` | | | `false` |
 | `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
-## SingleUpdateInputField
-
-A form element that currently renders a 'Coming Soon' placeholder. It is intended for scenarios requiring a single update input field, but the specific functionality is not yet implemented.
-
-### Props
-
-| Name | Type | Description | Required | Default |
-| :--- | :--- | :---------- | :-------- | :------- |
-| `config` | `object` | An object containing configuration properties specific to the form element. | Yes | `{}` |
-| `disabled` | `boolean` | | | `false` |
-| `formik` | `FormikContextType<any>` | The Formik context object, providing access to form state and helpers. | Yes | |
-| `name` | `string` | The unique identifier for the form field within the form. | Yes | |
-
 ## SingleVideoFile
 
 This form element allows users to select a single video, either by uploading a file directly or by providing a URL (depending on the `file_type` configuration). It displays a preview of the selected video and handles file size validation.
+
+For a visual reference, see [SingleVideoFile Gallery](./form-elements/SingleVideoFile.md)
 
 ### Props
 
@@ -1425,7 +1432,6 @@ This form element allows users to select a single video, either by uploading a f
 | `required` | `boolean` | | | `false` |
 | `storage_id` | `number \| null` | Optional ID for a specific storage service. | | `null` |
 | `upload_url` | `string` | The endpoint URL for uploading the file. | Yes | |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Slider
 
@@ -1460,7 +1466,9 @@ This element renders a container for multiple social login buttons. It dynamical
 
 ## SpamQuestion
 
-This element renders a text input field, often accompanied by an image, designed to present a question to the user to prevent spam submissions. It integrates with Formik for state management.
+This element renders a text input field, often accompanied by an image, designed to present a question to the user to prevent spam submissions.
+
+For a visual reference, see [SpamQuestion Gallery](./form-elements/SpamQuestion.md)
 
 ### Props
 
@@ -1476,7 +1484,7 @@ This element renders a text input field, often accompanied by an image, designed
 | `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
 | `placeholder` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |
 
 ## SponsorCalculatorCost
 
@@ -1498,7 +1506,7 @@ This form element provides a numeric input field that calculates and displays a 
 | `pricePattern` | `object` | An object defining the currency format (`symbol`, `currency_code`, etc.). | Yes | |
 | `required` | `boolean` | | | `false` |
 | `totalNameLabel` | `string` | The translation key for the label prefix before the calculated total cost. | | `'total_cost'` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'livestream' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## StepButton
 
@@ -1515,7 +1523,7 @@ A button element designed for multi-step forms, allowing navigation between step
 | `margin` | `'small' \| 'medium' \| 'large' \| 'none'` | | | `undefined` |
 | `paddingBottom` | `'small' \| 'medium' \| 'large' \| 'none'` | | | `undefined` |
 | `style` | `ViewStyle` | Custom styling applied to the surrounding form control. | | `undefined` |
-| `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Submit
 
@@ -1569,6 +1577,8 @@ This element renders a submit button, typically placed within a form's header ar
 
 A form element that renders a toggle switch input, allowing users to select between two states (on/off).
 
+For a visual reference, see [Switch Gallery](./form-elements/Switch.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1586,6 +1596,8 @@ A form element that renders a toggle switch input, allowing users to select betw
 
 A form element that allows users to input and manage a list of tags. Users can type tags and press Enter/Done to add them. Existing tags can be removed by clicking the close icon on the tag.
 
+For a visual reference, see [Tags Gallery](./form-elements/Tags.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1599,7 +1611,7 @@ A form element that allows users to input and manage a list of tags. Users can t
 | `paddingBottom` | `'normal' \| 'dense' \| 'none'` | | | `'normal'` |
 | `placeholder` | `string` | | | `'enter text'` |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'outlined-inlined' \| 'standard-outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Text
 
@@ -1638,6 +1650,8 @@ For a visual reference, see [Text Gallery](./form-elements/Text.md)
 
 Provides a multi-line text input field for forms.
 
+For a visual reference, see [Textarea Gallery](./form-elements/Textarea.md)
+
 ### Props
 
 | Name | Type | Description | Required | Default |
@@ -1659,11 +1673,13 @@ Provides a multi-line text input field for forms.
 | `name` | `string` | The name of the field used in the form state. | Yes | |
 | `placeholder` | `string` | | | |
 | `required` | `boolean` | | | `false` |
-| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
 
 ## Time
 
-A form element that allows users to select a specific time using a native time picker interface. This element is an alias for the `Date` element, configured specifically for time selection.
+*Note: This element inherits most props from the base `Date` element.*
+
+For a visual reference, see [Date Gallery](./form-elements/Date.md)
 
 ### Props
 
@@ -1682,8 +1698,6 @@ A form element that allows users to select a specific time using a native time p
 | `time_zone_gmt` | `string` | Timezone identifier (e.g., 'UTC', 'America/New_York') for display formatting. | | User's current timezone |
 | `timeFormat` | `12 \| 24` | Specifies whether to use 12-hour or 24-hour format in the picker. | | Locale default |
 | `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined'` | Specifies the visual style of the component. | | `'standard'` |
-
-**Note:** This element utilizes the `DatePickerField` component internally with its `datePickerMode` prop implicitly set to `'time'`. Props like `minDate`, `maxDate`, `startOfDay`, and `endOfDay` from `DatePickerField` are technically available but may have limited relevance or unexpected behavior in a time-only context.
 
 ## Typo
 

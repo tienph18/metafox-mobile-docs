@@ -1,19 +1,33 @@
-# SpamQuestion
+## SpamQuestion
 
-This element renders a text input field, often accompanied by an image, designed to present a question to the user to prevent spam submissions. It integrates with Formik for state management.
+This element renders a text input field, often accompanied by an image, designed to present a question to the user to prevent spam submissions.
 
-## Props
+## Visual Examples
 
-| Name                 | Type                                                              | Description                                                                 | Required | Default            |
-| :------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------- | :------- | :----------------- |
-| `label`              | `string`                                                          | The text label displayed for the field.                                     | No       |                    |
-| `placeholder`        | `string`                                                          | Placeholder text shown in the input field when empty.                       | No       |                    |
-| `required`           | `boolean`                                                         | Indicates if the field must be filled out.                                  | No       | `false`            |
-| `disabled`           | `boolean`                                                         | Disables the input field, making it non-interactive.                        | No       | `false`            |
-| `fullWidth`          | `boolean`                                                         | If `true`, the component will expand to take up the full available width.   | No       | `false`            |
-| `margin`             | `'none' \| 'dense' \| 'normal'`                                   | Controls the margin spacing around the component.                           | No       | `undefined`        |
-| `variant`            | `'standard' \| 'outlined' \| 'filled' \| 'standard-inlined'`      | Defines the visual style of the input field.                                | No       | `'standard-inlined'` |
-| `imageUri`           | `string`                                                          | The URI for the image associated with the spam question.                    | Yes      |                    |
-| `editable`           | `boolean`                                                         | Determines if the text input field can be edited by the user.               | No       | `true`             |
-| `clearButtonMode`    | `'never' \| 'while-editing' \| 'unless-editing' \| 'always'` | Controls when the clear text button appears in the input field (iOS only). | No       | `undefined`        |
-| `paddingBottom`      | `'none' \| 'dense' \| 'normal'`                                   | Controls the padding at the bottom of the component.                        | No       | `undefined`        |
+**Variant: standard**
+
+![Standard variant](../assets/SpamQuestion/standard.png)
+
+**Variant: outlined**
+
+![Outlined variant](../assets/SpamQuestion/outlined.png)
+
+**Variant: standard-inlined**
+
+![Standard Inlined variant](../assets/SpamQuestion/standard-inlined.png)
+
+### Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `clearButtonMode` | `'never' \| 'while-editing' \| 'unless-editing' \| 'always'` | Controls when the clear text button appears in the input field (iOS only). | | `undefined` |
+| `disabled` | `boolean` | | | `false` |
+| `editable` | `boolean` | Determines if the text input field can be edited by the user. | | `true` |
+| `fullWidth` | `boolean` | | | `false` |
+| `imageUri` | `string` | The URI for the image associated with the spam question. | Yes | |
+| `label` | `string` | | | |
+| `margin` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
+| `paddingBottom` | `'none' \| 'dense' \| 'normal'` | | | `undefined` |
+| `placeholder` | `string` | | | |
+| `required` | `boolean` | | | `false` |
+| `variant` | `'standard' \| 'outlined' \| 'standard-inlined'` | Specifies the visual style of the component. | | `'standard-inlined'` |

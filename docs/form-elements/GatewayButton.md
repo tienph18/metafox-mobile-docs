@@ -11,6 +11,10 @@ Renders a button specific to a payment gateway (e.g., Apple Pay, Stripe). It han
 
 ![Apple Pay variant](../assets/GatewayButton/applepay.png)
 
+**Variant: googlepay**
+
+![Google Pay variant](../assets/GatewayButton/googlepay.png)
+
 **Variant: paypal**
 
 ![PayPal variant](../assets/GatewayButton/paypal.png)
