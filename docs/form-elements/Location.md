@@ -2,6 +2,24 @@
 
 A form field that allows users to select a geographical location using a native location picker interface. Clicking the field opens the picker, and the selected location's address is displayed.
 
+## Visual Examples
+
+**Variant: standard**
+
+![Standard variant](../assets/Location/standard.png)
+
+**Variant: outlined**
+
+![Outlined variant](../assets/Location/outlined.png)
+
+**Variant: standard-outlined**
+
+![Standard Outlined variant](../assets/Location/standard-outlined.png)
+
+**Variant: standard-inlined**
+
+![Livestream variant](../assets/Location/standard-inlined.png)
+
 ## Props
 
 | Name | Type | Description | Required | Default |

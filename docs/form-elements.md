@@ -808,11 +808,11 @@ For a visual reference, see [Text Gallery](./form-elements/Text.md)
 | `timeFormat` | `12 \| 24` | Specifies whether to use 12-hour or 24-hour format in the time picker. | | User's setting |
 | `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
-# InviteFriendPicker
+## InviteFriendPicker
 
 A form element designed to allow users to select one or multiple friends for invitation purposes. It typically fetches friend suggestions via an API endpoint and presents them in a dedicated selection interface.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :-- | :-- | :-- | :-- | :-- |
@@ -832,11 +832,11 @@ A form element designed to allow users to select one or multiple friends for inv
 | `placeholder` | `string` | Placeholder text when no value selected. |  | `''` |
 | `api_params` | `Record<string, any>` | Additional API request parameters. |  | `{ q: ':q' }` |
 
-# LinkButton
+## LinkButton
 
 This form element renders a button styled as a link. It can be configured to navigate to a specific route/link or dispatch a Redux action upon being pressed. It's often used for actions like navigating to a "Forgot Password" screen or triggering secondary form actions.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :-- | :-- | :-- | :-- | :-- |
@@ -850,11 +850,13 @@ This form element renders a button styled as a link. It can be configured to nav
 | `textTransform` | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'` | CSS text-transform property for the button label. | | `'none'` |
 | `margin` | `'normal'` | Controls the margin around the form control. | | `'normal'` |
 
-# Location
+## Location
 
 A form field that allows users to select a geographical location using a native location picker interface. Clicking the field opens the picker, and the selected location's address is displayed.
 
-## Props
+For a visual reference, see [Location Gallery](./form-elements/Location.md)
+
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :-------- | :------- |
@@ -869,11 +871,11 @@ A form field that allows users to select a geographical location using a native 
 | `types` | `PlaceType[]` | Filters the types of places returned by the location picker (e.g., 'address', 'geocode', 'establishment'). | | |
 | `inline` | `boolean` | Controls if the label is displayed inline with the input. | | `false` |
 
-# MembershipQuestion
+## MembershipQuestion
 
 The `MembershipQuestion` form element allows users to define a question with different answer formats (Checkbox, Multiple Choice, or Written Answer) typically used for group membership applications. It includes fields for the question text, selecting the answer type, and managing answer options if applicable.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :-------- | :------- |
@@ -890,11 +892,11 @@ The `MembershipQuestion` form element allows users to define a question with dif
 | `margin` | `string` | Sets the margin around the form control. | | `undefined` |
 | `fullWidth` | `boolean` | Makes the form control occupy the full available width. | | `false` |
 
-# MentionInput
+## MentionInput
 
 The `MentionInput` element provides a text input field specifically designed for composing messages that can include user mentions (@username) and hashtags (#tag). It integrates with Formik for state management and validation.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -911,11 +913,11 @@ The `MentionInput` element provides a text input field specifically designed for
 | `containerStyle` | `ViewStyle` | Custom styles applied to the main container element. | | `{}` |
 | `styleLabel` | `ViewStyle` | Custom styles applied to the label element. | | `{}` |
 
-# MultiChoice
+## MultiChoice
 
 The `MultiChoice` form element allows users to select one or multiple options from a predefined list, typically presented using checkboxes when multiple selections are allowed. It is functionally equivalent to the `Select` element but configured for multiple selections.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -936,11 +938,11 @@ The `MultiChoice` form element allows users to select one or multiple options fr
 | `useSectionList` | `boolean` | If true, uses a SectionList for displaying options (for grouped options). | | `false` |
 | `showWithoutOptions` | `boolean` | If true, renders the component even if no options are provided. | | `false` |
 
-# MultiFile
+## MultiFile
 
 Allows users to select and upload multiple files (photos, videos, or other types based on configuration). This element is an alias for the `Attachment` element but typically used when multiple file selection is intended.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -965,11 +967,11 @@ Allows users to select and upload multiple files (photos, videos, or other types
 | `name` | `string` | The name of the field in the form state. | Yes | - |
 | `paddingBottom` | `string` | Custom padding at the bottom. | | - |
 
-# NumberCode
+## NumberCode
 
 A form input element designed for entering numerical codes (like One-Time Passwords) digit by digit into separate input boxes.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -986,11 +988,11 @@ A form input element designed for entering numerical codes (like One-Time Passwo
 | `codeLength` | `number` | The number of digits/input boxes for the code. | | `6` |
 | `keyboardType` | `TextInputProps['keyboardType']` | Specifies the type of keyboard to display (e.g., 'numeric'). | | `'numeric'` |
 
-# Password
+## Password
 
 The `Password` element provides a secure text input field specifically designed for entering passwords. It includes a toggle button to show or hide the entered password for user convenience. It integrates with Formik for form state management.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -1007,11 +1009,11 @@ The `Password` element provides a secure text input field specifically designed 
 | `containerStyle` | `ViewStyle` | Custom styles applied to the outermost container of the component. | | `undefined` |
 | `styleLabel` | `ViewStyle` | Custom styles applied specifically to the label text component. | | `undefined` |
 
-# PointConversionAmountReceived
+## PointConversionAmountReceived
 
 Displays a calculated monetary amount based on a value from another form field, an exchange rate, and a fee percentage. The result is formatted according to a specified currency pattern.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -1021,11 +1023,11 @@ Displays a calculated monetary amount based on a value from another form field, 
 | `feePercentage` | `number` | The fee percentage to be deducted (e.g., 0.05 for 5%). | Yes | |
 | `relatedField` | `string` | The name of the form field providing the base value for the calculation. | Yes | |
 
-# PollAnswer
+## PollAnswer
 
 A form element for managing a list of poll answers. Allows users to add, edit, and delete answer options, enforcing minimum/maximum answer counts and character limits per answer.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
@@ -1036,11 +1038,11 @@ A form element for managing a list of poll answers. Allows users to add, edit, a
 | `variant` | `string` | Visual style variant ('standard', 'standard-outlined'). | | `'standard'` |
 | `fullWidth` | `boolean` | If the element should occupy the full width. | | `false` |
 
-# PollCloseTime
+## PollCloseTime
 
 This element renders a date and time picker input field, specifically configured for selecting the closing time of a poll. It utilizes the underlying `DatePickerField` component.
 
-## Props
+### Props
 
 | Name | Type | Description | Required | Default |
 | :--- | :--- | :---------- | :------- | :------ |
