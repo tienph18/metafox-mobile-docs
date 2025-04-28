@@ -808,7 +808,258 @@ For a visual reference, see [Text Gallery](./form-elements/Text.md)
 | `timeFormat` | `12 \| 24` | Specifies whether to use 12-hour or 24-hour format in the time picker. | | User's setting |
 | `variant` | `'standard' \| 'outlined' \| 'filled'` | Specifies the visual style of the component. | | `'standard'` |
 
-<!-- Missing from InviteFriendPicker to PollCloseTime -->
+# InviteFriendPicker
+
+A form element designed to allow users to select one or multiple friends for invitation purposes. It typically fetches friend suggestions via an API endpoint and presents them in a dedicated selection interface.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :-- | :-- | :-- | :-- | :-- |
+| `label` | `string` | Field label text. | Yes | `''` |
+| `api_endpoint` | `string` | API endpoint for friend suggestions. | Yes | `''` |
+| `fullWidth` | `boolean` | Take full container width. |  | `false` |
+| `margin` | `'none' \| 'dense' \| 'normal'` | Margin spacing. |  | `'normal'` |
+| `required` | `boolean` | Field must have a value. |  | `false` |
+| `variant` | `'standard' \| 'outlined' \| 'filled'` | Display style variant. |  | `'standard'` |
+| `paddingBottom` | `'none' \| 'dense' \| 'normal'` | Bottom padding spacing. |  | `'normal'` |
+| `suboptions` | `SubOptionsShape` | Configuration for sub-options. |  | `undefined` |
+| `disable_custom` | `boolean` | Disable custom privacy/selection option. |  | `false` |
+| `multiple` | `boolean` | Allow selecting multiple friends. |  | `false` |
+| `enable_search` | `boolean` | Enable search in picker screen. |  | `false` |
+| `disable_uncheck` | `boolean` | Prevent unselecting chosen options. |  | `false` |
+| `choice_type` | `string` | Type of choice (internal use). |  | `''` |
+| `placeholder` | `string` | Placeholder text when no value selected. |  | `''` |
+| `api_params` | `Record<string, any>` | Additional API request parameters. |  | `{ q: ':q' }` |
+
+# LinkButton
+
+This form element renders a button styled as a link. It can be configured to navigate to a specific route/link or dispatch a Redux action upon being pressed. It's often used for actions like navigating to a "Forgot Password" screen or triggering secondary form actions.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :-- | :-- | :-- | :-- | :-- |
+| `label` | `string` | The text displayed on the link button. | Yes |  |
+| `description` | `string` | A description text displayed above the button. | |  |
+| `link` | `string` | A URL path (relative) to navigate to when pressed. Takes precedence over `actionName`/`routerName` if `action` is not set. | |  |
+| `action` | `string` | The type string of a Redux action to dispatch when pressed. Takes precedence over `link` and `actionName`/`routerName`. | |  |
+| `actionPayload` | `Record<string, any>` | The payload object to send with the dispatched Redux `action`. | | `{}` |
+| `actionName` | `'navigate' \| 'reset'` | Specifies the navigation action type. Used if `action` and `link` are not provided. | | `'navigate'` |
+| `routerName` | `string` | The name of the route to navigate to. Used with `actionName`. | | `'forgot-password'` |
+| `textTransform` | `'none' \| 'capitalize' \| 'uppercase' \| 'lowercase'` | CSS text-transform property for the button label. | | `'none'` |
+| `margin` | `'normal'` | Controls the margin around the form control. | | `'normal'` |
+
+# Location
+
+A form field that allows users to select a geographical location using a native location picker interface. Clicking the field opens the picker, and the selected location's address is displayed.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `label` | `string` | The label displayed for the form field. | Yes | |
+| `placeholder` | `string` | Placeholder text shown when no location is selected (not shown for 'standard-outlined' variant). | | `''` |
+| `variant` | `'standard' \| 'outlined' \| 'filled' \| 'standard-outlined' \| 'livestream'` | Controls the visual style of the component. | | `'standard'` |
+| `fullWidth` | `boolean` | If `true`, the component takes the full width of its container. | | `false` |
+| `margin` | `'none' \| 'dense' \| 'normal'` | Controls the margin around the component. | | `'normal'` |
+| `paddingBottom` | `'none' \| 'dense' \| 'normal'` | Controls the bottom padding of the component. | | `'normal'` |
+| `required` | `boolean` | Marks the field as required in the form validation. | | `false` |
+| `disabled` | `boolean` | If `true`, the input field is disabled. | | `false` |
+| `types` | `PlaceType[]` | Filters the types of places returned by the location picker (e.g., 'address', 'geocode', 'establishment'). | | |
+| `inline` | `boolean` | Controls if the label is displayed inline with the input. | | `false` |
+
+# MembershipQuestion
+
+The `MembershipQuestion` form element allows users to define a question with different answer formats (Checkbox, Multiple Choice, or Written Answer) typically used for group membership applications. It includes fields for the question text, selecting the answer type, and managing answer options if applicable.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :-------- | :------- |
+| `label` | `string` | The label text displayed above the element. | | `undefined` |
+| `description` | `string` | Additional descriptive text displayed below the label. | | `undefined` |
+| `required` | `boolean` | Marks the field as required (visually). | | `false` |
+| `multiline` | `boolean` | Allows the question input field to accept multiple lines. | | `false` |
+| `clearButtonMode` | `'never'`, `'while-editing'`, `'unless-editing'`, `'always'` | Determines when the clear button appears on the text input (iOS only). | | `undefined` |
+| `disabled` | `boolean` | Disables the entire form element. | | `false` |
+| `maxLength` | `number` | Maximum number of answer options allowed for Checkbox/Multiple Choice types. | | `5` |
+| `editable` | `boolean` | Determines if the question text input can be edited. | | `true` |
+| `minHeight` | `number` | Sets the minimum height for the question text input. | | `undefined` |
+| `paddingBottom` | `string`, `number` | Adds padding to the bottom of the form control. | | `undefined` |
+| `margin` | `string` | Sets the margin around the form control. | | `undefined` |
+| `fullWidth` | `boolean` | Makes the form control occupy the full available width. | | `false` |
+
+# MentionInput
+
+The `MentionInput` element provides a text input field specifically designed for composing messages that can include user mentions (@username) and hashtags (#tag). It integrates with Formik for state management and validation.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The text label displayed above the input field. | Yes | `''` |
+| `required` | `boolean` | Indicates if the field is mandatory. | | `false` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-inlined'` | The visual style variant of the input. | | `'standard-inlined'` |
+| `margin` | `'none'`, `'dense'`, `'normal'` | Controls the margin around the component. | | `'normal'` |
+| `fullWidth` | `boolean` | If true, the input stretches to the full width of its container. | | `false` |
+| `paddingBottom` | `'none'`, `'dense'`, `'normal'` | Controls the bottom padding of the component. | | `'none'` |
+| `editable` | `boolean` | If false, the text content cannot be modified by the user. | | `true` |
+| `testId` | `string` | A unique identifier used for testing purposes. | | `''` |
+| `meta` | `MetaShape` | Additional metadata associated with the field. | | `{}` |
+| `inputWrapperStyle` | `ViewStyle` | Custom styles applied to the input's wrapping element. | | `{}` |
+| `containerStyle` | `ViewStyle` | Custom styles applied to the main container element. | | `{}` |
+| `styleLabel` | `ViewStyle` | Custom styles applied to the label element. | | `{}` |
+
+# MultiChoice
+
+The `MultiChoice` form element allows users to select one or multiple options from a predefined list, typically presented using checkboxes when multiple selections are allowed. It is functionally equivalent to the `Select` element but configured for multiple selections.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The text label displayed for the field. | Yes | |
+| `description` | `string` | Additional descriptive text displayed below the field. | | |
+| `options` | `OptionsItemShape[]` | An array of available options to select from. | Yes | `[]` |
+| `multiple` | `boolean` | If true, allows selecting multiple options. Defaults to `true` for MultiChoice. | | `true` |
+| `required` | `boolean` | Whether the field is required. | | `false` |
+| `disabled` | `boolean` | If true, disables the field. | | `false` |
+| `variant` | `'standard', 'outlined', 'filled'` | The visual style of the component. | | `'standard'` |
+| `margin` | `'normal', 'dense', 'none'` | Defines the margin size around the component. | | `'normal'` |
+| `fullWidth` | `boolean` | If true, the component takes up the full width of its container. | | `false` |
+| `placeholder` | `string` | Placeholder text shown when no value is selected. | | `'select'` |
+| `enable_search` | `boolean` | If true, enables a search input within the option selector modal. | | `false` |
+| `disableClearable` | `boolean` | If true, prevents the user from clearing the selection (requires a value). | | `false` |
+| `value_type` | `string` | Specifies the expected data type of the value ('array' or single value). | | `'array'` |
+| `suboptions` | `SubOptionsShape` | Defines sub-options, often used for dependent selections. | | `undefined` |
+| `useSectionList` | `boolean` | If true, uses a SectionList for displaying options (for grouped options). | | `false` |
+| `showWithoutOptions` | `boolean` | If true, renders the component even if no options are provided. | | `false` |
+
+# MultiFile
+
+Allows users to select and upload multiple files (photos, videos, or other types based on configuration). This element is an alias for the `Attachment` element but typically used when multiple file selection is intended.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The label text for the field. | Yes | - |
+| `description` | `string` | Additional descriptive text below the label. | | - |
+| `multiple` | `boolean` | Allow selecting multiple files. Set to `true` for multi-file selection. | | `false` |
+| `file_type` | `string` | The type of file allowed ('photo', 'video', 'attachment', etc.). | | `'photo'` |
+| `item_type` | `string` | The resource type associated with the uploaded item (e.g., 'photo', 'blog'). | | `'unknown'` |
+| `max_files` | `number` | Maximum number of files allowed. | | `10` |
+| `min_files` | `number` | Minimum number of files required. | | `1` |
+| `max_upload_filesize` | `object` | Maximum upload size per file type in bytes. | | - |
+| `isVideoUploadAllowed` | `boolean` | Explicitly allow video uploads alongside photos. | | `false` |
+| `cropping` | `boolean` | Enable image cropping after selection. | | `false` |
+| `include_exif` | `boolean` | Include EXIF data with uploaded images. | | `false` |
+| `maxFilesDescription` | `string` | Custom description related to the maximum file limit. | | - |
+| `current_files` | `array` | Array of pre-existing file objects (used for editing). | | `[]` |
+| `fullWidth` | `boolean` | Whether the element should take up the full width. | | `false` |
+| `margin` | `'normal', 'dense', 'none'` | Margin style. | | `'normal'` |
+| `variant` | `string` | The display variant of the form control. | | `'standard-inlined'` |
+| `required` | `boolean` | Whether the field is required (validation). | | `false` |
+| `disabled` | `boolean` | Disable the form element. | | `false` |
+| `name` | `string` | The name of the field in the form state. | Yes | - |
+| `paddingBottom` | `string` | Custom padding at the bottom. | | - |
+
+# NumberCode
+
+A form input element designed for entering numerical codes (like One-Time Passwords) digit by digit into separate input boxes.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The label displayed above the input fields. | | `undefined` |
+| `editable` | `boolean` | Determines if the input fields are editable. | | `true` |
+| `variant` | `'standard', 'outlined', 'filled'` | The visual style variant of the form control. | | `'standard'` |
+| `paddingBottom` | `'dense', 'normal', 'none'` | Controls the bottom padding of the form control. | | `'dense'` |
+| `margin` | `'dense', 'normal', 'none'` | Controls the margin of the form control. | | `undefined` |
+| `required` | `boolean` | If true, marks the field as required. | | `false` |
+| `fullWidth` | `boolean` | If true, the component stretches to the full width available. | | `false` |
+| `clearInputs` | `boolean` | Controls input clearing behavior on press. | | `false` |
+| `isAutoFillSupported` | `boolean` | Enables native OTP autofill support if available. | | `false` |
+| `isAutoFocus` | `boolean` | If true, the first input box automatically receives focus. | | `false` |
+| `codeLength` | `number` | The number of digits/input boxes for the code. | | `6` |
+| `keyboardType` | `TextInputProps['keyboardType']` | Specifies the type of keyboard to display (e.g., 'numeric'). | | `'numeric'` |
+
+# Password
+
+The `Password` element provides a secure text input field specifically designed for entering passwords. It includes a toggle button to show or hide the entered password for user convenience. It integrates with Formik for form state management.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The label displayed above or alongside the input field. | | `''` |
+| `placeholder` | `string` | Placeholder text shown when the input field is empty. | | `''` |
+| `required` | `boolean` | Marks the field as mandatory, often visually indicated (e.g., with an asterisk). | | `false` |
+| `disabled` | `boolean` | If true, the input field is disabled and cannot be interacted with. | | `false` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'`, `'standard-outlined'` | Defines the visual style of the input field (e.g., border, background). | | `'standard'` |
+| `margin` | `'none'`, `'dense'`, `'normal'` | Controls the outer spacing around the form control. | | `'normal'` |
+| `fullWidth` | `boolean` | If true, the component stretches to the full width of its container. | | `false` |
+| `editable` | `boolean` | If false, the text content cannot be modified by the user. | | `true` |
+| `returnKeyType` | `ReturnKeyTypeOptions` | Specifies the appearance of the keyboard's return key. | | `'next'` |
+| `inputWapperStyle` | `ViewStyle` | Custom styles applied to the wrapper view containing the `TextInput`. | | `undefined` |
+| `containerStyle` | `ViewStyle` | Custom styles applied to the outermost container of the component. | | `undefined` |
+| `styleLabel` | `ViewStyle` | Custom styles applied specifically to the label text component. | | `undefined` |
+
+# PointConversionAmountReceived
+
+Displays a calculated monetary amount based on a value from another form field, an exchange rate, and a fee percentage. The result is formatted according to a specified currency pattern.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The base label text for the displayed amount (often an i18n key). | Yes | |
+| `exchangeRate` | `number` | The numerical exchange rate used for conversion. | Yes | |
+| `exchangeRatePattern` | `object` | An object defining the currency formatting rules (e.g., separators, precision). | Yes | |
+| `feePercentage` | `number` | The fee percentage to be deducted (e.g., 0.05 for 5%). | Yes | |
+| `relatedField` | `string` | The name of the form field providing the base value for the calculation. | Yes | |
+
+# PollAnswer
+
+A form element for managing a list of poll answers. Allows users to add, edit, and delete answer options, enforcing minimum/maximum answer counts and character limits per answer.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `minAnswers` | `number` | Minimum number of answers required. | Yes | *Varies* |
+| `maxAnswers` | `number` | Maximum number of answers allowed (0=unlimited). | Yes | *Varies* |
+| `maxLength` | `number` | Maximum character length for each answer. | | `undefined` |
+| `disabled` | `boolean` | Disables the input fields and add/delete buttons. | | `false` |
+| `variant` | `string` | Visual style variant ('standard', 'standard-outlined'). | | `'standard'` |
+| `fullWidth` | `boolean` | If the element should occupy the full width. | | `false` |
+
+# PollCloseTime
+
+This element renders a date and time picker input field, specifically configured for selecting the closing time of a poll. It utilizes the underlying `DatePickerField` component.
+
+## Props
+
+| Name | Type | Description | Required | Default |
+| :--- | :--- | :---------- | :------- | :------ |
+| `label` | `string` | The text label displayed for the input field. | | `'close_time'` |
+| `placeholder` | `string` | Placeholder text shown when the input is empty. | | |
+| `description` | `string` | Additional descriptive text displayed below the input field. | | |
+| `required` | `boolean` | If true, the field must have a value for form submission. | | `false` |
+| `disabled` | `boolean` | If true, the input field is disabled and cannot be interacted with. | | `false` |
+| `fullWidth` | `boolean` | If true, the input field spans the full width of its container. | | `false` |
+| `margin` | `'dense'`, `'normal'`, `'none'` | Specifies the margin spacing around the field. | | `'normal'` |
+| `variant` | `'standard'`, `'outlined'`, `'filled'` | Defines the visual style of the input field. | | `'standard'` |
+| `datePickerMode` | `'date'`, `'time'`, `'datetime'` | Determines the type of picker displayed (date, time, or both). | | `'datetime'` |
+| `displayFormat` | `string` | The format used to display the selected date and time in the input field. | | `'DD/MM/YYYY - HH:mm'` |
+| `minDate` | `string` | The earliest selectable date/time (ISO 8601 format string). | | |
+| `maxDate` | `string` | The latest selectable date/time (ISO 8601 format string). | | |
+| `time_zone_gmt` | `string` | Timezone identifier (e.g., 'America/New_York') for calculations. | | User's setting |
+| `timeFormat` | `12`, `24` | Specifies whether to use 12-hour or 24-hour format in the time picker. | | User's setting |
+| `startOfDay` | `boolean` | If true, sets the selected time to the beginning of the day (00:00:00). | | `false` |
+| `endOfDay` | `boolean` | If true, sets the selected time to the end of the day (23:59:59). | | `false` |
 
 ## Price
 
